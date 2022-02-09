@@ -114,7 +114,7 @@ const ColoredLine = ({ color }) => (
               January 10, 2022
                   
                   <br/>
-                  Weekly Edition #1: <b>Transformational Women</b>
+                  Headlines Edition #2: <b>Globalization of Shareholder</b>
                   <ColoredLine color="gold" />
                 </div>
              

@@ -1,0 +1,51 @@
+.article-text{
+    font-size: 17px;
+}
+.article-text > span > .wp-block-image > img {
+    width: 100%;
+}
+.article-text > span > .wp-block-image {
+    text-align: center;
+}
+.article-text > span > p > a{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.article-text > span > p > a:hover{
+    color: #007bff !important;
+}
+.article-container{
+    overflow-y: scroll;
+    height: 1700px;
+    padding-right: 3.5rem;
+    padding-left: 2.5rem;
+}
+@media screen and (max-width: 990px) {
+    .article-container{
+        width: 100vw;
+        text-align: center;
+    }
+}
+
+.art-img{
+    height: auto;
+    width: 55%;
+    margin: 2rem;
+    border-radius: 5px;
+}
+hr.wp-block-separator {
+    border-top: 1px solid rgba(0,0,0);
+}
+
+.edit-display-image{
+    border-radius: 5px;
+    height: 30vw;
+    width: auto;
+}
+
+.survey-article-header{
+    background-color: rgba(241, 200, 16, 0.884);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+}

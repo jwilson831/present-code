@@ -1,0 +1,22 @@
+@media screen and (max-width:992px) {
+    .dlc-box{
+        margin-top: 3rem !important;
+    }
+}
+
+.dlc-img{
+    width: 75%;
+    border-radius: calc(.25rem - 1px);
+}
+.fa-check-square{
+    color: green;
+    font-weight: 600!important;
+    font-size: 21px;
+    padding-left: 0.5rem;
+}
+.thank-you-msg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

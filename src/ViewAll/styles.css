@@ -1,0 +1,14 @@
+.view-all{
+    font-size: 16px!important;
+    background-color: rgb(38,136,165);
+}
+.view-all > a:hover{
+    text-decoration: none;
+}
+.view-all > a > p{
+    color:white;
+}
+.view-all:hover{
+    background-color: rgb(25, 73, 88);
+}
+

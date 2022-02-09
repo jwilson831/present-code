@@ -1,0 +1,50 @@
+.invest-main-container{
+    width: 90%;
+    margin: auto;
+}
+
+/* .invest-card{
+    border: 3px solid black !important;
+} */
+
+.invest-card-body{
+    /* background: rgba(0,0,0,0.1); */
+    /* border-left: 1px solid black; */
+    height: 100%;
+}
+
+.invest-col{
+    display: block;
+    align-items: center;
+}
+.invest-row{
+    margin: -1px !important;
+}
+.invest-price{
+    display: flex;
+    justify-content: space-between;
+}
+.invest-submit :hover{
+    color: white!important;
+}
+.section-title{
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+/* .invest-sponsors-list{
+    font-size: 1rem;
+    font-weight: 600;
+    
+} */
+.invest-sponsor-image{
+        height: 100%;
+        width: 15em;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}

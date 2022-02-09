@@ -1,0 +1,111 @@
+.program-title{
+  font-size:1.8rem;
+  font-family: "Work-sans", sans-serif;
+}
+.program-blurb{
+    margin: 20px;
+    font-family: "Work-Sans", sans-serif;
+}
+.program-img-top{
+        max-width: 30%;
+        margin-bottom: -10px;
+        height: auto;
+        align-items: center;
+        display: block;
+        padding-left: 10px; 
+}
+.logo{
+    margin-bottom: 2rem;
+}
+.ttp-top{
+  width: 90%;
+  margin-bottom: -10px;
+  height: auto;
+  align-items: center;
+  display: block;
+  padding-left: 10px; 
+
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    /* overflow: hidden; */
+    /* perspective: 1000px; Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2rem;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    /* background-color: rgba(241, 200, 16, 0.884) !important; */
+    box-shadow: 5px 5px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: "Work-Sans", sans-serif;
+    color: black;
+    transform: rotateY(180deg);
+    padding-top: .7rem;
+    border-radius: 5px;
+  }
+  
+  .at{
+      max-width: 150px;
+      margin: auto;
+      height: auto;
+      align-items: center;
+      display: block;
+      padding-bottom: .7rem;
+      overflow:hidden;
+  }
+
+    
+  .ttp{
+    padding-top: 1.5rem;
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+    align-items: center;
+    display: block;
+}
+
+    
+.its{
+  max-width: 100%;
+  padding: auto;
+  height: auto;
+}
+

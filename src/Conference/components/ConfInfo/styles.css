@@ -1,0 +1,146 @@
+/* ABOUT */
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.about-box{
+    padding: 2rem;
+    border: 3px solid rgb(38,136,165);
+    margin: 1rem;
+    border-radius: 8px;
+    background-color: #001540;
+    color: white;
+}
+.about-title{
+    /* color: rgb(38,136,165); */
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+.about-txt{
+    font-size: 17px;
+}
+/* SPONSORS */
+.sponsors{
+    margin-top: 2rem;
+}
+.sponsors-container{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 4rem;
+    overflow: hidden;
+}
+.sponsor-type{
+    margin-top: 1.5rem;
+    margin-bottom: 6.5rem;
+}
+.sponsor-grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+.sponsor-grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+}
+.sponsor-grid-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+}
+.sponsor-cat-txt{
+    font-size: 18px;
+    font-weight: 800;
+    width: 45%;
+    margin: auto;
+}
+.wp-block-image > img{
+    height: 100%;
+    width: 21rem;
+    margin: 0.5rem;
+    
+}
+.wp-block-image > a > img{
+    height: 100%;
+    width: 21rem;
+    margin: 0.5rem;
+}
+
+/* AGENDA */
+table{
+    table-layout: fixed;
+    border-radius: 5px;
+}
+
+table td{
+    border: 1px solid rgb(186, 186, 186);
+    padding: 1rem;
+    font-size: 13px;
+}
+.agenda-container{
+    width: 85%;
+    margin: auto;
+
+}
+
+/* DELEGATES */
+.delegates{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.delegate{
+    padding: 1rem;
+}
+
+/* SPEAKERS */
+.speaker-img{
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+}
+.speakers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.speaker{
+    padding: 1rem;
+    padding-right: 1rem;
+}
+
+/* VENUE */
+.venue-img{
+    width: 85%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+.amen-img{
+    width: 95%;
+    height: auto;
+    border-radius: 5px;
+}
+.venue-desc{
+    width: 85%;
+    font-size: 18px;
+    margin: auto;
+    font-weight: 600;
+}
+.carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+
+}
+

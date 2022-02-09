@@ -1,0 +1,21 @@
+.conf-menu-container{
+    width: 90%;
+    margin: auto;
+    padding-top: 1rem;
+}
+.convene{
+    font-weight: 600;
+    font-size: 16px;
+}
+.convene-address{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.map-text{
+    margin: auto;
+    margin-top: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(0,0,0,0.2);
+}

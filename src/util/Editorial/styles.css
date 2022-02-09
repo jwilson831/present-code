@@ -1,0 +1,37 @@
+.edit-container{
+    background: rgb(0,0,0,0.1);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.edit-category{
+    background: rgba(241, 200, 16, 0.884) !important;
+    color: black !important;
+}
+.space{
+    margin-top: .5rem;
+}
+.edit-img{
+
+     
+        width:  170px;
+        height: 200px;
+        object-fit: cover;
+        margin: auto;
+        border-radius: 5px;
+}
+.edit-title{
+    margin-top: 1rem;
+    font-size: 17px;
+    font-weight: 800;
+}
+.edit-text{
+    font-size: 15px;
+}
+.edit-name{
+    font-size: 15px;
+    font-weight: 600;
+}
+a.more-link {
+    visibility: hidden;
+}

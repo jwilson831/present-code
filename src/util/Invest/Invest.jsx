@@ -15,7 +15,7 @@ function Invest(){
                 <p>Skytop Strategies is about connecting in the B2B world both in-person and online.  Very few people have the the resources or inside connections to invest in a growth start up business.</p>
                 <p>Join others investing in Skytop's seed stage capital raise and watch us grow with your investment!  Choose your investment comfort level and know that you can add to it over time. </p>
                 <p>Please be advised this is not an investment product, vehicle private equity allocation or share of any type.  Your investment in Skytop is purely voluntary on your part and the benefits received are those listed in each category below which from time to time may be expanded, changed, or eliminated.</p>
-                <p>For more details, contact Rebecca at <a className="text-primary" href="mailto:rdukes@skytopstrategies.com">rdukes@skytopstrategies.com</a></p>
+                <p>For more details, contact Rebecca at <a className="text-primary" href="mailto:cskroupa@skytopstrategies.com">cskroupa@skytopstrategies.com</a></p>
             </div>
             <hr/>
             <div className="container invest-grid mt-5 p-0">
@@ -144,7 +144,7 @@ function Invest(){
                             </div>
                             <b><p className="card-text">Benefits: </p></b>
                             <p className="card-text">Financial debt instruments designed to provide return.  Each investment debt instrument is crafted with your involvement with the terms and conditions as a starting point for your true investment in Skytop. Please connect with Rebecca Dukes, Partner Investor Relations, to begin the conversation on debt and convertible notes.</p>
-                            <p>For more details, contact Rebecca at <a className="text-primary" href="mailto:rdukes@skytopstrategies.com">rdukes@skytopstrategies.com</a></p>
+                            <p>For more details, contact Rebecca at <a className="text-primary" href="mailto:cskroupa@skytopstrategies.com">cskroupa@skytopstrategies.com</a></p>
                             <div className="text-center mt-5 mb-3">
                                 <div className="invest-button view-all comments-box">
                                     <a target="_blank" rel="noreferrer" href="https://skytop-strategies.com/product/invest-in-skytop-confident-ceo/"><p className="m-0 p-0">Invest Now</p></a>

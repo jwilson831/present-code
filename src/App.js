@@ -111,20 +111,20 @@ const ColoredLine = ({ color }) => (
             <Switch>
               <div className="section">
               <div style={styleObj}>
-              January 10, 2022
+              February 10, 2022
                   
                   <br/>
-                  Headlines Edition #2: <b>Globalization of Shareholder</b>
+                  Headlines Edition #2: <b>Globalization of Shareholders</b>
                   <ColoredLine color="gold" />
                 </div>
              
                 <Route exact path="/">
                   <Home 
-                    video={"https://www.youtube.com/embed/6WLMz8Qeg4A"} 
+                    video={"https://www.youtube.com/watch?v=GdHUlaVxDwY&t=18s"} 
                     title={
                       <div className="video-title text-center">
                         <h5>
-                          Spotlight on Helen Reddy: A Game Changing Talent and Model of Resilience
+                          Interview with Walied Soliman, Global Chair and Canadian Chair at Norton Rose Fulbright LLP
                         </h5>
                       </div>
                     }

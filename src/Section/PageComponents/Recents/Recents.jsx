@@ -42,7 +42,7 @@ function Recents (props){
         <div >
             <Programs/>
         <div className="recent-container text-left">
-            <div className="recent-title-section">Headlines Edition #1: Transformational Women</div>
+            <div className="recent-title-section">Headlines Edition #2: Globalization of Shareholders</div>
             {renderArticles(articles)}
         </div>
         </div>

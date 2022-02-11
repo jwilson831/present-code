@@ -129,7 +129,6 @@ const ColoredLine = ({ color }) => (
                       </div>
                     }
                     articles={articles}
-                    ids={[2756,2424,2157,1804,203,622,583,604]} 
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.extrahop.com/"}
@@ -147,7 +146,7 @@ const ColoredLine = ({ color }) => (
                       </div>
                     }
                     articles={articles}
-                    ids={[2767,2770,2751,2748,2744,2661,2241,2217,2136,1322,643,1284]}
+                    ids={[2569,2661,2241,2217,2136,1322,643,1284]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.boardroomalpha.com/"}
@@ -164,7 +163,7 @@ const ColoredLine = ({ color }) => (
                       </div>
                     }
                     articles={articles}
-                    ids={[2756,2424,2157,1804,203,622,583,604]}                    
+                    ids={[2424,2157,1804,203,622,583,604]}                    
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.boardroomalpha.com/"}
@@ -181,7 +180,7 @@ const ColoredLine = ({ color }) => (
                       </div>
                     }
                     articles={articles}
-                    ids={[2394,2380,2319,2325,2226,2132,2150,1862]}                    
+                    ids={[2560,2565,2572,2394,2380,2319,2325,2226,2132,2150,1862]}                    
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://crisisconsultant.com/"}
@@ -215,7 +214,7 @@ const ColoredLine = ({ color }) => (
                       </div>
                     }
                     articles={articles}
-                    ids={[2407,2430,2223,2153,2145,1808,1303,585]}                    
+                    ids={[2588,2407,2430,2223,2153,2145,1808,1303,585]}                    
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.boardroomalpha.com/"}
@@ -232,7 +231,7 @@ const ColoredLine = ({ color }) => (
                       </div>
                     }
                     articles={articles}
-                    ids={[2757,2754,2753,2418,2368,2328,2247,2121,1815,1812,1316]}                    
+                    ids={[2574,2637,2418,2368,2328,2247,2121,1815,1812,1316]}                    
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.boardroomalpha.com/"}

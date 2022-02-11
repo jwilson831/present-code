@@ -13,7 +13,7 @@ function Editorial(props){
             </div>
             <img className="edit-img" src={props.img} alt="editorial"></img>
             <br/>
-            <h6 className="space"><b>{props.publisher.title.rendered}</b></h6>
+            <h6 className="space"><b>Publisher's Note #5: Shareholder Activism and ESG Converge: New Connections to Make</b></h6>
             <p className="edit-text mt-4"><Markup content={props.excerpt}></Markup><span></span></p>
             <Link to={props.link}>
                 <button onClick={() => scrollToTop()}className="btn sky-submit mb-3">Read Full Note</button>

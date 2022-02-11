@@ -128,7 +128,8 @@ const ColoredLine = ({ color }) => (
                         </h5>
                       </div>
                     }
-                    articles={articles} 
+                    articles={articles}
+                    ids={[2767]} 
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.extrahop.com/"}

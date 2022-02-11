@@ -120,12 +120,11 @@ const ColoredLine = ({ color }) => (
              
                 <Route exact path="/">
                   <Home 
-                    video={"https://www.youtube.com/embed/6WLMz8Qeg4A"} 
+                    video={"https://www.youtube.com/embed/VnI4ox-lOEU"} 
                     title={
                       <div className="video-title text-center">
-                        <h5>
-                          Spotlight on Helen Reddy: A Game Changing Talent and Model of Resilience
-                        </h5>
+                        <h5>Evolving Practices in Shareholder Engagement</h5>
+                        <p>Jeremy Fielding, CEO Kekst CNC</p>
                       </div>
                     }
                     articles={articles}

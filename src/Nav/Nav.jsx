@@ -16,7 +16,7 @@ function Nav (props){
         </div>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <Link to="/"><div className="nav-item" onClick={(e) => handleClick(e)}><p className="nav-text" id="Headlines">HEADLINES</p></div></Link>
-          <Link to="/activism"><div className="nav-item" onClick={(e) => handleClick(e)}><p className="nav-text" id="Activism">ACTIVISM</p></div></Link>
+          <Link to="/activism"><div className="nav-item" onClick={(e) => handleClick(e)}><p className="nav-text" id="Activism">SHAREHOLDER ACTIVISM</p></div></Link>
           <Link to="/capital-markets"><div className="nav-item" onClick={(e) => handleClick(e)}><p className="nav-text" id="Capital Markets">CAPITAL MARKETS</p></div></Link>
           <Link to="/cyber"><div className="nav-item" onClick={(e) => handleClick(e)}><p className="nav-text" id="Cyber Resilience">CYBER RESILIENCE</p></div></Link>
           <Link to="/CSR"><div className="nav-item" onClick={(e) => handleClick(e)}><p className="nav-text" id="CSR and Sustainability">CSR &amp; SUSTAINABILITY</p></div></Link>

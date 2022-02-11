@@ -120,11 +120,11 @@ const ColoredLine = ({ color }) => (
              
                 <Route exact path="/">
                   <Home 
-                    video={"https://www.youtube.com/embed/GdHUlaVxDwY?end=245"} 
+                    video={"https://www.youtube.com/embed/6WLMz8Qeg4A"} 
                     title={
                       <div className="video-title text-center">
                         <h5>
-                          Interview with Walied Soliman, Global Chair and Canadian Chair at Norton Rose Fulbright LLP
+                          Spotlight on Helen Reddy: A Game Changing Talent and Model of Resilience
                         </h5>
                       </div>
                     }

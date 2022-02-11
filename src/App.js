@@ -120,7 +120,7 @@ const ColoredLine = ({ color }) => (
              
                 <Route exact path="/">
                   <Home 
-                    video={"https://www.youtube.com/embed/GdHUlaVxDwY"} 
+                    video={"https://www.youtube.com/embed/GdHUlaVxDwY?end=245"} 
                     title={
                       <div className="video-title text-center">
                         <h5>

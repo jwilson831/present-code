@@ -21,9 +21,9 @@ function SideContainer(props){
         <div className="conference-container">
             <div className="conference-spotlight">
                 <h3 className="section-title">Conference Spotlight</h3>
-                    <h6>Gender Equality in the C-Suite & Boardroom</h6>
-                        <a href="https://skytopstrategies.com/conferences/395">
-                            <img className="card-img side-img" src={"https://skytop-strategies.com/wp-content/uploads/2021/07/THE-ONE-FOR-CHICAGO.jpeg"} alt="spotlight conference"></img>
+                    <h6>Shareholder Activism ESG Super Summit</h6>
+                        <a href="https://skytopstrategies.com/conferences/391">
+                            <img className="card-img side-img" src={"http://skytop-strategies.com/wp-content/uploads/2021/07/image-10.png"} alt="spotlight conference"></img>
                         </a>
             </div>        
             <p className="section-title">{props.article ? "Related Conferences" : "Upcoming Conferences"}</p>

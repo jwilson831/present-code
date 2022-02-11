@@ -21,7 +21,7 @@ function PrimaryMenu (props){
                     <Editorial
                         id={props.editorial.id}
                         category={"Editor's Note"}
-                        title={props.editorial.title.rendered}
+                        title={"Editor's Note #5: Rise of Global Shareholders: Fall of Fragile Governments"}
                         img={props.editorial.acf.image}
                         author={props.editorial.acf.author}
                         excerpt={props.editorial.excerpt.rendered}
@@ -32,7 +32,7 @@ function PrimaryMenu (props){
                     <Editorial
                         id={props.publisher.id}
                         category={"Publisher's Note"}
-                        title={props.publisher.title.rendered}
+                        title={"Publisher's Note #5: Shareholder Activism and ESG Converge: New Connections to Make"}
                         img={props.publisher.acf.image}
                         author={props.publisher.acf.author}
                         excerpt={props.publisher.excerpt.rendered}

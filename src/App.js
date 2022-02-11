@@ -68,7 +68,7 @@ function App() {
   
   const filterByCategory = (data, category) => {
     const categories = [  
-      "Activism", 
+      "Shareholder Activism", 
       "Capital Markets", 
       "Cyber Resilience", 
       "CSR and Sustainability", 
@@ -129,7 +129,7 @@ const ColoredLine = ({ color }) => (
                       </div>
                     }
                     articles={articles}
-                    ids={[2767]} 
+                    ids={[2756,2424,2157,1804,203,622,583,604]} 
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.extrahop.com/"}

@@ -162,7 +162,7 @@ const ColoredLine = ({ color }) => (
                       </div>
                     }
                     articles={articles}
-                    ids={[2569,2661,2241,2217,2136,1322,643,1284]}                    
+                    ids={[2424]}                    
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.boardroomalpha.com/"}

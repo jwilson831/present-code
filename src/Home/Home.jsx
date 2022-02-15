@@ -28,7 +28,7 @@ function Home (props){
                 </div>
                 <div className="subfeature"><SubFeatures articles={props.articles} ids={[2671,2675,2678]} comments={props.comments}/></div>
                 <div className="recent">
-                    <Recents changeActiveCategory={props.changeActiveCategory} articles={props.articles} ids={[2744,2748,2751,2753,2754,2756,2757,2767,2770]} comments={props.comments}/>
+                    <Recents changeActiveCategory={props.changeActiveCategory} articles={props.articles} ids={[2744,2748,2751,2753,2754,2756,2757,2767,2770,2811]} comments={props.comments}/>
                     <ViewAllBtn linkTo={"article"}/>
                 </div>
             </div>

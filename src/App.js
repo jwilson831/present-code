@@ -259,7 +259,7 @@ const ColoredLine = ({ color }) => (
               </div>
             </Switch>
 
-            {/* <div className="side-menu">
+            <div className="side-menu">
               <Switch>
                 <Route path={"/conferences/:id"}><ConferenceMenu conferences={conferences}/></Route>
                 <Route path={["/authors/:id","/editorial","/publisher"]}><AuthorMenu conferences={conferences}/></Route>
@@ -287,7 +287,7 @@ const ColoredLine = ({ color }) => (
                   />
                 </Route>
               </Switch>
-            </div> */}
+            </div>
           </div>
         </div>
       : 

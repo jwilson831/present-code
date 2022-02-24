@@ -32,7 +32,7 @@ function PrimaryMenu (props){
                     <Editorial
                         id={props.publisher.id}
                         category={"Publisher's Note"}
-                        title={"Publisher's Note #5: Shareholder Activism and ESG Converge: New Connections to Make"}
+                        title={"Publisher's Note #5: Make New Connections at the Shareholder Activism and ESG Super Summit"}
                         img={props.publisher.acf.image}
                         author={props.publisher.acf.author}
                         excerpt={props.publisher.excerpt.rendered}

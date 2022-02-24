@@ -261,8 +261,8 @@ const ColoredLine = ({ color }) => (
 
             <div className="side-menu">
               <Switch>
-                <Route path={"/conferences/:id"}><ConferenceMenu conferences={conferences}/></Route>
-                <Route path={["/authors/:id","/editorial","/publisher"]}><AuthorMenu conferences={conferences}/></Route>
+                {/* <Route path={"/conferences/:id"}><ConferenceMenu conferences={conferences}/></Route>
+                <Route path={["/authors/:id","/editorial","/publisher"]}><AuthorMenu conferences={conferences}/></Route> */}
                 <Route path="/invest-in-us"><InvestMenu/></Route>
                 <Route path="/index/conferences">
                   <div className="pl-3">

@@ -111,7 +111,7 @@ const ColoredLine = ({ color }) => (
             <Switch>
               <div className="section">
               <div style={styleObj}>
-              February 10, 2022
+              March 4, 2022
                   
                   <br/>
                   Headlines Edition #2: <b>Globalization of Shareholders</b>

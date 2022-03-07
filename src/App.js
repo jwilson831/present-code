@@ -162,7 +162,7 @@ const ColoredLine = ({ color }) => (
                       </div>
                     }
                     articles={articles}
-                    ids={[2424,2157,1804,203,622,583,2800]}                    
+                    ids={[2675,2424,2157,1804,203,622,583,2800]}                    
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.boardroomalpha.com/"}
@@ -196,7 +196,7 @@ const ColoredLine = ({ color }) => (
                       </div>
                     }
                     articles={articles}
-                    ids={[2332,2335,2250,1947,187,1306]}                    
+                    ids={[2671,2678,2332,2335,2250,1947,187,1306]}                    
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.extrahop.com/"}

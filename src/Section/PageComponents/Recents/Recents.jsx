@@ -43,8 +43,16 @@ function Recents (props){
             <Programs/>
         <div className="recent-container text-left">
             <div className="recent-title-section">Headlines Edition #2: Globalization of Shareholders</div>
+            <hr
+      style={{
+          color: "gold",
+          backgroundColor: "gold",
+          height: 1,
+      }}
+  />
             {renderArticles(articles)}
         </div>
+        
         </div>
     )
 }

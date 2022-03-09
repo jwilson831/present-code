@@ -30,6 +30,8 @@ import InvestMenu from './util/Invest/InvestMenu';
 import Program from './Program/Program';
 import AtTheTable from './Program/AtTheTable';
 import RFK from './rfk/RFK';
+import DigiProg from './DigiProg/DigiProg';
+import DigiMenu from './DigiProg/DigiMenu';
 
 
 function App() {
@@ -255,6 +257,7 @@ const ColoredLine = ({ color }) => (
                 <Route exact path="/program"><Program/></Route>
                 <Route exact path="/rfk"><RFK/></Route>
                 <Route exact path="/AtTheTable"><AtTheTable/></Route>
+                <Route exact path="/digiprog"><DigiProg/></Route>
                 
               </div>
             </Switch>
@@ -264,6 +267,7 @@ const ColoredLine = ({ color }) => (
                 <Route path={"/conferences/:id"}><ConferenceMenu conferences={conferences}/></Route>
                 <Route path={["/authors/:id","/editorial","/publisher"]}><AuthorMenu conferences={conferences}/></Route>
                 <Route path="/invest-in-us"><InvestMenu/></Route>
+                <Route path="/digiprog"><DigiMenu/></Route>
                 <Route path="/index/conferences">
                   <div className="pl-3">
                     <NewsFeed/>

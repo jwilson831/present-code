@@ -109,3 +109,15 @@
   height: auto;
 }
 
+.programButton {
+  width: 365px;
+  font-size: 1.2rem;
+  height: 43px;
+  background-color: #2688A5;
+  color: white;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+border-color: #2688A5;
+}

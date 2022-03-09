@@ -6,9 +6,7 @@ const ProgramLogos = () => {
         <div className="containter">
 
             <a href="https://skytopstrategies.com/digiprog">
-            {/* <h3 className="program-title">Business Intelligence on Three Streamed Channels</h3> */}
-            <h3 >Three Streamed Program Channels</h3>
-
+            <button className="programButton">Three Streamed Program Channels</button>
             </a>
 
             <br/>

@@ -39,7 +39,7 @@ const CapitalProg = (props) => {
                       <br />
                       <img
                         alt=""
-                        style={{ border: "1px solid black", width: "150px" }}
+                        style={{ marginTop: "5px", border: "1px solid black", width: "150px" }}
                         src="https://skytop-strategies.com/wp-content/uploads/2022/03/celary.jpg"
                       />
                     </div>

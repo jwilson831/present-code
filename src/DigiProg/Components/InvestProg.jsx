@@ -36,9 +36,12 @@ const InvestProg = (props) => {
                       <hr />
                       Brought to You By
                       <br />
+                      <br />
+
                       <img
                         alt=""
-                        style={{ width: "180px", paddingTop: "5px" }}
+                        style={{ width:"190px", transform: "translate(-50%, -50%)", position: "absolute" }}
+                        // style={{ width: "180px", paddingTop: "5px" }}
                         src="https://skytop-strategies.com/wp-content/uploads/2022/03/impactShares.png"
                       />
                     </div>
@@ -72,9 +75,11 @@ const InvestProg = (props) => {
                       <hr />
                       Brought to You By
                       <br />
+                      <br />
                       <img
                         alt=""
-                        style={{ width: "180px", paddingTop: "5px" }}
+                        // style={{ width: "180px", paddingTop: "5px" }}
+                        style={{ width:"190px", transform: "translate(-50%, -50%)", position: "absolute" }}
                         src="https://skytop-strategies.com/wp-content/uploads/2022/03/blueTractor.png"
                       />
                     </div>
@@ -108,9 +113,11 @@ const InvestProg = (props) => {
                       <hr />
                       Brought to You By
                       <br />
+                      <br />
                       <img
                         alt=""
-                        style={{ width: "180px", border: "1px solid" }}
+                        // style={{ width: "180px", border: "1px solid" }}
+                        style={{ marginTop:"15px", width:"190px", transform: "translate(-50%, -50%)", position: "absolute", border: ".5px solid" }}
                         src="https://skytop-strategies.com/wp-content/uploads/2022/03/spGlobal.png"
                       />
                     </div>

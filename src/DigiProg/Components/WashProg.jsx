@@ -37,9 +37,12 @@ const WashProg = (props) => {
                       <hr />
                       Brought to You By
                       <br />
+                      <br />
                       <img
                         alt=""
-                        style={{ width: "200px", paddingTop: "5px" }}
+                        // style={{ width: "200px", paddingTop: "5px" }}
+                        style={{ transform: "translate(-50%, -50%)", position: "absolute" }}
+
                         src="https://skytop-strategies.com/wp-content/uploads/2022/03/controlRisks.png"
                       />
                     </div>
@@ -62,7 +65,7 @@ const WashProg = (props) => {
                     <div className="programContent">
                       <b>Unpacking World Affairs</b>
                       <br />
-                      <i>For Global Leaders</i>
+                      <i>For Global Business Leaders</i>
                       <br />
                       <br />
                       Hosted by Ambassador Cameron Munter(retired)

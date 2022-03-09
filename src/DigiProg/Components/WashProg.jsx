@@ -15,7 +15,7 @@ const WashProg = (props) => {
           {/* To The Point */}
           <div id="back" className="logo col-sm">
             <a href="https://skytopstrategies.com/program">
-              <div className="card">
+              <div id="card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img
@@ -39,7 +39,7 @@ const WashProg = (props) => {
                       <br />
                       <img
                         alt=""
-                        style={{width:"200px", paddingTop: "5px" }}
+                        style={{ width: "200px", paddingTop: "5px" }}
                         src="https://skytop-strategies.com/wp-content/uploads/2022/03/controlRisks.png"
                       />
                     </div>
@@ -51,7 +51,7 @@ const WashProg = (props) => {
           {/* At The Table */}
           <div id="back" className="logo col-sm">
             <a href="https://skytopstrategies.com/program">
-              <div className="card">
+              <div id="card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img
@@ -81,7 +81,7 @@ const WashProg = (props) => {
           {/* In The Studio */}
           <div id="back" className="logo col-sm">
             <a href="https://skytopstrategies.com/program">
-              <div className="card">
+              <div id="card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img

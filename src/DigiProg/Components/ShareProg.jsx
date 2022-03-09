@@ -14,7 +14,7 @@ const ShareProg = (props) => {
           {/* To The Point */}
           <div id="back" className="logo col-sm">
             <a href="https://skytopstrategies.com/program">
-              <div className="card">
+              <div id="card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img
@@ -49,7 +49,7 @@ const ShareProg = (props) => {
           {/* At The Table */}
           <div id="back" className="logo col-sm">
             <a href="https://skytopstrategies.com/program">
-              <div className="card">
+              <div id="card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img
@@ -81,7 +81,7 @@ const ShareProg = (props) => {
           {/* In The Studio */}
           <div id="back" className="logo col-sm">
             <a href="https://skytopstrategies.com/program">
-              <div className="card">
+              <div id="card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img

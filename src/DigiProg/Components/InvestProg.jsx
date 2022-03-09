@@ -15,7 +15,7 @@ const InvestProg = (props) => {
           {/* To The Point */}
           <div id="back" className="logo col-sm">
             <a href="https://skytopstrategies.com/program">
-              <div className="card">
+              <div id="card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img
@@ -38,7 +38,7 @@ const InvestProg = (props) => {
                       <br />
                       <img
                         alt=""
-                        style={{ width:"180px", paddingTop: "5px" }}
+                        style={{ width: "180px", paddingTop: "5px" }}
                         src="https://skytop-strategies.com/wp-content/uploads/2022/03/impactShares.png"
                       />
                     </div>
@@ -50,7 +50,7 @@ const InvestProg = (props) => {
           {/* At The Table */}
           <div id="back" className="logo col-sm">
             <a href="https://skytopstrategies.com/program">
-              <div className="card">
+              <div id="card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img
@@ -74,7 +74,7 @@ const InvestProg = (props) => {
                       <br />
                       <img
                         alt=""
-                        style={{width:"180px", paddingTop: "5px" }}
+                        style={{ width: "180px", paddingTop: "5px" }}
                         src="https://skytop-strategies.com/wp-content/uploads/2022/03/blueTractor.png"
                       />
                     </div>
@@ -86,7 +86,7 @@ const InvestProg = (props) => {
           {/* In The Studio */}
           <div id="back" className="logo col-sm">
             <a href="https://skytopstrategies.com/program">
-              <div className="card">
+              <div id="card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img
@@ -110,7 +110,7 @@ const InvestProg = (props) => {
                       <br />
                       <img
                         alt=""
-                        style={{width:"180px", border: "1px solid"}}
+                        style={{ width: "180px", border: "1px solid" }}
                         src="https://skytop-strategies.com/wp-content/uploads/2022/03/spGlobal.png"
                       />
                     </div>

@@ -1,11 +1,26 @@
-const ShareProg = (props) => {
-  const { title, img } = props;
+const ShareProg = (data) => {
+  const {
+    title,
+    image,
+    ttp_title,
+    ttp_sub,
+    ttp_name,
+    ttp_logo,
+    att_title,
+    att_sub,
+    att_name,
+    att_logo,
+    its_title,
+    its_sub,
+    its_name,
+    its_logo,
+  } = data.data;
   return (
     <div id="border">
       <a href="https://skytopstrategies.com/activism">
         <button className="categoryButton">{title}</button>
       </a>
-      <img alt="boxSetImg" className="boxSetImg" src={img} />
+      <img alt="boxSetImg" className="boxSetImg" src={image} />
 
       <div className="container">
         <br />
@@ -24,21 +39,22 @@ const ShareProg = (props) => {
                     />
                     <hr style={{ marginBottom: "-6px" }}></hr>
                     <div className="programContent">
-                      <b>Board GPS: Navigating the Road Ahead</b>
+                      <b>{ttp_title}</b>
                       <br />
-                      <i>Top of Mind Concerns for Board Directors</i>
+                      <i>{ttp_sub}</i>
                       <br />
                       <br />
                       Featuring
                       <br />
-                      Jeremy Fielding, CEO, Kekst CNC
+                      <i>{ttp_name}</i>
+                      <br />
                       <hr />
                       Brought to You By
                       <br />
                       <img
                         alt=""
                         style={{ paddingTop: "5px", width: "100px" }}
-                        src="https://skytop-strategies.com/wp-content/uploads/2022/03/kekst.jpg"
+                        src={ttp_logo}
                       />
                     </div>
                   </div>
@@ -58,20 +74,30 @@ const ShareProg = (props) => {
                       alt=""
                     />
                     <div className="programContent">
-                      <b>Shareholder Activism Report</b>
+                      <b>{att_title}</b>
                       <br />
-                      <i>For Public Company Boards and Management </i>
+                      <i>{att_sub}</i>
                       <br />
                       <br />
-                      Hosted by
+                      Hosted By
                       <br />
-                      Dan Zacchei
+                      <i>{att_name}</i>
                       <br />
-                      Kai Liekefett
                       <hr />
                       Brought to You By
                       <br />
-                      LOGO
+                      <img
+                        alt=""
+                        style={{
+                          width: "180px",
+                          border: "1px solid black",
+                          marginTop: "5px",
+                          borderRadius: "10px",
+                          transform: "translate(-50%, 0%)",
+                          position: "absolute",
+                        }}
+                        src={att_logo}
+                      />{" "}
                     </div>
                   </div>
                 </div>
@@ -90,18 +116,29 @@ const ShareProg = (props) => {
                       alt=""
                     />
                     <div className="programContent">
-                      <b>Under Construction</b>
+                      <b>{its_title}</b>
                       <br />
-                      <i>Coming Soon</i>
+                      <i>{its_sub}</i>
                       <br />
                       <br />
                       Featuring
                       <br />
-                      <i>Insert Name</i>
+                      <i>{its_name}</i>
                       <hr />
                       Brought to You By
                       <br />
-                      LOGO
+                      <img
+                        alt=""
+                        style={{
+                          width: "180px",
+                          border: "1px solid black",
+                          marginTop: "5px",
+                          borderRadius: "10px",
+                          transform: "translate(-50%, 0%)",
+                          position: "absolute",
+                        }}
+                        src={its_logo}
+                      />{" "}
                     </div>
                   </div>
                 </div>

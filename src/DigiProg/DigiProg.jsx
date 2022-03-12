@@ -1,6 +1,6 @@
 import "./styles/styles.css";
 import ProgramLogos from "./Components/ProgramLogos.jsx";
-import Programs from "./Components/Programs.jsx";
+// import Programs from "./Components/Programs.jsx";
 import WashProg from "./Components/WashProg.jsx";
 import ShareProg from "./Components/ShareProg.jsx";
 import CapitalProg from "./Components/CapitalProg.jsx";
@@ -8,19 +8,15 @@ import CSRProg from "./Components/CSRProg.jsx";
 import CyberProg from "./Components/CyberProg.jsx";
 import InvestProg from "./Components/InvestProg.jsx";
 
-const DigiProg = () => {
-  const ww =
-    "https://skytop-strategies.com/wp-content/uploads/2022/02/w_tw.png";
-  const share =
-    "https://skytop-strategies.com/wp-content/uploads/2022/02/share.png";
-  const markets =
-    "https://skytop-strategies.com/wp-content/uploads/2022/02/markets.png";
-  const csr =
-    "https://skytop-strategies.com/wp-content/uploads/2022/02/csr.png";
-  const cyber =
-    "https://skytop-strategies.com/wp-content/uploads/2022/02/cyber.png";
-  const invest =
-    "https://skytop-strategies.com/wp-content/uploads/2022/02/invest.png";
+const DigiProg = (programs) => {
+  const invest = programs.programs[0].acf
+  const cyber = programs.programs[1].acf
+  const csr = programs.programs[2].acf
+  const markets = programs.programs[3].acf
+  const share = programs.programs[4].acf
+  const world = programs.programs[5].acf
+
+  console.log(invest)
   return (
     <>
       <div className="stuImgContainer">
@@ -43,19 +39,13 @@ const DigiProg = () => {
 
       <ProgramLogos />
 
-      <WashProg title={"Washington & The World"} img={ww} />
-      <ShareProg title={"Shareholder Activism"} img={share} />
-      <CapitalProg title={"Capital Markets"} img={markets} />
-      <CSRProg title={"CSR & Sustainability"} img={csr} />
-      <CyberProg title={"Cyber Resilience"} img={cyber} />
-      <InvestProg title={"Investment Management"} img={invest} />
+      <WashProg data={world}/>
+      <ShareProg data={share}/>
+      <CapitalProg data={markets} />
+      <CSRProg data={csr} />
+      <CyberProg data={cyber}/>
+      <InvestProg data={invest} />
 
-      {/* <Programs title={"Washington & The World"} img={ww} />
-      <Programs title={"Shareholder Activism"} img={share} />
-      <Programs title={"Capital Markets"} img={markets} />
-      <Programs title={"CSR & Sustainability"} img={csr} />
-      <Programs title={"Cyber Resilience"} img={cyber} />
-      <Programs title={"Investment Management"} img={invest} /> */}
     </>
   );
 };

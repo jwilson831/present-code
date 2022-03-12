@@ -16,7 +16,7 @@ const ProgramLogos = () => {
                                     <div className="flip-card-back">
                                         <img className="ttp-top" src="https://swerthmi.sirv.com/SKYTOP/digital_programs/skytop%20to%20the%20point.png" alt="" />
                                         <hr></hr>
-                                        <div className="program-blurb">Everything <b>you</b> need to know right now in 15 minutes or less</div>    
+                                        <div className="program-blurb">Everything <b>you</b> need to know right now in 30 minutes or less</div>    
                                     </div>
                                 </div>
                             </div>

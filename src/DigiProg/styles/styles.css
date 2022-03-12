@@ -31,14 +31,19 @@
 .categoryButton {
   width: 224px;
   height: 43px;
-  background-color: #6351e0;
+  background-color: #2688a5;
   color: white;
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 15px;
   border-radius: 5px;
-border-color: #6351e0;
+  border:none;
 }
+
+.categoryButton:hover {
+  background-color: rgb(25, 73, 88);
+}
+
 
 .boxSetImg {
   position: relative;
@@ -55,5 +60,5 @@ border-color: #6351e0;
   margin-bottom: 25px;
   border-radius: 5px;
   border-color:  #F1C810;;
-
+  pointer-events: none;
 }

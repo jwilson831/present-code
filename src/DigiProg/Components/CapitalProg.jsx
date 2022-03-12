@@ -1,11 +1,26 @@
-const CapitalProg = (props) => {
-  const { title, img } = props;
+const CapitalProg = (data) => {
+  const {
+    title,
+    image,
+    ttp_title,
+    ttp_sub,
+    ttp_name,
+    ttp_logo,
+    att_title,
+    att_sub,
+    att_name,
+    att_logo,
+    its_title,
+    its_sub,
+    its_name,
+    its_logo,
+  } = data.data;
   return (
     <div id="border">
       <a href="https://skytopstrategies.com/capital-markets">
         <button className="categoryButton">{title}</button>
       </a>
-      <img alt="boxSetImg" className="boxSetImg" src={img} />
+      <img alt="boxSetImg" className="boxSetImg" src={image} />
 
       <div className="container">
         <br />
@@ -24,23 +39,27 @@ const CapitalProg = (props) => {
                     />
                     <hr style={{ marginBottom: "-6px" }}></hr>
                     <div className="programContent">
-                      <b>Cleary Memo 2022</b>
+                      <b>{ttp_title}</b>
                       <br />
-                      <i>
-                        Strategic Priorities for Boards, Management & Investors
-                      </i>
+                      <i>{ttp_sub}</i>
                       <br />
                       <br />
                       Featuring
                       <br />
-                      <i>Insert Name</i>
+                      <i>{ttp_name}</i>
+                      <br />
                       <hr />
                       Brought to You By
                       <br />
                       <img
                         alt=""
-                        style={{ marginTop: "5px", border: "1px solid black", width: "150px" }}
-                        src="https://skytop-strategies.com/wp-content/uploads/2022/03/celary.jpg"
+                        style={{
+                          marginTop: "5px",
+                          border: "1px solid black",
+                          width: "150px",
+                          borderRadius: "10px",
+                        }}
+                        src={ttp_logo}
                       />
                     </div>
                   </div>
@@ -60,22 +79,23 @@ const CapitalProg = (props) => {
                       alt=""
                     />
                     <div className="programContent">
-                      <b>Small Cap Activism</b>
+                      <b>{att_title}</b>
                       <br />
-                      <i>Outlook for 2022-2023</i>
+                      <i>{att_sub}</i>
                       <br />
                       <br />
                       Hosted By
                       <br />
-                      John Grau, Founder & CEO, InvestorCom
+                      <i>{att_name}</i>
+                      <br />
                       <hr />
                       Brought to You By
                       <br />
                       <img
                         alt=""
-                        style={{ paddingTop: "5px", width: "150px" }}
-                        src="https://skytop-strategies.com/wp-content/uploads/2022/03/InvestorCom.jpg"
-                      />
+                        style={{ width: "156px", paddingTop: "5px" }}
+                        src={att_logo}
+                      />{" "}
                     </div>
                   </div>
                 </div>
@@ -94,18 +114,29 @@ const CapitalProg = (props) => {
                       alt=""
                     />
                     <div className="programContent">
-                      <b>Under Construction</b>
+                      <b>{its_title}</b>
                       <br />
-                      <i>Coming Soon</i>
+                      <i>{its_sub}</i>
                       <br />
                       <br />
                       Featuring
                       <br />
-                      <i>Insert Name</i>
+                      <i>{its_name}</i>
                       <hr />
                       Brought to You By
                       <br />
-                      LOGO
+                      <img
+                        alt=""
+                        style={{
+                          width: "180px",
+                          border: "1px solid black",
+                          marginTop: "5px",
+                          borderRadius: "10px",
+                          transform: "translate(-50%, 0%)",
+                          position: "absolute",
+                        }}
+                        src={its_logo}
+                      />{" "}
                     </div>
                   </div>
                 </div>

@@ -1,5 +1,3 @@
-import "./styles/menuStyles.css";
-
 const DigiMenu = () => {
   const places = [
     "Algeria",
@@ -109,7 +107,7 @@ const DigiMenu = () => {
 
   return (
     <>
-    <img alt="world" style={{borderRadius: "500px"}} src="https://skytop-strategies.com/wp-content/uploads/2022/03/world.png" />
+    <img alt="world" style={{marginTop: "20px", borderRadius: "500px"}} src="https://skytop-strategies.com/wp-content/uploads/2022/03/world.png" />
       <h3>Skytop Brings You the World</h3>
       <hr
       style={{

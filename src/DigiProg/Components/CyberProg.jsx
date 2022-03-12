@@ -1,11 +1,27 @@
-const CyberProg = (props) => {
-  const { title, img } = props;
+const CyberProg = (data) => {
+  const {
+    title,
+    image,
+    ttp_title,
+    ttp_sub,
+    ttp_name,
+    ttp_logo,
+    att_title,
+    att_sub,
+    att_name,
+    att_logo,
+    its_title,
+    its_sub,
+    its_name,
+    its_logo,
+  } = data.data;
+
   return (
     <div id="border">
       <a href="https://skytopstrategies.com/cyber">
         <button className="categoryButton">{title}</button>
       </a>
-      <img alt="boxSetImg" className="boxSetImg" src={img} />
+      <img alt="boxSetImg" className="boxSetImg" src={image} />
 
       <div className="container">
         <br />
@@ -24,18 +40,30 @@ const CyberProg = (props) => {
                     />
                     <hr style={{ marginBottom: "-6px" }}></hr>
                     <div className="programContent">
-                      <b>Under Construction</b>
+                      <b>{ttp_title}</b>
                       <br />
-                      <i>Coming Soon</i>
+                      <i>{ttp_sub}</i>
                       <br />
                       <br />
                       Featuring
                       <br />
-                      <i>Insert Name</i>
+                      <i>{ttp_name}</i>
+                      <br />
                       <hr />
                       Brought to You By
                       <br />
-                      LOGO
+                      <img
+                        alt=""
+                        style={{
+                          width: "180px",
+                          border: "1px solid black",
+                          marginTop: "5px",
+                          borderRadius: "10px",
+                          transform: "translate(-50%, 0%)",
+                          position: "absolute",
+                        }}
+                        src={its_logo}
+                      />{" "}
                     </div>
                   </div>
                 </div>
@@ -54,18 +82,30 @@ const CyberProg = (props) => {
                       alt=""
                     />
                     <div className="programContent">
-                      <b>Intelligence Briefing</b>
+                      <b>{att_title}</b>
                       <br />
-                      <i>Emerging Cyber Risks and Best Response Scenarios</i>
+                      <i>{att_sub}</i>
                       <br />
                       <br />
                       Hosted By
                       <br />
-                      Chuck Brooks
+                      <i>{att_name}</i>
+                      <br />
                       <hr />
                       Brought to You By
                       <br />
-                      LOGO
+                      <img
+                        alt=""
+                        style={{
+                          width: "180px",
+                          border: "1px solid black",
+                          marginTop: "5px",
+                          borderRadius: "10px",
+                          transform: "translate(-50%, 0%)",
+                          position: "absolute",
+                        }}
+                        src={its_logo}
+                      />{" "}
                     </div>
                   </div>
                 </div>
@@ -84,18 +124,30 @@ const CyberProg = (props) => {
                       alt=""
                     />
                     <div className="programContent">
-                      <b>Under Construction</b>
+                      <b>{its_title}</b>
                       <br />
-                      <i>Coming Soon</i>
+                      <i>{its_sub}</i>
                       <br />
                       <br />
                       Featuring
                       <br />
-                      <i>Insert Name</i>
+                      <i>{its_name}</i>
+                      <br />
                       <hr />
                       Brought to You By
                       <br />
-                      LOGO
+                      <img
+                        alt=""
+                        style={{
+                          width: "180px",
+                          border: "1px solid black",
+                          marginTop: "5px",
+                          borderRadius: "10px",
+                          transform: "translate(-50%, 0%)",
+                          position: "absolute",
+                        }}
+                        src={its_logo}
+                      />{" "}
                     </div>
                   </div>
                 </div>

@@ -43,6 +43,7 @@ function App() {
   const [editCalendar,setCal] = useState("");
   const [loaded, setLoaded] = useState(false);
   const [activeCategory, setActiveCategory] = useState("Headlines");
+  const [programs, setPrograms] = useState([])
 
   useEffect(() => {
     const fetchData = async () => {
@@ -51,7 +52,9 @@ function App() {
         const conferences = await axios("https://skytop-strategies.com/wp-json/wp/v2/conferences?_fields[]=id&_fields[]=title&_fields[]=acf&_fields[]=content&_fields[]=_links&_embed=wp:featuredmedia&per_page=100");
         const comments = await axios("https://skytop-strategies.com/wp-json/wp/v2/comments?per_page=100");
         const editorials = await axios("https://skytop-strategies.com/wp-json/wp/v2/editorials?_embed=wp:featuredmedia");
-        
+        const programs = await axios("https://skytop-strategies.com/wp-json/wp/v2/programs")
+
+        setPrograms(programs.data)
         setArticles(articles.data);
         setConferences(orderByDate(conferences))
         setComments(comments.data);
@@ -257,7 +260,7 @@ const ColoredLine = ({ color }) => (
                 <Route exact path="/program"><Program/></Route>
                 <Route exact path="/rfk"><RFK/></Route>
                 <Route exact path="/AtTheTable"><AtTheTable/></Route>
-                <Route exact path="/digiprog"><DigiProg/></Route>
+                <Route exact path="/digiprog"><DigiProg programs={programs}/></Route>
                 
               </div>
             </Switch>

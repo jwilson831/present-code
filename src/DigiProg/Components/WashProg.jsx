@@ -1,12 +1,27 @@
-const WashProg = (props) => {
-  const { title, img } = props;
+const WashProg = (data) => {
+  const {
+    title,
+    image,
+    ttp_title,
+    ttp_sub,
+    ttp_name,
+    ttp_logo,
+    att_title,
+    att_sub,
+    att_name,
+    att_logo,
+    its_title,
+    its_sub,
+    its_name,
+    its_logo,
+  } = data.data;
   return (
     <div id="border">
       <a href="https://skytopstrategies.com/washington-world">
         <button className="categoryButton">{title}</button>
       </a>
 
-      <img alt="boxSetImg" className="boxSetImg" src={img} />
+      <img alt="boxSetImg" className="boxSetImg" src={image} />
 
       <div className="container">
         <br />
@@ -25,14 +40,14 @@ const WashProg = (props) => {
                     />
                     <hr style={{ marginBottom: "-6px" }}></hr>
                     <div className="programContent">
-                      <b>ESG Evolution or Revolution </b>
+                      <b>{ttp_title}</b>
                       <br />
-                      <i>Growing Political Risks and Regional Instability</i>
+                      <i>{ttp_sub}</i>
                       <br />
                       <br />
                       Featuring
                       <br />
-                      <i>Insert Name</i>
+                      <i>{ttp_name}</i>
                       <br />
                       <hr />
                       Brought to You By
@@ -41,9 +56,11 @@ const WashProg = (props) => {
                       <img
                         alt=""
                         // style={{ width: "200px", paddingTop: "5px" }}
-                        style={{ transform: "translate(-50%, -50%)", position: "absolute" }}
-
-                        src="https://skytop-strategies.com/wp-content/uploads/2022/03/controlRisks.png"
+                        style={{
+                          transform: "translate(-50%, -50%)",
+                          position: "absolute",
+                        }}
+                        src={ttp_logo}
                       />
                     </div>
                   </div>
@@ -63,18 +80,31 @@ const WashProg = (props) => {
                       alt=""
                     />
                     <div className="programContent">
-                      <b>Unpacking World Affairs</b>
+                      <b>{att_title}</b>
                       <br />
-                      <i>For Global Business Leaders</i>
+                      <i>{att_sub}</i>
                       <br />
                       <br />
-                      Hosted by Ambassador Cameron Munter(retired)
+                      Hosted By
+                      <br />
+                      <i>{att_name}</i>
                       <br />
                       Along with Guests
                       <hr />
                       Brought to You By
                       <br />
-                      LOGO
+                      <img
+                        alt=""
+                        style={{
+                          width: "180px",
+                          border: "1px solid black",
+                          marginTop: "5px",
+                          borderRadius: "10px",
+                          transform: "translate(-50%, 0%)",
+                          position: "absolute",
+                        }}
+                        src={its_logo}
+                      />{" "}
                     </div>
                   </div>
                 </div>
@@ -93,18 +123,29 @@ const WashProg = (props) => {
                       alt=""
                     />
                     <div className="programContent">
-                      <b>Women Disappearing in Mexico and China</b>
+                      <b>{its_title}</b>
                       <br />
-                      <i>A Briefing for Global Companies</i>
+                      <i>{its_sub}</i>
                       <br />
                       <br />
                       Guest Appearance By
                       <br />
-                      <i>Insert Name</i>
+                      <i>{its_name}</i>
                       <hr />
                       Brought to You By
                       <br />
-                      LOGO
+                      <img
+                        alt=""
+                        style={{
+                          width: "180px",
+                          border: "1px solid black",
+                          marginTop: "5px",
+                          borderRadius: "10px",
+                          transform: "translate(-50%, 0%)",
+                          position: "absolute",
+                        }}
+                        src={its_logo}
+                      />{" "}
                     </div>
                   </div>
                 </div>

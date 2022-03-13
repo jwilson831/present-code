@@ -30,7 +30,7 @@
 
 .categoryButton {
   width: 224px;
-  height: 43px;
+  height: 48px;
   background-color: #2688a5;
   color: white;
   font-weight: bold;
@@ -53,12 +53,13 @@
 
 .previewButton {
   width: 150px;
-  height: 43px;
+  height: fit-content;
   background-color:  #F1C810;;
   color: white;
   font-weight: bold;
   margin-bottom: 25px;
   border-radius: 5px;
-  border-color:  #F1C810;;
+  /* border-color:  #F1C810;; */
+  border: none;
   pointer-events: none;
 }

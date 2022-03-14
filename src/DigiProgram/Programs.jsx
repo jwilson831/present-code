@@ -1,25 +1,28 @@
-const WashProg = (data) => {
+const Programs = (props) => {
+const {ttpStyle, attStyle, itsStyle} = props;
   const {
     title,
     image,
     ttp_title,
     ttp_sub,
+    ttp_pre_name,
     ttp_name,
     ttp_logo,
     att_title,
     att_sub,
+    att_pre_name,
     att_name,
     att_logo,
     its_title,
     its_sub,
+    its_pre_name,
     its_name,
     its_logo,
-  } = data.data;
+  } = props.data;
+
   return (
     <div id="border">
-      <a href="https://skytopstrategies.com/washington-world">
-        <button className="categoryButton">{title}</button>
-      </a>
+      <button className="categoryButton">{title}</button>
 
       <img alt="boxSetImg" className="boxSetImg" src={image} />
 
@@ -39,13 +42,13 @@ const WashProg = (data) => {
                       alt=""
                     />
                     <hr style={{ marginBottom: "-6px" }}></hr>
-                    <div className="programContent">
+                    <div className="program-blurb">
                       <b>{ttp_title}</b>
                       <br />
                       <i>{ttp_sub}</i>
                       <br />
                       <br />
-                      Featuring
+                      {ttp_pre_name}
                       <br />
                       <i>{ttp_name}</i>
                       <br />
@@ -55,13 +58,9 @@ const WashProg = (data) => {
                       <br />
                       <img
                         alt=""
-                        // style={{ width: "200px", paddingTop: "5px" }}
-                        style={{
-                          transform: "translate(-50%, -50%)",
-                          position: "absolute",
-                        }}
+                        className={ttpStyle}
                         src={ttp_logo}
-                      />
+                        />
                     </div>
                   </div>
                 </div>
@@ -79,32 +78,25 @@ const WashProg = (data) => {
                       src="https://swerthmi.sirv.com/SKYTOP/digital_programs/skytop%20at%20the%20table.png"
                       alt=""
                     />
-                    <div className="programContent">
-                      <b>{att_title}</b>
+                    <div className="program-blurb">
+                    <b>{att_title}</b>
                       <br />
                       <i>{att_sub}</i>
                       <br />
                       <br />
-                      Hosted By
+                      {att_pre_name}
                       <br />
                       <i>{att_name}</i>
                       <br />
-                      Along with Guests
                       <hr />
                       Brought to You By
                       <br />
+                      <br />
                       <img
                         alt=""
-                        style={{
-                          width: "180px",
-                          border: "1px solid black",
-                          marginTop: "5px",
-                          borderRadius: "10px",
-                          transform: "translate(-50%, 0%)",
-                          position: "absolute",
-                        }}
-                        src={its_logo}
-                      />{" "}
+                        className={attStyle}
+                        src={att_logo}
+                        />
                     </div>
                   </div>
                 </div>
@@ -122,30 +114,25 @@ const WashProg = (data) => {
                       src="https://swerthmi.sirv.com/SKYTOP/digital_programs/in%20the%20studio%20color.png"
                       alt=""
                     />
-                    <div className="programContent">
-                      <b>{its_title}</b>
+                    <div className="program-blurb">
+                    <b>{its_title}</b>
                       <br />
                       <i>{its_sub}</i>
                       <br />
                       <br />
-                      Guest Appearance By
+                      {its_pre_name}
                       <br />
                       <i>{its_name}</i>
+                      <br />
                       <hr />
                       Brought to You By
                       <br />
+                      <br />
                       <img
                         alt=""
-                        style={{
-                          width: "180px",
-                          border: "1px solid black",
-                          marginTop: "5px",
-                          borderRadius: "10px",
-                          transform: "translate(-50%, 0%)",
-                          position: "absolute",
-                        }}
+                        className={itsStyle}
                         src={its_logo}
-                      />{" "}
+                        />
                     </div>
                   </div>
                 </div>
@@ -158,4 +145,4 @@ const WashProg = (data) => {
   );
 };
 
-export default WashProg;
+export default Programs;

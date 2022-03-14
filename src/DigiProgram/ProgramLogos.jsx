@@ -1,4 +1,4 @@
-import "../styles/logos.css";
+import "./styles.css";
 
 const ProgramLogos = () => {
   return (

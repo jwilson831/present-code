@@ -1,3 +1,68 @@
+.stuImgContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.stuImg {
+  width: 95%;
+  height: 660px;
+  border-radius: 10px;
+}
+
+.textContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.robotoFont {
+  font-family: Roboto;
+}
+
+#border {
+  border: 1px solid black;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.categoryButton {
+  padding: 10px;
+  width: 224px;
+  height: fit-content;
+  background-color: #2688a5;
+  color: white;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.categoryButton:hover {
+  background-color: rgb(25, 73, 88);
+}
+
+.boxSetImg {
+  position: relative;
+  width: 95%;
+  border-radius: 10px;
+}
+
+.previewButton {
+  width: 150px;
+  height: fit-content;
+  background-color: #f1c810;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  /* border-color:  #F1C810;; */
+  border: none;
+  pointer-events: none;
+}
 
 .container {
   padding-right: 12px;
@@ -92,7 +157,7 @@
 #card {
   background-color: transparent;
   width: 100%;
-  height: 430px;
+  height: 450px;
   overflow: hidden;
   /* perspective: 1000px; Remove this if you don't want the 3D effect */
 }
@@ -185,4 +250,51 @@
 .programContent {
   margin-top: 20px;
   font-family: "Work-Sans", sans-serif;
+}
+
+.crLogo {
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.yourLogo {
+  width: 170px;
+  border: 1px solid black;
+  border-radius: 10px;
+  transform: translate(-50%, -40%);
+  position: absolute;
+}
+
+.kekstLogo {
+  width: 110px;
+  border: 1px solid black;
+  border-radius: 10px;
+  transform: translate(-50%, -30%);
+  position: absolute;
+}
+
+.clearyLogo {
+  border: 1px solid black;
+  width: 150px;
+  border-radius: 10px;
+  transform: translate(0%, -25%);
+}
+
+.investorLogo {
+  width: 156px;
+  transform: translate(0%, -45%);
+}
+
+.impactLogo {
+  width: 190px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.spLogo {
+  margin-top: 15px;
+  width: 190px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border: 0.5px solid;
 }

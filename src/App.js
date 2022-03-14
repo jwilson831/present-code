@@ -132,9 +132,9 @@ function App() {
             <Switch>
               <div className="section">
                 <div style={styleObj}>
-                  March 10, 2022
+                  March 14, 2022
                   <br />
-                  Upcoming Headlines Edition #3: <b>Social Impact of Capital</b>
+                  Headlines Edition #3: <b>Hostile Nation States, Terrorists and Cyber Criminals</b>
                   <ColoredLine color="gold" />
                 </div>
 

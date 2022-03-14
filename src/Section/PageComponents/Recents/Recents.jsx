@@ -43,7 +43,7 @@ function Recents(props) {
       <Programs />
       <div className="recent-container text-left">
         <div className="recent-title-section">
-          Upcoming Headlines Edition #3: Social Impact of Capital
+        Headlines Edition #3: Hostile Nation States, Terrorists and Cyber Criminals
         </div>
         <hr
           style={{

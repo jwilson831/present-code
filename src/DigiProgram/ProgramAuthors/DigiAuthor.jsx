@@ -10,24 +10,24 @@ const DigiAuthor = () => {
           alt="studio"
           src="https://skytop-strategies.com/wp-content/uploads/2022/03/blank-layout.jpg"
         />
-
+<br/>
+<br/>
+<br/>
         <div style={{ color: "black" }} className="textContainer">
           <h3>
             <br />
             <br />
             <br />
-            Skytop's At the Table Channel
-            <br />
-            Presents{" "}
-          </h3>
+<img alt="" style={{marginTop: "50px", marginBottom: "50px", transform: "translate(-31px, 4px)"
+}} src="https://skytop-strategies.com/wp-content/uploads/2022/03/table.png"/>            <br />
+            </h3><h4>Presents</h4>
+          
           <br />
           <h2>Unpacking World Affairs</h2>
           <h4>for Global Business Leaders</h4>
           <br />
           <h3>
             <p style={{whiteSpace: "nowrap"}}>Ambassador Cameron Munter (retired)</p>
-            
-            <br />
             <h4>Along with Special Guests</h4>
             <br />
             <h5>View Streamed or On Demand Worldwide</h5>
@@ -53,7 +53,7 @@ const DigiAuthor = () => {
       <br />
       <br />
 
-      <h2> Expert Insight on Geopolitical Risk for Global Companies</h2>
+      <h2> Expert Insights on Geopolitical Risk for Global Companies</h2>
       <h3>A Five Part Series</h3>
       <br />
       <img

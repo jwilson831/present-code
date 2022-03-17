@@ -1,19 +1,22 @@
 import React from "react";
 import "./styles.css";
+// import { Link } from 'react-router-dom';
 
 const ProgramLogos = () => {
   return (
     <div className="containter">
-      <a href="https://skytopstrategies.com/digiprog">
+      {/* <Link to="/digi-prog"> */}
+      <a href="/digi-prog">
         <button className="programButton">
           Three Streamed Program Channels
         </button>
       </a>
+      {/* </Link> */}
       <br />
       <div className="row">
         {/* To The Point */}
         <div className="logo col-sm">
-          <a href="https://skytopstrategies.com/program">
+          <a href="/digi-prog">
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
@@ -42,7 +45,7 @@ const ProgramLogos = () => {
         </div>
         {/* At The Table */}
         <div className="logo col-sm">
-          <a href="https://skytopstrategies.com/program">
+          <a href="/digi-prog">
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
@@ -68,7 +71,7 @@ const ProgramLogos = () => {
         </div>
         {/* In The Studio */}
         <div className="logo col-sm">
-          <a href="https://skytopstrategies.com/program">
+        <a href="/digi-prog">
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">

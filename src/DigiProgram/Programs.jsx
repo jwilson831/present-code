@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
+
 const Programs = (props) => {
-const {ttpStyle, attStyle, itsStyle} = props;
+const {link, link2, ttpStyle, attStyle, itsStyle} = props;
   const {
     title,
     image,
@@ -19,11 +21,13 @@ const {ttpStyle, attStyle, itsStyle} = props;
     its_name,
     its_logo,
   } = props.data;
-
   return (
     <div id="border">
+      {/* <Link to={link}> */}
+      <a href={link}>
       <button className="categoryButton">{title}</button>
-
+      </a>
+      {/* </Link> */}
       <img alt="boxSetImg" className="boxSetImg" src={image} />
 
       <div className="container">
@@ -53,7 +57,7 @@ const {ttpStyle, attStyle, itsStyle} = props;
                       <i>{ttp_name}</i>
                       <br />
                       <hr />
-                      Brought to You By
+                      Brought to You by
                       <br />
                       <br />
                       <img
@@ -69,7 +73,8 @@ const {ttpStyle, attStyle, itsStyle} = props;
           </div>
           {/* At The Table */}
           <div id="back" className="logo col-sm">
-            <a href="https://skytopstrategies.com/program">
+          {/* <Link to={link2}> */}
+            <a href="/digi-author">
               <div id="card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -89,7 +94,7 @@ const {ttpStyle, attStyle, itsStyle} = props;
                       <i>{att_name}</i>
                       <br />
                       <hr />
-                      Brought to You By
+                      Brought to You by
                       <br />
                       <br />
                       <img
@@ -101,6 +106,7 @@ const {ttpStyle, attStyle, itsStyle} = props;
                   </div>
                 </div>
               </div>
+              {/* </Link> */}
             </a>
           </div>
           {/* In The Studio */}
@@ -125,7 +131,7 @@ const {ttpStyle, attStyle, itsStyle} = props;
                       <i>{its_name}</i>
                       <br />
                       <hr />
-                      Brought to You By
+                      Brought to You by
                       <br />
                       <br />
                       <img

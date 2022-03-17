@@ -32,6 +32,9 @@ import AtTheTable from "./Program/AtTheTable";
 import RFK from "./rfk/RFK";
 import DigiMain from "./DigiProgram/DigiMain";
 import DigiSide from "./DigiProgram/DigiSide";
+import DigiAuthor from "./DigiProgram/ProgramAuthors/DigiAuthor";
+import DigiAuthorSide from "./DigiProgram/ProgramAuthors/DigiAuthorSide";
+
 
 function App() {
   const [articles, setArticles] = useState([]);
@@ -356,8 +359,11 @@ function App() {
                 <Route exact path="/AtTheTable">
                   <AtTheTable />
                 </Route>
-                <Route exact path="/digiprog">
+                <Route exact path="/digi-prog">
                   <DigiMain programs={programs} />
+                </Route>
+                <Route exact path="/digi-author">
+                  <DigiAuthor programs={programs} />
                 </Route>
               </div>
             </Switch>
@@ -373,8 +379,11 @@ function App() {
                 <Route path="/invest-in-us">
                   <InvestMenu />
                 </Route>
-                <Route path="/digiprog">
+                <Route path="/digi-prog">
                   <DigiSide programs={programs} />
+                </Route>
+                <Route path="/digi-author">
+                  <DigiAuthorSide programs={programs} />
                 </Route>
                 <Route path="/index/conferences">
                   <div className="pl-3">

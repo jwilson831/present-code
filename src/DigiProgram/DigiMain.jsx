@@ -3,12 +3,12 @@ import ProgramLogos from "./ProgramLogos.jsx";
 import Programs from "./Programs.jsx";
 
 const DigiMain = (programs) => {
-  const invest = programs.programs[1].acf;
+  const investment = programs.programs[1].acf;
   const cyber = programs.programs[2].acf;
-  const csr = programs.programs[3].acf;
-  const markets = programs.programs[4].acf;
-  const share = programs.programs[5].acf;
-  const world = programs.programs[6].acf;
+  const CSR = programs.programs[3].acf;
+  const capital_markets = programs.programs[4].acf;
+  const activism = programs.programs[5].acf;
+  const washington_world = programs.programs[6].acf;
 
   return (
     <>
@@ -33,37 +33,44 @@ const DigiMain = (programs) => {
       <ProgramLogos />
 
       <Programs
-        data={world}
+        link="/washington-world"
+        link2="/digi-author"
+        data={washington_world}
         ttpStyle="crLogo"
         attStyle="yourLogo"
         itsStyle="yourLogo"
       />
       <Programs
-        data={share}
+        link="/activism"
+        data={activism}
         ttpStyle="kekstLogo"
         attStyle="yourLogo"
         itsStyle="yourLogo"
       />
       <Programs
-        data={markets}
+        link={"/capital-markets"}
+        data={capital_markets}
         ttpStyle="clearyLogo"
         attStyle="investorLogo"
         itsStyle="yourLogo"
       />
       <Programs
-        data={csr}
+        link="/CSR"
+        data={CSR}
         ttpStyle="yourLogo"
         attStyle="yourLogo"
         itsStyle="yourLogo"
       />
       <Programs
+        link="/cyber"
         data={cyber}
         ttpStyle="yourLogo"
         attStyle="yourLogo"
         itsStyle="yourLogo"
       />
       <Programs
-        data={invest}
+        link="/investment"
+        data={investment}
         ttpStyle="impactLogo"
         attStyle="impactLogo"
         itsStyle="spLogo"

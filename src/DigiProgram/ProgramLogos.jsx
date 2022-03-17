@@ -7,7 +7,7 @@ const ProgramLogos = () => {
                 <div className="row">
                     {/* To The Point */}
                     <div className="logo col-sm">
-                        <a href="https://skytopstrategies.com/program">
+                    <a href="/digi-prog">
                         <div className="flip-card">
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
@@ -24,7 +24,7 @@ const ProgramLogos = () => {
                     </div>
                     {/* At The Table */}
                     <div className="logo col-sm">
-                        <a href="https://skytopstrategies.com/program">
+                    <a href="/digi-prog">
                         <div className="flip-card">
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
@@ -40,7 +40,7 @@ const ProgramLogos = () => {
                     </div>
                     {/* In The Studio */}
                     <div className="logo col-sm">
-                        <a href="https://skytopstrategies.com/program">
+                    <a href="/digi-prog">
                             <div className="flip-card">
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">

@@ -18,8 +18,8 @@ const DigiAuthor = () => {
             <br />
             <br />
             <br />
-<img alt="" style={{marginTop: "50px", marginBottom: "50px", transform: "translate(-31px, 4px)"
-}} src="https://skytop-strategies.com/wp-content/uploads/2022/03/table.png"/>            <br />
+<img alt="" style={{marginTop: "50px", marginBottom: "50px",transform: "translate(-26px, 41px)"
+}} src="https://skytop-strategies.com/wp-content/uploads/2022/03/table.png"/>       
             </h3><h4>Presents</h4>
           
           <br />

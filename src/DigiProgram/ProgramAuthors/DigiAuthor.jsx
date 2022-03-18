@@ -23,15 +23,17 @@ const DigiAuthor = () => {
             </h3><h4>Presents</h4>
           
           <br />
-          <h2>Unpacking World Affairs</h2>
-          <h4>for Global Business Leaders</h4>
-          <br />
           <h3>
             <p style={{whiteSpace: "nowrap"}}>Ambassador Cameron Munter (retired)</p>
             <h4>Along with Special Guests</h4>
             <br />
+            <h2>Unpacking World Affairs</h2>
+          <h4>for Global Business Leaders</h4>
+            <br />
             <h5>View Streamed or On Demand Worldwide</h5>
           </h3>
+
+
 
           {/* <h3>- </h3>
           <h5>Christopher P. Skroupa</h5>

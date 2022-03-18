@@ -234,6 +234,12 @@
   overflow: hidden;
   /* perspective: 1000px; Remove this if you don't want the 3D effect */
 }
+#progCard {
+  background-color: transparent;
+  min-width: 300px;
+  height: 450px;
+  overflow: hidden;
+}
 
 #cardAuth {
   background-color: transparent;

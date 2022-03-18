@@ -33,9 +33,7 @@ select{
     margin-top: 4%;
     /*Top*/
 
-    margin-bottom: 30%;
-    /* Bottom*/
-
+    margin-bottom: 4%;
 }
 .poll-header{
     display: -ms-flexbox;

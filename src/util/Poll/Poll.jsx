@@ -44,7 +44,7 @@ function Poll(){
                 <div className="modal-body poll-body text-center">
                     <iframe title="poll" id="totalpoll-iframe-2645" src="https://skytop-strategies.com/?post_type=poll&p=3071&embed=1" frameborder="0" allowtransparency="true" width="100%" height="600"></iframe>
                 </div>
-                <div style={{marginBottom:"10px"}} className="modal-footer">
+                <div className="modal-footer">
                     <button onClick={() => modalClickHandler()} type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
                 </div>

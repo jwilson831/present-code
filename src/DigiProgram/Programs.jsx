@@ -37,7 +37,7 @@ const {link, link2, ttpStyle, attStyle, itsStyle} = props;
           {/* To The Point */}
           <div id="back" className="logo col-sm">
             <a href="https://skytopstrategies.com/program">
-              <div id="card">
+              <div id="progCard">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img
@@ -75,7 +75,7 @@ const {link, link2, ttpStyle, attStyle, itsStyle} = props;
           <div id="back" className="logo col-sm">
           {/* <Link to={link2}> */}
             <a href="/digi-author">
-              <div id="card">
+              <div id="progCard">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img
@@ -112,7 +112,7 @@ const {link, link2, ttpStyle, attStyle, itsStyle} = props;
           {/* In The Studio */}
           <div id="back" className="logo col-sm">
             <a href="https://skytopstrategies.com/program">
-              <div id="card">
+              <div id="progCard">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img

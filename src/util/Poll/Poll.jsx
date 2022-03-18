@@ -33,8 +33,8 @@ function Poll(){
                 <div className="modal-content">
                 <div className="poll-header">
                     <div className="text-center w-100">
-                        <div className="m-auto"><p className="poll-header-txt mb-1 p-1">Skytop Perspectives</p></div>
-                        <div className="m-auto"><p className="poll-header-txt mb-1 p-1">Share Your Insights!</p></div>
+                        <div className="m-auto"><p className="poll-header-txt mb-1 p-1"><b>Skytop Perspectives</b></p></div>
+                        {/* <div className="m-auto"><p className="poll-header-txt mb-1 p-1">Share Your Insights!</p></div> */}
                         <div className="m-auto"><p className="poll-header-txt m-0 p-1">Weigh In with Us on This Week’s Topic</p></div>
                     </div>
                     <button type="button" className="m-0 p-0 close" data-dismiss="modal" aria-label="Close">

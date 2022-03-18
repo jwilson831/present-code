@@ -22,14 +22,16 @@ select{
     display: block;
 }
 .modal-content{
-    /* box-shadow: 0px 0px 2px 1px rgb(0,0,0,0.1); */
     border: 7px solid #151A40;
-    height: 36rem;
+    /* height: 36rem;  */
 }
 .poll-dialog {
     max-width: 65%;
     margin: auto;
-    margin-top: 3%;
+
+    margin-top: 4%;
+    /* Space */
+
     animation: popup 1.5s ease-out 10s;
 }
 .poll-header{
@@ -54,11 +56,10 @@ select{
 
 .poll-body{
     padding: 1rem;
-    height: 500px;
-    overflow-y: scroll;
     width: 90%;
     margin: auto;
-
+    /* height: 500px; */
+    /* overflow-y: scroll; */
 }
 .poll-body::-webkit-scrollbar{
     display: none;

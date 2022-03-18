@@ -28,14 +28,14 @@ select{
 .poll-dialog {
     max-width: 75%;
     margin: auto;
+    animation: popup 1.5s ease-out 10s;
 
     margin-top: 4%;
-    /* TopSpace */
+    /*Top*/
 
-    margin-bottom: 5%;
-    /* BottomSpace? */
-    
-    animation: popup 1.5s ease-out 10s;
+    margin-bottom: 15%;
+    /* Bottom*/
+
 }
 .poll-header{
     display: -ms-flexbox;

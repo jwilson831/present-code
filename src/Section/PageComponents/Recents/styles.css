@@ -41,8 +41,9 @@
     margin: auto;
 }
 .survey-img{
-    height: 400px;
-    width: auto;
+    /* height: 400px;
+    width: auto; */
+    height: 442px;
     object-fit: cover;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;

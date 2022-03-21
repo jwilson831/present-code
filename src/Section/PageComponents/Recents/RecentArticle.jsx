@@ -34,7 +34,7 @@ function RecentArticle(props){
                                     {props.category === "Skytop Survey" ? 
                                         <div>
                                             {/* hardcoded excerpt needs to be pulled from ACF props */}
-                                            <p>Women’s roles in the workplace and our greater society at large continue to both grow and evolve...</p>
+                                            <p>Activist investors from outside of a company’s region continue to buy into companies to effectuate strategic changes, ones believed to increase performance...</p>
                                             
                                             <Link to={`/articles/${props.id}`} >
                                                 <button className="btn btn-primary m-3">Click For Survey Results</button>
@@ -50,7 +50,7 @@ function RecentArticle(props){
                                 {props.custom_byline ?
                                     <> 
                                         <p className="m-0"><Markup content={props.custom_byline}/></p>
-                                        <p className="mt-1">{moment(props.date).format("MMMM Do, YYYY")}</p>
+                                        {/* <p className="mt-1">{moment(props.date).format("MMMM Do, YYYY")}</p> */}
                                     </>
                                     :
                                     <p className="m-0">By <Markup content={renderByLine(props.author)}/> / {moment(props.date).format("MMMM Do, YYYY")} </p>

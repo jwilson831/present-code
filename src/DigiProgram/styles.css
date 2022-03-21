@@ -17,6 +17,20 @@
   transform: translate(-50%, -50%);
 }
 
+.textContainerAuth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+#programTableLogoAuth {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transform: translate(-26px, 41px);
+}
+
 .robotoFont {
   font-family: Roboto;
 }
@@ -151,7 +165,7 @@
 
 .studio-top {
   max-width: 40%;
-  margin-bottom: -9px;
+  margin-bottom: -16px;
   height: auto;
   align-items: center;
   display: block;
@@ -161,7 +175,7 @@
 
 .table-top {
   max-width: 33%;
-  margin-bottom: -23px;
+  margin-bottom: -29px;
   height: auto;
   align-items: center;
   display: block;
@@ -237,7 +251,7 @@
 #progCard {
   background-color: transparent;
   min-width: 300px;
-  height: 450px;
+  height: 470px;
   overflow: hidden;
 }
 
@@ -411,6 +425,8 @@
 #authorMain {
   border-radius: 5px;
   width:75%;
+  box-shadow:
+  rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
 }
 
 .guest-img{
@@ -428,4 +444,9 @@
   margin: 10px 71px 2rem 67px;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.blueLine {
+  border-top: 7px solid #2688a5;
+  border-radius: 5px;
 }

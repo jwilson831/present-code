@@ -2,16 +2,6 @@ const DigiAuthorSide = () => {
   return (
     <>
       <h4>
-        {/* Gain the Attention of Boards, Management and Investors
-        <br />
-        Around the World
-        <br />
-        <br />
-        Live, Streamed and On Demand
-        <br />
-        <br />
-        <br />
-        Let Us Tell You More About <br /> */}
         <button className="previewButtonAuth">Booking Sponsors Now</button>
       </h4>
 

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const Programs = (props) => {
-const {link, link2, ttpStyle, attStyle, itsStyle} = props;
+const {link, programAuthor2, ttpStyle, attStyle, itsStyle} = props;
   const {
     title,
     image,
@@ -47,8 +47,7 @@ const {link, link2, ttpStyle, attStyle, itsStyle} = props;
                     />
                     <hr style={{ marginBottom: "-6px" }}></hr>
                     <div className="program-blurb">
-                      <b>{ttp_title}</b>
-                      <br />
+                      <h4>{ttp_title}</h4>
                       <i>{ttp_sub}</i>
                       <br />
                       <br />
@@ -74,7 +73,7 @@ const {link, link2, ttpStyle, attStyle, itsStyle} = props;
           {/* At The Table */}
           <div id="back" className="logo col-sm">
           {/* <Link to={link2}> */}
-            <a href="/digi-author">
+          <a href={`/digi-author/${programAuthor2}`}>
               <div id="progCard">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -84,8 +83,7 @@ const {link, link2, ttpStyle, attStyle, itsStyle} = props;
                       alt=""
                     />
                     <div className="program-blurb">
-                    <b>{att_title}</b>
-                      <br />
+                    <h4>{att_title}</h4>
                       <i>{att_sub}</i>
                       <br />
                       <br />
@@ -121,8 +119,7 @@ const {link, link2, ttpStyle, attStyle, itsStyle} = props;
                       alt=""
                     />
                     <div className="program-blurb">
-                    <b>{its_title}</b>
-                      <br />
+                    <h4>{its_title}</h4>
                       <i>{its_sub}</i>
                       <br />
                       <br />

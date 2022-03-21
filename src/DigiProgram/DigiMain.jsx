@@ -10,6 +10,8 @@ const DigiMain = (programs) => {
   const activism = programs.programs[5].acf;
   const washington_world = programs.programs[6].acf;
 
+
+
   return (
     <>
       <div className="stuImgContainer">
@@ -34,7 +36,7 @@ const DigiMain = (programs) => {
 
       <Programs
         link="/washington-world"
-        link2="/digi-author"
+        programAuthor2="3211"
         data={washington_world}
         ttpStyle="crLogo"
         attStyle="yourLogo"

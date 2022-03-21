@@ -46,6 +46,7 @@ function App() {
   const [loaded, setLoaded] = useState(false);
   const [activeCategory, setActiveCategory] = useState("Headlines");
   const [programs, setPrograms] = useState([]);
+  const [programAuthors, setProgAuth] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -65,7 +66,11 @@ function App() {
         const programs = await axios(
           "https://skytop-strategies.com/wp-json/wp/v2/programs"
         );
+        const programAuthors = await axios(
+          "https://skytop-strategies.com/wp-json/wp/v2/program_authors"
+        );
 
+        setProgAuth(programAuthors)
         setPrograms(programs.data);
         setArticles(articles.data);
         setConferences(orderByDate(conferences));
@@ -78,6 +83,9 @@ function App() {
         }
         {
           console.log(editorials.data);
+        }
+        {
+          console.log(programAuthors.data[0].acf);
         }
       } catch (err) {
         console.error(err);
@@ -362,8 +370,8 @@ function App() {
                 <Route exact path="/digi-prog">
                   <DigiMain programs={programs} />
                 </Route>
-                <Route exact path="/digi-author">
-                  <DigiAuthor programs={programs} />
+                <Route exact path="/program-authors/:id">
+                  <DigiAuthor author={programAuthors.data[0].acf} />
                 </Route>
               </div>
             </Switch>
@@ -382,8 +390,8 @@ function App() {
                 <Route path="/digi-prog">
                   <DigiSide programs={programs} />
                 </Route>
-                <Route path="/digi-author">
-                  <DigiAuthorSide programs={programs} />
+                <Route path="/program-authors/:id">
+                  <DigiAuthorSide programAuthors={programAuthors} />
                 </Route>
                 <Route path="/index/conferences">
                   <div className="pl-3">

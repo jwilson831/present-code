@@ -18,7 +18,6 @@ function Home (props){
             setSurvey(articles.find(art => art.acf.isSurvey === true));
         }
         findSurvey(props.articles);
-        
     },[props.articles])
     return(
         <>

@@ -73,7 +73,7 @@ const {link, programAuthor2, ttpStyle, attStyle, itsStyle} = props;
           {/* At The Table */}
           <div id="back" className="logo col-sm">
           {/* <Link to={link2}> */}
-          <a href={`/digi-author/${programAuthor2}`}>
+          <a href={`/program-authors/${programAuthor2}`}>
               <div id="progCard">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">

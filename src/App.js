@@ -84,9 +84,6 @@ function App() {
         {
           console.log(editorials.data);
         }
-        {
-          console.log(programAuthors.data[0].acf);
-        }
       } catch (err) {
         console.error(err);
       }

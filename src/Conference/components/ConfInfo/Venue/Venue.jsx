@@ -55,7 +55,7 @@ function Venue(){
                     </div>
                     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMPOsQePBf23vVC7EkEDFBpojHF0T6IY9U7Hdo2u8PYDnM_w/viewform?embedded=true" width="640" height="2466" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
-        : <PageLoader/>}
+        : <PageLoader/> }
         </>
     )
 }

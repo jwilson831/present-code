@@ -44,12 +44,16 @@ function Venue(){
                         :''}
                     </div>
                     <Amenities amenities={data.amenities}/>
-                    <div className="mt-5">
+                    {/* <div className="mt-5">
                         <h6>Contact us about highly incentivized room rates for Skytop participants!</h6>
                         <a href="mailto:info@skytopstrategies.com?subject=Skytop Participant Hotel Booking">
                             <button className="btn btn-danger">Book Now</button>
                         </a>
+                    </div> */}
+                        <div className="mt-5">
+                        <h5>Contact us about highly incentivized room rates for Skytop participants!</h5>
                     </div>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMPOsQePBf23vVC7EkEDFBpojHF0T6IY9U7Hdo2u8PYDnM_w/viewform?embedded=true" width="640" height="2466" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         : <PageLoader/>}
         </>

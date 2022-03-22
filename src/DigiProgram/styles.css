@@ -450,3 +450,14 @@
   border-top: 7px solid #2688a5;
   border-radius: 5px;
 }
+
+.guest-container {
+  margin-left: 20px;
+  border: 1.7px solid black;
+  border-radius: 5px;
+  margin-bottom:10px;
+}
+
+.textShadow {
+  text-shadow: 2px 2px 5px  grey;
+}

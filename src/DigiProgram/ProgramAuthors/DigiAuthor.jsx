@@ -1,10 +1,6 @@
-import { useParams } from 'react-router-dom';
-import ProgramPart from "./ProgramPart"
+import ProgramPart from "./ProgramPart";
 
 const DigiAuthor = (props) => {
-  console.log(props.author);
-
-  
   const {
     program_logo,
     name,
@@ -43,9 +39,8 @@ const DigiAuthor = (props) => {
     part_sub_title7,
     part_logo7,
     construction_img,
-    contributing_author
+    contributing_author,
   } = props.author;
-  const authId = contributing_author[0];
   return (
     <>
       <br />
@@ -63,18 +58,12 @@ const DigiAuthor = (props) => {
             <br />
             <br />
             <br />
-            <img
-              alt=""
-              id="programTableLogoAuth"
-              src={program_logo}
-            />
+            <img alt="" id="programTableLogoAuth" src={program_logo} />
           </h3>
           <h4>Presents</h4>
           <br />
           <h3>
-            <p style={{ whiteSpace: "nowrap" }}>
-              {name}
-            </p>
+            <p style={{ whiteSpace: "nowrap" }}>{name}</p>
             <h4>Along with Special Guests</h4>
             <br />
             <h2>{title}</h2>
@@ -96,11 +85,7 @@ const DigiAuthor = (props) => {
       <h2>{title2}</h2>
       <h3>{sub_title2}</h3>
       <br />
-      <img
-        id="authorMain"
-        alt=""
-        src={author_image}
-      />
+      <img id="authorMain" alt="" src={author_image} />
       <br />
       <br />
       <h4>
@@ -108,29 +93,62 @@ const DigiAuthor = (props) => {
       </h4>
       <h5>Along with Special Guests</h5>
       <br />
-
-      <a href={`/authors/${authId}`}>
+      <a href={`/authors/${contributing_author}`}>
         <button className="previewButtonAuth">About {about_name}</button>
       </a>
-
       <br />
       <br />
       <hr className="blueLine" />
       <br />
-      <ProgramPart title={part_title} number={part_number} sub_title={part_sub_title} logo={part_logo} build={construction_img} />
-
-      <ProgramPart title={part_title2} number={part_number2} sub_title={part_sub_title2} logo={part_logo2} build={construction_img} />
-
-      <ProgramPart title={part_title3} number={part_number3} sub_title={part_sub_title3} logo={part_logo3} build={construction_img} />
-
-      <ProgramPart title={part_title4} number={part_number4} sub_title={part_sub_title4} logo={part_logo4} build={construction_img} />
-
-      <ProgramPart title={part_title5} number={part_number5} sub_title={part_sub_title5} logo={part_logo5} build={construction_img} />
-
-      <ProgramPart title={part_title6} number={part_number6} sub_title={part_sub_title6} logo={part_logo6} build={construction_img} />
-
-      <ProgramPart title={part_title7} number={part_number7} sub_title={part_sub_title7} logo={part_logo7} build={construction_img} />
-
+      <ProgramPart
+        title={part_title}
+        number={part_number}
+        sub_title={part_sub_title}
+        logo={part_logo}
+        build={construction_img}
+      />
+      <ProgramPart
+        title={part_title2}
+        number={part_number2}
+        sub_title={part_sub_title2}
+        logo={part_logo2}
+        build={construction_img}
+      />
+      <ProgramPart
+        title={part_title3}
+        number={part_number3}
+        sub_title={part_sub_title3}
+        logo={part_logo3}
+        build={construction_img}
+      />
+      <ProgramPart
+        title={part_title4}
+        number={part_number4}
+        sub_title={part_sub_title4}
+        logo={part_logo4}
+        build={construction_img}
+      />
+      <ProgramPart
+        title={part_title5}
+        number={part_number5}
+        sub_title={part_sub_title5}
+        logo={part_logo5}
+        build={construction_img}
+      />
+      <ProgramPart
+        title={part_title6}
+        number={part_number6}
+        sub_title={part_sub_title6}
+        logo={part_logo6}
+        build={construction_img}
+      />
+      <ProgramPart
+        title={part_title7}
+        number={part_number7}
+        sub_title={part_sub_title7}
+        logo={part_logo7}
+        build={construction_img}
+      />
     </>
   );
 };

@@ -30,7 +30,6 @@ const ProgramPart = (props) => {
                       ) : (
                         <h3> {title}</h3>
                       )}
-
                       <i>{number}</i>
                     </b>
                     <br />

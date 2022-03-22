@@ -1,293 +1,139 @@
+import { useEffect, useState } from "react";
+import PageLoader from "../../util/Loader/Loader";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+import ProgramGuestsSide from "./ProgramGuestsSide";
+
 const DigiAuthorSide = () => {
+  const [programGuests, setGuest] = useState("");
+  const [loaded, setLoaded] = useState(false);
+  const { id } = useParams();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const guest = await axios(
+          `https://skytop-strategies.com/wp-json/wp/v2/program_authors/${id}`
+        );
+        setGuest(guest.data.acf);
+        setLoaded(true);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    fetchData();
+  }, [id]);
+  console.log(programGuests);
+
+  const {
+    short_part_header,
+    guest_name,
+    guest_name2,
+    guest_name3,
+    guest_title,
+    guest_title2,
+    guest_title3,
+    guest_affiliation,
+    guest_affiliation2,
+    guest_affiliation3,
+    guest_img,
+    guest_img2,
+    guest_img3,
+    short_part_header2,
+    short_part_header3,
+    short_part_header4,
+    short_part_header5,
+  } = programGuests;
   return (
     <>
-      <h4>
-        <button className="previewButtonAuth">Booking Sponsors Now</button>
-      </h4>
-
-      <br />
-
-      <div
-        style={{
-          marginLeft: "20px",
-          border: "1.7px solid black",
-          borderRadius: "5px",
-          marginBottom:"10px"
-
-        }}
-      >
-          <br/>
-        <h4 style={{textShadow: "2px 2px 5px  grey"}}>
-          Global Business Calculus
+      {loaded ? (
+        <>
+          <h4>
+            <button className="previewButtonAuth">Booking Sponsors Now</button>
           </h4>
-          <i><h5>Featuring</h5></i>
-          
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation 
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
+          <br />
+
+          <ProgramGuestsSide
+            header={short_part_header}
+            img={guest_img}
+            name={guest_name}
+            title={guest_title}
+            affiliation={guest_affiliation}
+            img2={guest_img2}
+            name2={guest_name2}
+            title2={guest_title2}
+            affiliation2={guest_affiliation2}
+            img3={guest_img3}
+            name3={guest_name3}
+            title3={guest_title3}
+            affiliation3={guest_affiliation3}
           />
-        </div>
-
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
+          <ProgramGuestsSide
+            header={short_part_header2}
+            img={guest_img}
+            name={guest_name}
+            title={guest_title}
+            affiliation={guest_affiliation}
+            img2={guest_img2}
+            name2={guest_name2}
+            title2={guest_title2}
+            affiliation2={guest_affiliation2}
+            img3={guest_img3}
+            name3={guest_name3}
+            title3={guest_title3}
+            affiliation3={guest_affiliation3}
           />
-        </div>
-
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
+          <ProgramGuestsSide
+            header={short_part_header3}
+            img={guest_img}
+            name={guest_name}
+            title={guest_title}
+            affiliation={guest_affiliation}
+            img2={guest_img2}
+            name2={guest_name2}
+            title2={guest_title2}
+            affiliation2={guest_affiliation2}
+            img3={guest_img3}
+            name3={guest_name3}
+            title3={guest_title3}
+            affiliation3={guest_affiliation3}
           />
-        </div>
-      </div>
-
-      <div
-        style={{
-          marginLeft: "20px",
-          border: "1.7px solid black",
-          borderRadius: "5px",
-          marginBottom:"10px"
-        }}
-      >
-        <h4 style={{textShadow: "2px 2px 5px  grey"}}>
-          China's Chessgame
-          </h4>
-          <i><h5>Featuring</h5></i>
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
+          <ProgramGuestsSide
+            header={short_part_header4}
+            img={guest_img}
+            name={guest_name}
+            title={guest_title}
+            affiliation={guest_affiliation}
+            img2={guest_img2}
+            name2={guest_name2}
+            title2={guest_title2}
+            affiliation2={guest_affiliation2}
+            img3={guest_img3}
+            name3={guest_name3}
+            title3={guest_title3}
+            affiliation3={guest_affiliation3}
           />
-        </div>
-
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
+          <ProgramGuestsSide
+            header={short_part_header5}
+            img={guest_img}
+            name={guest_name}
+            title={guest_title}
+            affiliation={guest_affiliation}
+            img2={guest_img2}
+            name2={guest_name2}
+            title2={guest_title2}
+            affiliation2={guest_affiliation2}
+            img3={guest_img3}
+            name3={guest_name3}
+            title3={guest_title3}
+            affiliation3={guest_affiliation3}
           />
+        </>
+      ) : (
+        <div className="author-loader">
+          <PageLoader />
         </div>
-
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
-          />
-        </div>
-      </div>
-
-
-      <div
-        style={{
-          marginLeft: "20px",
-          border: "1.7px solid black",
-          borderRadius: "5px",
-        }}
-      >
-        <h4 style={{textShadow: "2px 2px 5px  grey"}}>
-          Russian Oil and Gas
-          </h4>
-          <i><h5>Featuring</h5></i>
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
-          />
-        </div>
-
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
-          />
-        </div>
-
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
-          />
-        </div>
-      </div>
-
-      <div
-        style={{
-            marginTop:"10px",
-          marginLeft: "20px",
-          border: "1.7px solid black",
-          borderRadius: "5px",
-        }}
-      >
-        <h4 style={{textShadow: "2px 2px 5px  grey"}}>
-          Frontier Markets
-          </h4>
-          <i><h5>Featuring</h5></i>
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
-          />
-        </div>
-
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
-          />
-        </div>
-
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
-          />
-        </div>
-      </div>
-
-      <div
-        style={{
-            marginTop:"10px",
-          marginLeft: "20px",
-          border: "1.7px solid black",
-          borderRadius: "5px",
-        }}
-      >
-        <h4 style={{textShadow: "2px 2px 5px  grey"}}>
-          Inside Poland and Out
-          </h4>
-          <i><h5>Featuring</h5></i>
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
-          />
-        </div>
-
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
-          />
-        </div>
-
-        <div className="guest-box">
-          <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
-          </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
-          />
-        </div>
-      </div>
-
-
-
-
+      )}
     </>
   );
 };

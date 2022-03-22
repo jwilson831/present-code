@@ -1,20 +1,22 @@
-import { Link } from 'react-router-dom';
 
 const Programs = (props) => {
-const {link, programAuthor2, ttpStyle, attStyle, itsStyle} = props;
+const {link, ttpStyle, attStyle, itsStyle} = props;
   const {
     title,
     image,
+    ttp_author,
     ttp_title,
     ttp_sub,
     ttp_pre_name,
     ttp_name,
     ttp_logo,
+    att_author,
     att_title,
     att_sub,
     att_pre_name,
     att_name,
     att_logo,
+    its_author,
     its_title,
     its_sub,
     its_pre_name,
@@ -23,11 +25,9 @@ const {link, programAuthor2, ttpStyle, attStyle, itsStyle} = props;
   } = props.data;
   return (
     <div id="border">
-      {/* <Link to={link}> */}
       <a href={link}>
       <button className="categoryButton">{title}</button>
       </a>
-      {/* </Link> */}
       <img alt="boxSetImg" className="boxSetImg" src={image} />
 
       <div className="container">
@@ -36,7 +36,7 @@ const {link, programAuthor2, ttpStyle, attStyle, itsStyle} = props;
         <div className="row">
           {/* To The Point */}
           <div id="back" className="logo col-sm">
-            <a href="https://skytopstrategies.com/program">
+          <a href={`/program-authors/${ttp_author}`}>
               <div id="progCard">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -72,8 +72,7 @@ const {link, programAuthor2, ttpStyle, attStyle, itsStyle} = props;
           </div>
           {/* At The Table */}
           <div id="back" className="logo col-sm">
-          {/* <Link to={link2}> */}
-          <a href={`/program-authors/${programAuthor2}`}>
+          <a href={`/program-authors/${att_author}`}>
               <div id="progCard">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -104,12 +103,11 @@ const {link, programAuthor2, ttpStyle, attStyle, itsStyle} = props;
                   </div>
                 </div>
               </div>
-              {/* </Link> */}
             </a>
           </div>
           {/* In The Studio */}
           <div id="back" className="logo col-sm">
-            <a href="https://skytopstrategies.com/program">
+          <a href={`/program-authors/${its_author}`}>
               <div id="progCard">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">

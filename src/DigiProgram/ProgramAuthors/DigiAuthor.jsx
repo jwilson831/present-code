@@ -1,7 +1,10 @@
-import { Link } from "react-router-dom";
+import { useParams } from 'react-router-dom';
+import ProgramPart from "./ProgramPart"
 
 const DigiAuthor = (props) => {
   console.log(props.author);
+
+  
   const {
     program_logo,
     name,
@@ -42,7 +45,7 @@ const DigiAuthor = (props) => {
     construction_img,
     contributing_author
   } = props.author;
-  const id = contributing_author[0];
+  const authId = contributing_author[0];
   return (
     <>
       <br />
@@ -67,11 +70,9 @@ const DigiAuthor = (props) => {
             />
           </h3>
           <h4>Presents</h4>
-
           <br />
           <h3>
             <p style={{ whiteSpace: "nowrap" }}>
-              {/* Ambassador Cameron Munter (retired) */}
               {name}
             </p>
             <h4>Along with Special Guests</h4>
@@ -108,321 +109,28 @@ const DigiAuthor = (props) => {
       <h5>Along with Special Guests</h5>
       <br />
 
-      <a href={`/authors/${id}`}>
-        {/* <Link to="/authors/563"> */}
+      <a href={`/authors/${authId}`}>
         <button className="previewButtonAuth">About {about_name}</button>
-        {/* </Link> */}
       </a>
 
       <br />
       <br />
       <hr className="blueLine" />
       <br />
-      <div className="container">
-        <br />
-        <div className="row">
-          {/* At The Table */}
-          <div id="back" className="logo col-sm">
-            <a href="https://skytopstrategies.com/program">
-              <div id="cardAuth">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img
-                      className="table-top-auth"
-                      src="https://swerthmi.sirv.com/SKYTOP/digital_programs/skytop%20at%20the%20table.png"
-                      alt=""
-                    />
-                    <div className="program-blurb-auth">
-                      <b>
-                        <h3>
-                          {part_title}
-                        </h3>
-                        <i>{part_number}</i>
-                      </b>
-                      <br />
-                      <br />
-                      <i>
-                        {part_sub_title}
-                      </i>
-                      <br />
-                      <hr />
-                      Brought to You by
-                      <br />
-                      <br />
-                      <img
-                        alt=""
-                        className="yourLogoAuth"
-                        src={part_logo}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <br />
-        <div className="row">
-          {/* At The Table */}
-          <div id="back" className="logo col-sm">
-            <a href="https://skytopstrategies.com/program">
-              <div id="cardAuth">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img
-                      className="table-top-auth"
-                      src="https://swerthmi.sirv.com/SKYTOP/digital_programs/skytop%20at%20the%20table.png"
-                      alt=""
-                    />
-                    <div className="program-blurb-auth">
-                      <b>
-                        <h3>
-                          {part_title2}
-                        </h3>
-                        <i>{part_number2}</i>
-                      </b>
-                      <br />
-                      <br />
-                      <i>
-                      {part_sub_title2}
-                      </i>
-                      <br />
-                      <hr />
-                      Brought to You by
-                      <br />
-                      <br />
-                      <img
-                        alt=""
-                        className="yourLogoAuth"
-                        src={part_logo}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <br />
-        <div className="row">
-          <div id="back" className="logo col-sm">
-            <a href="https://skytopstrategies.com/program">
-              <div id="cardAuth">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img
-                      className="table-top-auth"
-                      src="http://skytop-strategies.com/wp-content/uploads/2022/03/table.png"
-                      alt=""
-                    />
-                    <div className="program-blurb-auth">
-                      <b>
-                        <h3>
-                          {part_title3}
-                        </h3>
-                        <i>{part_number3}</i>
-                      </b>
-                      <br />
-                      <br />
-                      <i>
-                        {part_sub_title3}
-                      </i>
-                      <br />
-                      <hr />
-                      Brought to You by
-                      <br />
-                      <br />
-                      <img
-                        alt=""
-                        className="yourLogoAuth"
-                        src={part_logo}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <br />
-        <div className="row">
-          <div id="back" className="logo col-sm">
-            <a href="https://skytopstrategies.com/program">
-              <div id="cardAuth">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img
-                      className="table-top-auth"
-                      src="https://swerthmi.sirv.com/SKYTOP/digital_programs/skytop%20at%20the%20table.png"
-                      alt=""
-                    />
-                    <div className="program-blurb-auth">
-                      <b>
-                        <h3>{part_title4}</h3>
-                        <i>{part_number4}</i>
-                      </b>
-                      <br />
-                      <br />
-                      <i>
-                        {part_sub_title4}
-                      </i>
-                      <br />
-                      <hr />
-                      Brought to You by
-                      <br />
-                      <br />
-                      <img
-                        alt=""
-                        className="yourLogoAuth"
-                        src={part_logo}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <br />
-        <div className="row">
-          <div id="back" className="logo col-sm">
-            <a href="https://skytopstrategies.com/program">
-              <div id="cardAuth">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img
-                      className="table-top-auth"
-                      src="https://swerthmi.sirv.com/SKYTOP/digital_programs/skytop%20at%20the%20table.png"
-                      alt=""
-                    />
-                    <div className="program-blurb-auth">
-                      <b>
-                        <h3>
-                          {part_title5}
-                        </h3>
-                        <i>{part_number5}</i>
-                      </b>
-                      <br />
-                      <br />
-                      <i>{part_sub_title5}</i>
-                      <br />
-                      <hr />
-                      Brought to You by
-                      <br />
-                      <br />
-                      <img
-                        alt=""
-                        className="yourLogoAuth"
-                        src={part_logo}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <br />
-        <div className="row">
-          <div id="back" className="logo col-sm">
-            <a href="https://skytopstrategies.com/program">
-              <div id="cardAuth">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img
-                      className="table-top-auth"
-                      src="https://swerthmi.sirv.com/SKYTOP/digital_programs/skytop%20at%20the%20table.png"
-                      alt=""
-                    />
-                    <div className="program-blurb-auth">
-                      <b>
-                        <img
-                          alt=""
-                          className="constructionLogo"
-                          src={construction_img}
-                        />
-                        <br />
-                        <br />
-                        <br />
-                        <i>{part_number6}</i>
-                      </b>
-                      <br />
-                      <br />
-                      <i>{part_sub_title6}</i>
-                      <br />
-                      <hr />
-                      Brought to You by
-                      <br />
-                      <br />
-                      <img
-                        alt=""
-                        className="yourLogoAuth"
-                        src={part_logo}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <br />
-        <div className="row">
-          <div id="back" className="logo col-sm">
-            <a href="https://skytopstrategies.com/program">
-              <div id="cardAuth">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img
-                      className="table-top-auth"
-                      src="https://swerthmi.sirv.com/SKYTOP/digital_programs/skytop%20at%20the%20table.png"
-                      alt=""
-                    />
-                    <div className="program-blurb-auth">
-                      <b>
-                        {part_title6 === "Under Construction" ? (<img
-                          alt=""
-                          className="constructionLogo"
-                          src={construction_img}
-                        />) : {part_title6} }
-                        <br />
-                        <br />
-                        <br />
-                        <i>{part_number7}</i>
-                      </b>
-                      <br />
-                      <br />
-                      <i>{part_sub_title7}</i>
-                      <br />
-                      <hr />
-                      Brought to You by
-                      <br />
-                      <br />
-                      <img
-                        alt=""
-                        className="yourLogoAuth"
-                        src={part_logo}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+      <ProgramPart title={part_title} number={part_number} sub_title={part_sub_title} logo={part_logo} build={construction_img} />
+
+      <ProgramPart title={part_title2} number={part_number2} sub_title={part_sub_title2} logo={part_logo2} build={construction_img} />
+
+      <ProgramPart title={part_title3} number={part_number3} sub_title={part_sub_title3} logo={part_logo3} build={construction_img} />
+
+      <ProgramPart title={part_title4} number={part_number4} sub_title={part_sub_title4} logo={part_logo4} build={construction_img} />
+
+      <ProgramPart title={part_title5} number={part_number5} sub_title={part_sub_title5} logo={part_logo5} build={construction_img} />
+
+      <ProgramPart title={part_title6} number={part_number6} sub_title={part_sub_title6} logo={part_logo6} build={construction_img} />
+
+      <ProgramPart title={part_title7} number={part_number7} sub_title={part_sub_title7} logo={part_logo7} build={construction_img} />
+
     </>
   );
 };

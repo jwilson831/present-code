@@ -57,9 +57,9 @@ const DigiAuthor = (props) => {
           <h3>
             <br />
             <br />
-            <br />
-            <img alt="" id="programTableLogoAuth" src={program_logo} />
-          </h3>
+            <br />{name === "Coming Soon" ? (<img alt="" id="skyLogoAuth" src={program_logo} />) : (<img alt="" id="programTableLogoAuth" src={program_logo} />)}
+            {/* <img alt="" id="programTableLogoAuth" src={program_logo} /> */}
+          </h3> 
           <h4>Presents</h4>
           <br />
           <h3>

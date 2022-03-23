@@ -14,6 +14,7 @@ function Editorial(props){
             <img className="edit-img" src={props.img} alt="editorial"></img>
             <br/>
             <h6 className="space"><b>{props.title}</b></h6>
+            {props.category === "Editor's Note" ? (<b><h5><br/>Calling Mr. Mikhail Gorbachev:<br/><i>Where are You?</i></h5></b>) : null}
             <p className="edit-text mt-4"><Markup content={props.excerpt}></Markup><span></span></p>
             <Link to={props.link}>
                 <button onClick={() => scrollToTop()}className="btn sky-submit mb-3">Read Full Note</button>

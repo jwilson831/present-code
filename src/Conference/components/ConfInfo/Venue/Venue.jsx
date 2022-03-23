@@ -51,7 +51,8 @@ function Venue(){
                         </a>
                     </div> */}
                         <div className="mt-5">
-                        <h5>Contact us about highly incentivized room rates for Skytop participants!</h5>
+                        <h3>Contact us about highly incentivized room rates for Skytop participants!</h3>
+                        <br/>
                     </div>
                     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMPOsQePBf23vVC7EkEDFBpojHF0T6IY9U7Hdo2u8PYDnM_w/viewform?embedded=true" width="640" height="2466" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>

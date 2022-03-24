@@ -88,11 +88,17 @@ const DigiAuthor = (props) => {
       <img id="authorMain" alt="" src={author_image} />
       <br />
       <br />
-      <h4>
+
+      {/* <h4>
         Hosted by <br /> {name}
       </h4>
       <h5>Along with Special Guests</h5>
-      <br />
+      <br /> */}
+{/* 
+      <h4>
+      Cameron Lends Insights from <br/> Serving in Three White Houses, as an Appointed U.S. Ambassador, and as a Director at the National Security Council
+      </h4> */}
+
       <a href={`/authors/${contributing_author}`}>
         <button className="previewButtonAuth">About {about_name}</button>
       </a>

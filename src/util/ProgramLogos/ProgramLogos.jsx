@@ -1,22 +1,20 @@
 import React from "react";
 import "./styles.css";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { scrollToTop } from '../scrollToTop';
+
 
 const ProgramLogos = () => {
   return (
+    <Link to="/digi-prog">
     <div className="containter">
-      {/* <Link to="/digi-prog"> */}
-      <a href="/digi-prog">
-        <button className="programButton">
+        <button onClick={() => scrollToTop()} className="programButton">
           Three Streamed Program Channels
         </button>
-      </a>
-      {/* </Link> */}
       <br />
       <div className="row">
         {/* To The Point */}
-        <div className="logo col-sm">
-          <a href="/digi-prog">
+        <div onClick={() => scrollToTop()} className="logo col-sm">
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
@@ -41,11 +39,9 @@ const ProgramLogos = () => {
                 </div>
               </div>
             </div>
-          </a>
         </div>
         {/* At The Table */}
-        <div className="logo col-sm">
-          <a href="/digi-prog">
+        <div onClick={() => scrollToTop()} className="logo col-sm">
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
@@ -67,11 +63,9 @@ const ProgramLogos = () => {
                 </div>
               </div>
             </div>
-          </a>
         </div>
         {/* In The Studio */}
-        <div className="logo col-sm">
-        <a href="/digi-prog">
+        <div onClick={() => scrollToTop()} className="logo col-sm">
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
@@ -94,10 +88,10 @@ const ProgramLogos = () => {
                 </div>
               </div>
             </div>
-          </a>
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 

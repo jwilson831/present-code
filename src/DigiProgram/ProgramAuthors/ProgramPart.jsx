@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import { scrollToTop } from '../../util/scrollToTop';
+
 const ProgramPart = (props) => {
   const { title, number, sub_title, logo, build } = props;
   return (
@@ -5,8 +8,8 @@ const ProgramPart = (props) => {
       <br />
       <div className="row">
         <div id="back" className="logo col-sm">
-          <a href="https://skytopstrategies.com/program">
-            <div id="cardAuth">
+        <Link to="/digi-prog">
+            <div onClick={() => scrollToTop()} id="cardAuth">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <img
@@ -45,7 +48,7 @@ const ProgramPart = (props) => {
                 </div>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

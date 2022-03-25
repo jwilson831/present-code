@@ -1,5 +1,5 @@
 import "./styles.css";
-import ProgramLogos from "./ProgramLogos.jsx";
+import ProgramLogos from "../util/ProgramLogos/ProgramLogos.jsx";
 import Programs from "./Programs.jsx";
 
 const DigiMain = (programs) => {

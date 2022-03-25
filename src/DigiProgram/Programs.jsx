@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { scrollToTop } from '../util/scrollToTop';
 
 const Programs = (props) => {
 const {link, ttpStyle, attStyle, itsStyle} = props;
@@ -25,9 +27,9 @@ const {link, ttpStyle, attStyle, itsStyle} = props;
   } = props.data;
   return (
     <div id="border">
-      <a href={link}>
-      <button className="categoryButton">{title}</button>
-      </a>
+      <Link to={link}>
+      <button onClick={() => scrollToTop()} className="categoryButton">{title}</button>
+      </Link>
       <img alt="boxSetImg" className="boxSetImg" src={image} />
 
       <div className="container">
@@ -36,8 +38,8 @@ const {link, ttpStyle, attStyle, itsStyle} = props;
         <div className="row">
           {/* To The Point */}
           <div id="back" className="logo col-sm">
-          <a href={`/program-authors/${ttp_author}`}>
-              <div id="progCard">
+          <Link to={`/program-authors/${ttp_author}`}>
+              <div onClick={() => scrollToTop()} id="progCard">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img
@@ -68,12 +70,12 @@ const {link, ttpStyle, attStyle, itsStyle} = props;
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
           {/* At The Table */}
           <div id="back" className="logo col-sm">
-          <a href={`/program-authors/${att_author}`}>
-              <div id="progCard">
+          <Link to={`/program-authors/${att_author}`}>
+              <div onClick={() => scrollToTop()} id="progCard">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img
@@ -103,12 +105,12 @@ const {link, ttpStyle, attStyle, itsStyle} = props;
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
           {/* In The Studio */}
           <div id="back" className="logo col-sm">
-          <a href={`/program-authors/${its_author}`}>
-              <div id="progCard">
+          <Link to={`/program-authors/${its_author}`}>
+              <div onClick={() => scrollToTop()} id="progCard">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <img
@@ -138,7 +140,7 @@ const {link, ttpStyle, attStyle, itsStyle} = props;
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

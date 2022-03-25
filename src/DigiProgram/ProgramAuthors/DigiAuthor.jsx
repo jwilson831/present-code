@@ -1,4 +1,6 @@
 import ProgramPart from "./ProgramPart";
+import { Link } from 'react-router-dom';
+import { scrollToTop } from '../../util/scrollToTop';
 
 const DigiAuthor = (props) => {
   const {
@@ -99,9 +101,9 @@ const DigiAuthor = (props) => {
       Cameron Lends Insights from <br/> Serving in Three White Houses, as an Appointed U.S. Ambassador, and as a Director at the National Security Council
       </h4> */}
 
-      <a href={`/authors/${contributing_author}`}>
-        <button className="previewButtonAuth">About {about_name}</button>
-      </a>
+      <Link to={`/authors/${contributing_author}`}>
+        <button onClick={() => scrollToTop()} className="previewButtonAuth">About {about_name}</button>
+      </Link>
       <br />
       <br />
       <hr className="blueLine" />

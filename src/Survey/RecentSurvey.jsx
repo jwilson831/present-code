@@ -5,6 +5,8 @@ import {Link} from 'react-router-dom';
 import {Markup} from "interweave";
 import CommentsBox from '../util/CommentsBox/CommentsBox';
 import { renderByLine } from '../util/renderByLine';
+import { scrollToTop } from '../util/scrollToTop';
+
 
 function RecentSurvey(props){
     return(
@@ -25,20 +27,18 @@ function RecentSurvey(props){
                                     }
                                 </div>
                             }
-                            {/* <Link to={`/surveys/${props.id}`} > */}
-                            <a href={`/surveys/${props.id}`} >
-                                <h5 className="card-title"><Markup content={props.title}></Markup></h5>
-                            </a>
+                            <Link to={`/surveys/${props.id}`} >
+                                <h5 onClick={() => scrollToTop()} className="card-title"><Markup content={props.title}></Markup></h5>
+                            </Link>
 
                             {/* Edit Survey Card Body Below */}
                             <div className={(props.category === "Skytop Survey" ? "survey-excerpt":"")}>
                                     {props.category === "Skytop Survey" ? 
                                         <div>
                                             <p>{props.excerpt}</p>
-                                            {/* <Link to={`/surveys/${props.id}`} > */}
-                                            <a href={`/surveys/${props.id}`} >
-                                                <button className="btn btn-primary m-3">Click For Survey Results</button>
-                                            </a>
+                                            <Link to={`/surveys/${props.id}`} >
+                                                <button onClick={() => scrollToTop()} className="btn btn-primary m-3">Click For Survey Results</button>
+                                            </Link>
                                         </div>
                                         : 
                                         <div></div>

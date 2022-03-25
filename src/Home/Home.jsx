@@ -9,16 +9,18 @@ import AdvertMain from '../util/Advert/AdvertMain';
 import Calendar from '../util/Calendar/Calendar';
 import { sendGAPageView } from '../util/GoogleAnalytics';
 import RecentArticle from '../Section/PageComponents/Recents/RecentArticle';
+import RecentSurvey from '../Survey/RecentSurvey';
 import ProgramLogos from '../util/ProgramLogos/ProgramLogos';
 function Home (props){
-    const [survey,setSurvey] = useState(null);
-    useEffect(() => {
-        sendGAPageView("/headlines");
-        const findSurvey = (articles) => {
-            setSurvey(articles.find(art => art.acf.isSurvey === true));
-        }
-        findSurvey(props.articles);
-    },[props.articles])
+    const survey = props.survey
+    // const [survey,setSurvey] = useState(null);
+    // useEffect(() => {
+    //     sendGAPageView("/headlines");
+    //     const findSurvey = (articles) => {
+    //         setSurvey(articles.find(art => art.acf.isSurvey === true));
+    //     }
+    //     findSurvey(props.articles);
+    // },[props.articles])
     return(
         <>
             <div className="home-grid">
@@ -38,7 +40,7 @@ function Home (props){
             <hr/>
             {survey &&
                 <div className="mt-5 mb-5">
-                    <RecentArticle 
+                    <RecentSurvey
                         id={survey.id}
                         image={survey.acf.image}
                         category={survey.acf.category}
@@ -47,12 +49,13 @@ function Home (props){
                         author={survey.acf.author}
                         date={survey.acf.date}
                         comments={props.comments}
+                        excerpt={survey.acf.excerpt}
                     />
                 </div> 
             }
-            <div className="text-left">
+            {/* <div className="text-left">
                 <Calendar calendar={props.calendar}/>
-            </div>
+            </div> */}
         </>
     )
 }

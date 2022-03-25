@@ -34,6 +34,9 @@ import DigiMain from "./DigiProgram/DigiMain";
 import DigiSide from "./DigiProgram/DigiSide";
 import DigiAuthorSide from "./DigiProgram/ProgramAuthors/DigiAuthorSide";
 import DigiAuthorContainer from "./DigiProgram/ProgramAuthors/DigiAuthorContainer";
+import Survey from "./Survey/Survey";
+import SurveySide from "./Survey/SurveySide";
+
 
 
 function App() {
@@ -46,6 +49,8 @@ function App() {
   const [loaded, setLoaded] = useState(false);
   const [activeCategory, setActiveCategory] = useState("Headlines");
   const [programs, setPrograms] = useState([]);
+  const [surveys, setSurveys] = useState([]);
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -65,7 +70,11 @@ function App() {
         const programs = await axios(
           "https://skytop-strategies.com/wp-json/wp/v2/programs"
         );
-
+        const surveys = await axios(
+          "https://skytop-strategies.com/wp-json/wp/v2/surveys"
+        );
+        
+        setSurveys(surveys.data)
         setPrograms(programs.data);
         setArticles(articles.data);
         setConferences(orderByDate(conferences));
@@ -152,6 +161,7 @@ function App() {
                         </p>
                       </div>
                     }
+                    survey={surveys[0]}
                     articles={articles}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
@@ -159,7 +169,6 @@ function App() {
                     ad={
                       "https://utcoleca.sirv.com/SKYTOP/skytop_ads/extraHop.gif"
                     }
-                    calendar={editCalendar}
                   />
                 </Route>
 
@@ -365,11 +374,17 @@ function App() {
                 <Route exact path="/program-authors/:id">
                   <DigiAuthorContainer />
                 </Route>
+                <Route exact path="/surveys/:id">
+                  <Survey surveys={surveys} comments={comments} />
+                </Route>
               </div>
             </Switch>
 
             <div className="side-menu">
               <Switch>
+              <Route exact path="/surveys/:id">
+                  <SurveySide calendar={editCalendar} />
+                </Route>
                 <Route path={"/conferences/:id"}>
                   <ConferenceMenu conferences={conferences} />
                 </Route>

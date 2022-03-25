@@ -1,12 +1,12 @@
 import React from 'react';
-import './styles.css';
+// import './styles.css';
 import moment from 'moment';
 import {Link} from 'react-router-dom';
 import {Markup} from "interweave";
-import CommentsBox from '../../../util/CommentsBox/CommentsBox';
-import { renderByLine } from '../../../util/renderByLine';
+import CommentsBox from '../util/CommentsBox/CommentsBox';
+import { renderByLine } from '../util/renderByLine';
 
-function RecentArticle(props){
+function RecentSurvey(props){
     return(
         <div className="card mb-5">
                 <div className={"row no-gutters " + (props.category === "Skytop Survey" ? "survey-row":"")}>
@@ -25,20 +25,20 @@ function RecentArticle(props){
                                     }
                                 </div>
                             }
-                            <Link to={`/articles/${props.id}`} >
+                            {/* <Link to={`/surveys/${props.id}`} > */}
+                            <a href={`/surveys/${props.id}`} >
                                 <h5 className="card-title"><Markup content={props.title}></Markup></h5>
-                            </Link>
+                            </a>
 
                             {/* Edit Survey Card Body Below */}
                             <div className={(props.category === "Skytop Survey" ? "survey-excerpt":"")}>
                                     {props.category === "Skytop Survey" ? 
                                         <div>
-                                            {/* hardcoded excerpt needs to be pulled from ACF props */}
-                                            <p>Activist investors from outside of a company’s region continue to buy into companies to effectuate strategic changes, ones believed to increase performance...</p>
-                                            
-                                            <Link to={`/articles/${props.id}`} >
+                                            <p>{props.excerpt}</p>
+                                            {/* <Link to={`/surveys/${props.id}`} > */}
+                                            <a href={`/surveys/${props.id}`} >
                                                 <button className="btn btn-primary m-3">Click For Survey Results</button>
-                                            </Link>
+                                            </a>
                                         </div>
                                         : 
                                         <div></div>
@@ -50,7 +50,7 @@ function RecentArticle(props){
                                 {props.custom_byline ?
                                     <> 
                                         <p className="m-0"><Markup content={props.custom_byline}/></p>
-                                        <p className="mt-1">{moment(props.date).format("MMMM Do, YYYY")}</p>
+                                        {/* <p className="mt-1">{moment(props.date).format("MMMM Do, YYYY")}</p> */}
                                     </>
                                     :
                                     <p className="m-0">By <Markup content={renderByLine(props.author)}/> / {moment(props.date).format("MMMM Do, YYYY")} </p>
@@ -66,4 +66,4 @@ function RecentArticle(props){
     )
 }
 
-export default RecentArticle;
+export default RecentSurvey;

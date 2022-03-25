@@ -2,6 +2,8 @@ import React from 'react';
 import ViewAllBtn from '../../ViewAll/ViewAllBtn';
 import '../styles.css';
 import SideConference from './SideConference';
+import { Link } from 'react-router-dom';
+import { scrollToTop } from '../../util/scrollToTop';
 
 function SideContainer(props){
     const renderConferences = (conferences) => {
@@ -22,9 +24,9 @@ function SideContainer(props){
             <div className="conference-spotlight">
                 <h3 className="section-title">Conference Spotlight</h3>
                     <h6>Shareholder Activism ESG Super Summit</h6>
-                        <a href="https://skytopstrategies.com/conferences/391">
+                        <Link to="/conferences/391">
                             <img className="card-img side-img" src={"http://skytop-strategies.com/wp-content/uploads/2021/07/image-10.png"} alt="spotlight conference"></img>
-                        </a>
+                        </Link>
             </div>        
             <p className="section-title">{props.article ? "Related Conferences" : "Upcoming Conferences"}</p>
             <div className="side-conference-overflow">

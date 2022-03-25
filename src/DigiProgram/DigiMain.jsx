@@ -20,7 +20,7 @@ const DigiMain = (programs) => {
         />
 
         <div className="textContainer">
-          <h1 className="robotoFont">
+          <h1 style={{fontFamily: "Roboto"}} className="robotoFont">
             "Skytop media connects you with exceptional business insights live,
             streamed or on demand."
           </h1>

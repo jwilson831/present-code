@@ -96,10 +96,10 @@ const DigiAuthor = (props) => {
       </h4>
       <h5>Along with Special Guests</h5>
       <br /> */}
-{/* 
-      <h4>
-      Cameron Lends Insights from <br/> Serving in Three White Houses, as an Appointed U.S. Ambassador, and as a Director at the National Security Council
-      </h4> */}
+
+      <h5>
+        {part_sub_title}
+      </h5>
 
       <Link to={`/authors/${contributing_author}`}>
         <button onClick={() => scrollToTop()} className="previewButtonAuth">About {about_name}</button>

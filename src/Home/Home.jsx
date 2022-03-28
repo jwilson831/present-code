@@ -53,9 +53,7 @@ function Home (props){
                     />
                 </div> 
             }
-            {/* <div className="text-left">
-                <Calendar calendar={props.calendar}/>
-            </div> */}
+
         </>
     )
 }

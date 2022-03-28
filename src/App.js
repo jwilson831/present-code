@@ -50,6 +50,7 @@ function App() {
   const [activeCategory, setActiveCategory] = useState("Headlines");
   const [programs, setPrograms] = useState([]);
   const [surveys, setSurveys] = useState([]);
+  const [sideCal, setSideCal] = useState([])
 
 
   useEffect(() => {
@@ -79,9 +80,10 @@ function App() {
         setArticles(articles.data);
         setConferences(orderByDate(conferences));
         setComments(comments.data);
-        setPublisher(editorials.data[0]);
-        setCal(editorials.data[1]);
-        setEditorial(editorials.data[2]);
+        setPublisher(editorials.data[1]);
+        setCal(editorials.data[2]);
+        setSideCal(editorials.data[0]);
+        setEditorial(editorials.data[3]);
         {
           console.log(articles.data);
         }
@@ -420,6 +422,8 @@ function App() {
                     editorial={editorial}
                     publisher={publisher}
                     comments={comments}
+                    calendar={sideCal}
+                    survey={surveys[0]}
                   />
                 </Route>
               </Switch>

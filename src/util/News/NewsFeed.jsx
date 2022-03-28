@@ -3,8 +3,8 @@ import './styles.css';
 
 function NewsFeed(){
     return(
-            <div className="newsletter">
-                <iframe scrolling="no"title="news-feed-embed" src="https://inspiresummitsllc.myfreshworks.com/crm/sales/web_forms/ed9812a6a1d027b3d1128f08501cf3db50e437cb4d4539e5ab0fadc58b7e82cf/form.html?1641325706584" width="110%" height="1100" type="text/html" frameBorder="0" allowtransparency="true"></iframe>
+            <div style={{marginTop:"-90"}} >
+                <iframe scrolling="no"title="news-feed-embed" src="https://inspiresummitsllc.myfreshworks.com/crm/sales/web_forms/ed9812a6a1d027b3d1128f08501cf3db50e437cb4d4539e5ab0fadc58b7e82cf/form.html?1641325706584" width="90%" height="1000" type="text/html" frameBorder="0" allowtransparency="true"></iframe>
             </div>
     )
 }

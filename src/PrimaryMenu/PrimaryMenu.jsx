@@ -2,6 +2,11 @@ import React, {useState, useEffect} from 'react';
 import SideContainer from './components/SideContainer';
 import NewsFeed from '../util/News/NewsFeed';
 import Editorial from '../util/Editorial/Editorial';
+import Calendar from '../util/Calendar/Calendar';
+import { Link } from 'react-router-dom';
+import { scrollToTop } from '../util/scrollToTop';
+import { Markup } from 'interweave';
+
 
 function PrimaryMenu (props){
     // eslint-disable-next-line
@@ -45,7 +50,15 @@ function PrimaryMenu (props){
                 <a href={props.ad_link} target="_blank" rel="noreferrer">
                     <img className="menu-advert" alt="ad" src={props.ad}></img>
                 </a>
+                
+                <div  >
+        <Calendar calendar={props.calendar}/>
+       
+    </div>
+    <br/>
+    <hr style={{marginTop:"75px"}} />
                 <NewsFeed />
+
             </div>
         </>
     )

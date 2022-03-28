@@ -4,6 +4,7 @@ import { scrollToTop } from '../../util/scrollToTop';
 
 const DigiAuthor = (props) => {
   const {
+    auth_img_bio,
     program_logo,
     name,
     title,
@@ -98,7 +99,7 @@ const DigiAuthor = (props) => {
       <br /> */}
 
       <h5>
-        {part_sub_title}
+        {auth_img_bio}
       </h5>
 
       <Link to={`/authors/${contributing_author}`}>

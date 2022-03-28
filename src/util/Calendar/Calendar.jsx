@@ -14,7 +14,7 @@ function Calendar(props){
                 </div>
                 {/* <div className="cal-dates"> */}
                 <div>
-                <p style={{marginLeft:" 5.5rem!important"}} className="section-title mt-auto mb-auto ml-4 mr-5">2022 Editorial Calendar</p>
+                <h1 style={{paddingLeft:"30px"}} className="section-title mt-auto mb-auto ml-4 mr-5">2022 Editorial Calendar</h1>
                         <br/>
                     {/* <p><Markup content={props.calendar.content.rendered}></Markup> </p> */}
                     <Markup content={props.calendar.content.rendered}></Markup>

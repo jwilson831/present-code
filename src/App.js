@@ -422,7 +422,7 @@ function App() {
                     editorial={editorial}
                     publisher={publisher}
                     comments={comments}
-                    calendar={sideCal}
+                    calendar={editCalendar}
                     survey={surveys[0]}
                   />
                 </Route>

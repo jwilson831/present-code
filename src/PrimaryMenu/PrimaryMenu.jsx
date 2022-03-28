@@ -50,10 +50,10 @@ function PrimaryMenu (props){
                 <a href={props.ad_link} target="_blank" rel="noreferrer">
                     <img className="menu-advert" alt="ad" src={props.ad}></img>
                 </a>
-                
-                <div  >
+                <br/>
+                <div style={{marginRight:"10px"}} className="calendarStyle" >
+            <br/>
         <Calendar calendar={props.calendar}/>
-       
     </div>
     <br/>
     <hr style={{marginTop:"75px"}} />

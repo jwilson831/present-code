@@ -1,7 +1,7 @@
-const ProgramGuestsSide = ({header, name, title, affiliation }) => {
-    return(
-        <>
-        <div className="guest-container">
+const ProgramGuestsSide = ({ img, img2, img3, header, name, name2, name3, title, title2, title3, affiliation, affiliation2, affiliation3 }) => {
+  return (
+    <>
+      <div className="guest-container">
         <br />
         <h4 className="textShadow">{header}</h4>
         <i>
@@ -9,48 +9,36 @@ const ProgramGuestsSide = ({header, name, title, affiliation }) => {
         </i>
         <div className="guest-box">
           <strong>
-            <h5>
-              {name},
-              <br /> {title}, {affiliation}
-            </h5>
+            <h5>{name}</h5>
+            <h6>
+              {title}, <br /> {affiliation}
+            </h6>
           </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
-          />
+          <img alt="" className="guest-img" src={img} />
         </div>
 
         <div className="guest-box">
           <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
+            <h5>{name2}</h5>
+            <h6>
+              {title2}, <br /> {affiliation2}
+            </h6>
           </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
-          />
+          <img alt="" className="guest-img" src={img2} />
         </div>
 
         <div className="guest-box">
           <strong>
-            <h5>
-              Name,
-              <br /> Title, Affiliation
-            </h5>
+            <h5>{name3}</h5>
+            <h6>
+              {title3}, <br /> {affiliation3}
+            </h6>
           </strong>
-          <img
-            alt=""
-            className="guest-img"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/placeholder.jpg"
-          />
+          <img alt="" className="guest-img" src={img2} />
         </div>
       </div>
-        </>
-    )
-}
+    </>
+  );
+};
 
 export default ProgramGuestsSide;

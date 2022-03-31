@@ -30,15 +30,63 @@ const DigiAuthorSide = () => {
     guest_name,
     guest_name2,
     guest_name3,
+    guest_name4,
+    guest_name5,
+    guest_name6,
+    guest_name7,
+    guest_name8,
+    guest_name9,
+    guest_name10,
+    guest_name11,
+    guest_name12,
+    guest_name13,
+    guest_name14,
+    guest_name15,
     guest_title,
     guest_title2,
     guest_title3,
+    guest_title4,
+    guest_title5,
+    guest_title6,
+    guest_title7,
+    guest_title8,
+    guest_title9,
+    guest_title10,
+    guest_title11,
+    guest_title12,
+    guest_title13,
+    guest_title14,
+    guest_title15,
     guest_affiliation,
     guest_affiliation2,
     guest_affiliation3,
+    guest_affiliation4,
+    guest_affiliation5,
+    guest_affiliation6,
+    guest_affiliation7,
+    guest_affiliation8,
+    guest_affiliation9,
+    guest_affiliation10,
+    guest_affiliation11,
+    guest_affiliation12,
+    guest_affiliation13,
+    guest_affiliation14,
+    guest_affiliation15,
     guest_img,
     guest_img2,
     guest_img3,
+    guest_img4,
+    guest_img5,
+    guest_img6,
+    guest_img7,
+    guest_img8,
+    guest_img9,
+    guest_img10,
+    guest_img11,
+    guest_img12,
+    guest_img13,
+    guest_img14,
+    guest_img15,
     short_part_header2,
     short_part_header3,
     short_part_header4,
@@ -70,64 +118,65 @@ const DigiAuthorSide = () => {
           />
           <ProgramGuestsSide
             header={short_part_header2}
-            img={guest_img}
-            name={guest_name}
-            title={guest_title}
-            affiliation={guest_affiliation}
-            img2={guest_img2}
-            name2={guest_name2}
-            title2={guest_title2}
-            affiliation2={guest_affiliation2}
-            img3={guest_img3}
-            name3={guest_name3}
-            title3={guest_title3}
-            affiliation3={guest_affiliation3}
+            img={guest_img4}
+            name={guest_name4}
+            title={guest_title4}
+            affiliation={guest_affiliation4}
+            img2={guest_img5}
+            name2={guest_name5}
+            title2={guest_title5}
+            affiliation2={guest_affiliation5}
+            img3={guest_img6}
+            name3={guest_name6}
+            title3={guest_title6}
+            affiliation3={guest_affiliation6}
           />
-          <ProgramGuestsSide
+                  <ProgramGuestsSide
             header={short_part_header3}
-            img={guest_img}
-            name={guest_name}
-            title={guest_title}
-            affiliation={guest_affiliation}
-            img2={guest_img2}
-            name2={guest_name2}
-            title2={guest_title2}
-            affiliation2={guest_affiliation2}
-            img3={guest_img3}
-            name3={guest_name3}
-            title3={guest_title3}
-            affiliation3={guest_affiliation3}
+            img={guest_img4}
+            name={guest_name4}
+            title={guest_title4}
+            affiliation={guest_affiliation4}
+            img2={guest_img5}
+            name2={guest_name5}
+            title2={guest_title5}
+            affiliation2={guest_affiliation5}
+            img3={guest_img6}
+            name3={guest_name6}
+            title3={guest_title6}
+            affiliation3={guest_affiliation6}
           />
-          <ProgramGuestsSide
+                  <ProgramGuestsSide
             header={short_part_header4}
-            img={guest_img}
-            name={guest_name}
-            title={guest_title}
-            affiliation={guest_affiliation}
-            img2={guest_img2}
-            name2={guest_name2}
-            title2={guest_title2}
-            affiliation2={guest_affiliation2}
-            img3={guest_img3}
-            name3={guest_name3}
-            title3={guest_title3}
-            affiliation3={guest_affiliation3}
+            img={guest_img4}
+            name={guest_name4}
+            title={guest_title4}
+            affiliation={guest_affiliation4}
+            img2={guest_img5}
+            name2={guest_name5}
+            title2={guest_title5}
+            affiliation2={guest_affiliation5}
+            img3={guest_img6}
+            name3={guest_name6}
+            title3={guest_title6}
+            affiliation3={guest_affiliation6}
           />
-          <ProgramGuestsSide
+                  <ProgramGuestsSide
             header={short_part_header5}
-            img={guest_img}
-            name={guest_name}
-            title={guest_title}
-            affiliation={guest_affiliation}
-            img2={guest_img2}
-            name2={guest_name2}
-            title2={guest_title2}
-            affiliation2={guest_affiliation2}
-            img3={guest_img3}
-            name3={guest_name3}
-            title3={guest_title3}
-            affiliation3={guest_affiliation3}
+            img={guest_img4}
+            name={guest_name4}
+            title={guest_title4}
+            affiliation={guest_affiliation4}
+            img2={guest_img5}
+            name2={guest_name5}
+            title2={guest_title5}
+            affiliation2={guest_affiliation5}
+            img3={guest_img6}
+            name3={guest_name6}
+            title3={guest_title6}
+            affiliation3={guest_affiliation6}
           />
+          
         </>
       ) : (
         <div className="author-loader">

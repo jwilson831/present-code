@@ -92,15 +92,9 @@ const DigiAuthor = (props) => {
       <br />
       <br />
 
-      {/* <h4>
-        Hosted by <br /> {name}
-      </h4>
-      <h5>Along with Special Guests</h5>
-      <br /> */}
-
-      <h5>
+      <h4>
         {auth_img_bio}
-      </h5>
+      </h4>
 
       <Link to={`/authors/${contributing_author}`}>
         <button onClick={() => scrollToTop()} className="previewButtonAuth">About {about_name}</button>

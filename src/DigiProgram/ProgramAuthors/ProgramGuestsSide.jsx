@@ -1,4 +1,18 @@
-const ProgramGuestsSide = ({ img, img2, img3, header, name, name2, name3, title, title2, title3, affiliation, affiliation2, affiliation3 }) => {
+const ProgramGuestsSide = ({
+  img,
+  img2,
+  img3,
+  header,
+  name,
+  name2,
+  name3,
+  title,
+  title2,
+  title3,
+  affiliation,
+  affiliation2,
+  affiliation3,
+}) => {
   return (
     <>
       <div className="guest-container">
@@ -8,10 +22,10 @@ const ProgramGuestsSide = ({ img, img2, img3, header, name, name2, name3, title,
           <h5>Featuring</h5>
         </i>
         <div className="guest-box">
-          <strong>
+          <strong >
             <h5>{name}</h5>
             <h6>
-              {title}, <br /> {affiliation}
+              {title} <br /> {affiliation}
             </h6>
           </strong>
           <img alt="" className="guest-img" src={img} />
@@ -21,7 +35,7 @@ const ProgramGuestsSide = ({ img, img2, img3, header, name, name2, name3, title,
           <strong>
             <h5>{name2}</h5>
             <h6>
-              {title2}, <br /> {affiliation2}
+              {title2} <br /> {affiliation2}
             </h6>
           </strong>
           <img alt="" className="guest-img" src={img2} />
@@ -31,7 +45,7 @@ const ProgramGuestsSide = ({ img, img2, img3, header, name, name2, name3, title,
           <strong>
             <h5>{name3}</h5>
             <h6>
-              {title3}, <br /> {affiliation3}
+              {title3} <br /> {affiliation3}
             </h6>
           </strong>
           <img alt="" className="guest-img" src={img2} />

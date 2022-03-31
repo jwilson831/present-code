@@ -449,7 +449,7 @@
   background-color: rgb(0,0,0,0.1);
   border-radius: 5px;
   margin: 10px 71px 2rem 67px;
-  min-width: 230px;
+  width: -moz-fit-content;
   width: fit-content;
 }
 

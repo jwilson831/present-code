@@ -48,7 +48,7 @@ function PrimaryMenu (props){
                     </div>
                 :""}
                 <a href={props.ad_link} target="_blank" rel="noreferrer">
-                    <img className="menu-advert" alt="ad" src={props.ad}></img>
+                    <img style={{width:"24em"}} className="menu-advert" alt="ad" src={props.ad}></img>
                 </a>
                 {/* <br/>
                 <div style={{marginRight:"10px"}} className="calendarStyle" >

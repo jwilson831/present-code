@@ -416,8 +416,8 @@ function App() {
                 </Route>
                 <Route path={"*"}>
                   <PrimaryMenu
-                    ad_link={"https://cmi2i.com/"}
-                    ad={"https://utcoleca.sirv.com/SKYTOP/skytop_ads/CMi2i.png"}
+                    ad={"https://swerthmi.sirv.com/SKYTOP/skytop_ads/figbyte.jpg"}
+                    ad_link={"https://figbytes.com/speak-to-figbytes-expert/?utm_campaign=Content%20Syndication&utm_source=third-party%20&utm_medium=Ad&utm_content=Skytop%20"}
                     conferences={filterByCategory(conferences, activeCategory)}
                     editorial={editorial}
                     publisher={publisher}

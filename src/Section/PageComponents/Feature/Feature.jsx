@@ -9,7 +9,7 @@ function Feature (props){
             <div className="sub-article-title">{props.title ? props.title : ""}</div>
            <hr/>
             {/* <Advert image={"https://swerthmi.sirv.com/SKYTOP/skytop_ads/figbyte.jpg"} link={"https://figbytes.com/speak-to-figbytes-expert/?utm_campaign=Content%20Syndication&utm_source=third-party%20&utm_medium=Ad&utm_content=Skytop%20"}/> */}
-            <Advert image={"https://skytop-strategies.com/wp-content/uploads/2022/03/esg.jpg"} link={"https://practicalesg.com/"}/>
+            <Advert image={"https://skytop-strategies.com/wp-content/uploads/2022/03/esg.jpg"} link={"https://practicalesg.com/begin-your-membership-skytop/"}/>
     
                    
 

@@ -21,7 +21,7 @@ function PrimaryMenu (props){
                 {window.location.pathname === "/" ?
                 <div>
                     <a href={"https://www.spglobal.com/en/"} target="_blank" rel="noreferrer">
-                        <img className="menu-advert" alt="ad" src={"https://utcoleca.sirv.com/SKYTOP/S_P%20Global%20S1%20Climate%20Week-Event%20Collaterals-01_Climate%20Week%20Event%20Page-800x800%202.png"}></img>
+                        <img style={{width:"80%", boxShadow:"none"}} className="menu-advert" alt="ad" src={"https://utcoleca.sirv.com/SKYTOP/S_P%20Global%20S1%20Climate%20Week-Event%20Collaterals-01_Climate%20Week%20Event%20Page-800x800%202.png"}></img>
                     </a>
                     <Editorial
                         id={props.editorial.id}
@@ -48,15 +48,9 @@ function PrimaryMenu (props){
                     </div>
                 :""}
                 <a href={props.ad_link} target="_blank" rel="noreferrer">
-                    <img style={{width:"24em"}} className="menu-advert" alt="ad" src={props.ad}></img>
+                    <img style={{boxShadow:"none"}} className="menu-advert" alt="ad" src={props.ad}></img>
                 </a>
-                {/* <br/>
-                <div style={{marginRight:"10px"}} className="calendarStyle" >
-            <br/>
-        <Calendar calendar={props.calendar}/>
-    </div>
-    <br/>
-    <hr style={{marginTop:"75px"}} /> */}
+    {/* <hr style={{marginTop:"75px"}} />  */}
                 <NewsFeed />
 
             </div>

@@ -48,7 +48,7 @@ const ProgramGuestsSide = ({
               {title3} <br /> {affiliation3}
             </h6>
           </strong>
-          <img alt="" className="guest-img" src={img2} />
+          <img alt="" className="guest-img" src={img3} />
         </div>
       </div>
     </>

@@ -1,6 +1,6 @@
 import ProgramPart from "./ProgramPart";
-import { Link } from 'react-router-dom';
-import { scrollToTop } from '../../util/scrollToTop';
+import { Link } from "react-router-dom";
+import { scrollToTop } from "../../util/scrollToTop";
 
 const DigiAuthor = (props) => {
   const {
@@ -13,6 +13,7 @@ const DigiAuthor = (props) => {
     sub_title2,
     author_image,
     about_name,
+    about_link,
     part_title,
     part_number,
     part_sub_title,
@@ -60,9 +61,14 @@ const DigiAuthor = (props) => {
           <h3>
             <br />
             <br />
-            <br />{name === "Coming Soon" ? (<img alt="" id="skyLogoAuth" src={program_logo} />) : (<img alt="" id="programTableLogoAuth" src={program_logo} />)}
+            <br />
+            {name === "Coming Soon" ? (
+              <img alt="" id="skyLogoAuth" src={program_logo} />
+            ) : (
+              <img alt="" id="programTableLogoAuth" src={program_logo} />
+            )}
             {/* <img alt="" id="programTableLogoAuth" src={program_logo} /> */}
-          </h3> 
+          </h3>
           <h4>Presents</h4>
           <br />
           <h3>
@@ -92,13 +98,22 @@ const DigiAuthor = (props) => {
       <br />
       <br />
 
-      <h4>
-        {auth_img_bio}
-      </h4>
+      <h4>{auth_img_bio}</h4>
 
-      <Link to={`/authors/${contributing_author}`}>
-        <button onClick={() => scrollToTop()} className="previewButtonAuth">About {about_name}</button>
-      </Link>
+      {contributing_author ? (
+        <Link to={`/authors/${contributing_author}`}>
+          <button onClick={() => scrollToTop()} className="previewButtonAuth">
+            About {about_name}
+          </button>
+        </Link>
+      ) : (
+        <a href={about_link}>
+          {" "}
+          <button onClick={() => scrollToTop()} className="previewButtonAuth">
+            About {about_name}
+          </button>
+        </a>
+      )}
       <br />
       <br />
       <hr className="blueLine" />

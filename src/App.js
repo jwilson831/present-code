@@ -272,7 +272,7 @@ function App() {
                       </div>
                     }
                     articles={articles}
-                    ids={[2588, 2407, 2430, 2223, 2153, 2145, 1808, 1303, 585]}
+                    ids={[2894, 2588, 2407, 2430, 2223, 2153, 2145, 1808, 1303, 585]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.boardroomalpha.com/"}

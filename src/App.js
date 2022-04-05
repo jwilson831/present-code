@@ -206,7 +206,7 @@ function App() {
                       </div>
                     }
                     articles={articles}
-                    ids={[2756, 2675, 2424, 2157, 1804, 203, 622, 583, 2800]}
+                    ids={[3089, 2756, 2675, 2424, 2157, 1804, 203, 622, 583, 2800]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.boardroomalpha.com/"}

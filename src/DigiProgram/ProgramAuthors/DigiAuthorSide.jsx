@@ -133,48 +133,48 @@ const DigiAuthorSide = () => {
           />
                   <ProgramGuestsSide
             header={short_part_header3}
-            img={guest_img4}
-            name={guest_name4}
-            title={guest_title4}
-            affiliation={guest_affiliation4}
-            img2={guest_img5}
-            name2={guest_name5}
-            title2={guest_title5}
-            affiliation2={guest_affiliation5}
-            img3={guest_img6}
-            name3={guest_name6}
-            title3={guest_title6}
-            affiliation3={guest_affiliation6}
+            img={guest_img7}
+            name={guest_name7}
+            title={guest_title7}
+            affiliation={guest_affiliation7}
+            img2={guest_img8}
+            name2={guest_name8}
+            title2={guest_title8}
+            affiliation2={guest_affiliation8}
+            img3={guest_img9}
+            name3={guest_name9}
+            title3={guest_title9}
+            affiliation3={guest_affiliation9}
           />
                   <ProgramGuestsSide
             header={short_part_header4}
-            img={guest_img4}
-            name={guest_name4}
-            title={guest_title4}
-            affiliation={guest_affiliation4}
-            img2={guest_img5}
-            name2={guest_name5}
-            title2={guest_title5}
-            affiliation2={guest_affiliation5}
-            img3={guest_img6}
-            name3={guest_name6}
-            title3={guest_title6}
-            affiliation3={guest_affiliation6}
+            img={guest_img10}
+            name={guest_name10}
+            title={guest_title10}
+            affiliation={guest_affiliation10}
+            img2={guest_img11}
+            name2={guest_name11}
+            title2={guest_title11}
+            affiliation2={guest_affiliation11}
+            img3={guest_img12}
+            name3={guest_name12}
+            title3={guest_title12}
+            affiliation3={guest_affiliation12}
           />
                   <ProgramGuestsSide
             header={short_part_header5}
-            img={guest_img4}
-            name={guest_name4}
-            title={guest_title4}
-            affiliation={guest_affiliation4}
-            img2={guest_img5}
-            name2={guest_name5}
-            title2={guest_title5}
-            affiliation2={guest_affiliation5}
-            img3={guest_img6}
-            name3={guest_name6}
-            title3={guest_title6}
-            affiliation3={guest_affiliation6}
+            img={guest_img13}
+            name={guest_name13}
+            title={guest_title13}
+            affiliation={guest_affiliation13}
+            img2={guest_img14}
+            name2={guest_name14}
+            title2={guest_title14}
+            affiliation2={guest_affiliation14}
+            img3={guest_img15}
+            name3={guest_name15}
+            title3={guest_title15}
+            affiliation3={guest_affiliation15}
           />
           
         </>

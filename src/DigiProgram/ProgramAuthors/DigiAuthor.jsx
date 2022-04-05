@@ -7,6 +7,7 @@ const DigiAuthor = (props) => {
     auth_img_bio,
     program_logo,
     name,
+    category,
     title,
     sub_title,
     title2,
@@ -67,7 +68,7 @@ const DigiAuthor = (props) => {
             ) : (
               <img alt="" id="programTableLogoAuth" src={program_logo} />
             )}
-            {/* <img alt="" id="programTableLogoAuth" src={program_logo} /> */}
+            {/* <img alt="" id="skyLogoAuth" src={program_logo} /> */}
           </h3>
           <h4>Presents</h4>
           <br />

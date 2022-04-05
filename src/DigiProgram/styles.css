@@ -69,6 +69,24 @@
 .categoryButton:focus {
   outline: none;
 }
+.guestButton {
+  padding: 5px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #2688a5;
+  color: white;
+  font-weight: bold;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.guestButton:hover {
+  background-color: rgb(25, 73, 88);
+}
+.guestButton:focus {
+  outline: none;
+}
 
 .previewButtonAuth {
   padding: 10px;
@@ -440,7 +458,6 @@
   width: 100%;
   height: auto;
   margin-top: 1rem;
-  margin-bottom: 1rem;
   border-radius: 5px;
 }
 

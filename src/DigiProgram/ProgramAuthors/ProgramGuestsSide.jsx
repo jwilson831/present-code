@@ -29,6 +29,9 @@ const ProgramGuestsSide = ({
             </h6>
           </strong>
           <img alt="" className="guest-img" src={img} />
+          <button className="guestButton">
+            About {name}
+          </button>
         </div>
 
         <div className="guest-box">
@@ -39,6 +42,9 @@ const ProgramGuestsSide = ({
             </h6>
           </strong>
           <img alt="" className="guest-img" src={img2} />
+          <button className="guestButton">
+            About {name2}
+          </button>
         </div>
 
         <div className="guest-box">
@@ -49,6 +55,9 @@ const ProgramGuestsSide = ({
             </h6>
           </strong>
           <img alt="" className="guest-img" src={img3} />
+          <button className="guestButton">
+            About {name3}
+          </button>
         </div>
       </div>
     </>

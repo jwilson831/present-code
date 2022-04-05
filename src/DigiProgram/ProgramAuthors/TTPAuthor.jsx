@@ -1,8 +1,9 @@
 import ProgramPart from "./ProgramPart";
+import PointPart from "./PointPart";
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../../util/scrollToTop";
 
-const DigiAuthor = (props) => {
+const TTPAuthor = (props) => {
   const {
     auth_img_bio,
     program_logo,
@@ -50,49 +51,48 @@ const DigiAuthor = (props) => {
     <>
       <br />
       <div className="stuImgContainer">
-        {category === "At The Table" ? (
-          <img
-            className="stuImg"
-            alt="studio"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/blank-layout.jpg"
-          />
-        ) : (
-          <img
-            className="stuImg"
-            alt="studio"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/blank-layout.jpg"
-          />
-        )}
+        <img
+          className="ttpBack"
+          alt="studio"
+          src="https://skytop-strategies.com/wp-content/uploads/2022/03/blank-layout.jpg"
+        />
         <br />
         <br />
         <br />
         <div className="textContainerAuth">
-          <h3>
-            <br />
-            <br />
-            <br />
-            {name === "Coming Soon" ? (
-              <img alt="" className="skyLogoAuth" src={program_logo} />
-            ) : (
-              <img alt="" className="programTableLogoAuth" src={program_logo} />
-            )}
-            {/* <img alt="" id="skyLogoAuth" src={program_logo} /> */}
-          </h3>
-          <h4>Presents</h4>
+          <br />
+          <br />
+          <br />
+          <img alt="" className="bigTTP" src={program_logo} />
+          <h2>
+            {title}
+            {sub_title}
+          </h2>
           <br />
           <h3>
-            <p style={{ whiteSpace: "nowrap" }}>{name}</p>
-            <h4>Along with Special Guests</h4>
-            <br />
-            <h2>{title}</h2>
-            <h4>{sub_title}</h4>
-            <br />
-            <br />
-            <h5 className="viewStream">View Streamed or On Demand Worldwide</h5>
+            Christopher P. Skroupa <br />
+            Editor-in-Chief, Skytop <br />
+            <h5>
+              <i>Presents</i>
+            </h5>
           </h3>
+          <h4>
+            {" "}
+            <br />
+            Jeremy Fielding, CEO, Kekst CNC <br />
+            <h5>
+              <i>along with</i>
+            </h5>
+            Marann Bruce, Board Director and Former CEO
+            <br />
+            Michael Marquardt, Board Director of Global Companies
+            <br />
+            Cynthia Plouche, Board Director in the Financial Sector
+          </h4>
         </div>
       </div>
-      <br />
+      {/* <b>View Streamed or On Demand Worldwide</b><br/><br/> */}
+      <h5 className="viewStream">View Streamed or On Demand Worldwide</h5>
       <button className="previewButtonAuth">
         Register Here to Join Our Program
       </button>
@@ -100,15 +100,11 @@ const DigiAuthor = (props) => {
       <br />
       <hr className="blueLine" />
       <br />
+      <h3>A Three Part Series</h3>
       <br />
-      <h2>{title2}</h2>
-      <h3>{sub_title2}</h3>
-      <br />
-      <img className="authorMain" alt="" src={author_image} />
+      <img className="authorImgBig" alt="" src={author_image} />
       <br />
       <br />
-
-      <h4>{auth_img_bio}</h4>
 
       {contributing_author ? (
         <Link to={`/authors/${contributing_author}`}>
@@ -128,7 +124,33 @@ const DigiAuthor = (props) => {
       <br />
       <hr className="blueLine" />
       <br />
-      <ProgramPart
+      <PointPart
+        title={part_title}
+        number={part_number}
+        sub_title={part_sub_title}
+        logo={part_logo}
+        styles="yourLogoAuth"
+        guest="Maryann Bruce, Board Director and Former CEO"
+      />
+
+      <PointPart
+        title={part_title2}
+        number={part_number2}
+        sub_title={part_sub_title2}
+        logo={part_logo2}
+        styles="kekstLogoAuth"
+        guest="Michael Marquardt, Director of Global Companies"
+      />
+
+      <PointPart
+        title={part_title3}
+        number={part_number3}
+        sub_title={part_sub_title3}
+        logo={part_logo3}
+        styles="kekstLogoAuth"
+        guest="Cynthia Plouche, Board Director in the Financial Sector"
+      />
+      {/* <ProgramPart
         title={part_title}
         number={part_number}
         sub_title={part_sub_title}
@@ -156,19 +178,14 @@ const DigiAuthor = (props) => {
         logo={part_logo4}
         build={construction_img}
       />
-      {part_title5 === "Under Construction" ? (
-        ""
-      ) : (
-        <ProgramPart
-          title={part_title5}
-          number={part_number5}
-          sub_title={part_sub_title5}
-          logo={part_logo5}
-          build={construction_img}
-        />
-      )}
-
-      {/* <ProgramPart
+      <ProgramPart
+        title={part_title5}
+        number={part_number5}
+        sub_title={part_sub_title5}
+        logo={part_logo5}
+        build={construction_img}
+      />
+      <ProgramPart
         title={part_title6}
         number={part_number6}
         sub_title={part_sub_title6}
@@ -186,4 +203,4 @@ const DigiAuthor = (props) => {
   );
 };
 
-export default DigiAuthor;
+export default TTPAuthor;

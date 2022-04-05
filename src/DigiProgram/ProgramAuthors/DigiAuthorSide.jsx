@@ -23,7 +23,6 @@ const DigiAuthorSide = () => {
     };
     fetchData();
   }, [id]);
-  console.log(programGuests);
 
   const {
     short_part_header,
@@ -131,7 +130,7 @@ const DigiAuthorSide = () => {
             title3={guest_title6}
             affiliation3={guest_affiliation6}
           />
-                  <ProgramGuestsSide
+          <ProgramGuestsSide
             header={short_part_header3}
             img={guest_img7}
             name={guest_name7}
@@ -146,37 +145,42 @@ const DigiAuthorSide = () => {
             title3={guest_title9}
             affiliation3={guest_affiliation9}
           />
-                  <ProgramGuestsSide
-            header={short_part_header4}
-            img={guest_img10}
-            name={guest_name10}
-            title={guest_title10}
-            affiliation={guest_affiliation10}
-            img2={guest_img11}
-            name2={guest_name11}
-            title2={guest_title11}
-            affiliation2={guest_affiliation11}
-            img3={guest_img12}
-            name3={guest_name12}
-            title3={guest_title12}
-            affiliation3={guest_affiliation12}
-          />
-                  <ProgramGuestsSide
-            header={short_part_header5}
-            img={guest_img13}
-            name={guest_name13}
-            title={guest_title13}
-            affiliation={guest_affiliation13}
-            img2={guest_img14}
-            name2={guest_name14}
-            title2={guest_title14}
-            affiliation2={guest_affiliation14}
-            img3={guest_img15}
-            name3={guest_name15}
-            title3={guest_title15}
-            affiliation3={guest_affiliation15}
-          />
-          
+          {short_part_header4 === "" ? (
+            ""
+          ) : (
+            <>
+              <ProgramGuestsSide
+                header={short_part_header4}
+                img={guest_img10}
+                name={guest_name10}
+                title={guest_title10}
+                affiliation={guest_affiliation10}
+                img2={guest_img11}
+                name2={guest_name11}
+                title2={guest_title11}
+                affiliation2={guest_affiliation11}
+                img3={guest_img12}
+                name3={guest_name12}
+                title3={guest_title12}
+                affiliation3={guest_affiliation12}
+              />
+              <ProgramGuestsSide
+                header={short_part_header5}
+                img={guest_img13}
+                name={guest_name13}
+                title={guest_title13}
+                affiliation={guest_affiliation13}
+                img2={guest_img14}
+                name2={guest_name14}
+                title2={guest_title14}
+                affiliation2={guest_affiliation14}
+                img3={guest_img15}
+                name3={guest_name15}
+                title3={guest_title15}
+                affiliation3={guest_affiliation15}
+              />
+            </>
+          )}
         </>
       ) : (
         <div className="author-loader">

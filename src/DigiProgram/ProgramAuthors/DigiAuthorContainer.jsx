@@ -3,9 +3,9 @@ import PageLoader from "../../util/Loader/Loader";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import DigiAuthor from "./DigiAuthor";
+import TTPAuthor from "./TTPAuthor";
 
 const DigiAuthorContainer = () => {
-
   const [programAuthor, setAuthor] = useState("");
   const [loaded, setLoaded] = useState(false);
   const { id } = useParams();
@@ -24,13 +24,17 @@ const DigiAuthorContainer = () => {
     };
     fetchData();
   }, [id]);
-//   console.log(programAuthor);
-
+  // console.log(programAuthor.category);
+  const category = programAuthor.category;
   return (
     <>
       {loaded ? (
         <div className="feature">
-          <DigiAuthor author={programAuthor} />
+          {category === "To The Point" ? (
+            <TTPAuthor author={programAuthor} />
+          ) : (
+            <DigiAuthor author={programAuthor} />
+          )}
         </div>
       ) : (
         <div className="author-loader">

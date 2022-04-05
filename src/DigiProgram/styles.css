@@ -10,6 +10,15 @@
   border-radius: 10px;
 }
 
+.ttpBack {
+  width: 95%;
+    height: 675px;
+    border-radius: 10px;
+}
+.viewStream {
+  margin-top: -20px;
+    margin-bottom: 20px;
+}
 .textContainer {
   position: absolute;
   top: 50%;
@@ -25,17 +34,24 @@
   color: black;
 }
 
-#programTableLogoAuth {
+.programTableLogoAuth {
   margin-top: 50px;
   margin-bottom: 50px;
   transform: translate(-26px, 41px);
 }
 
-#skyLogoAuth {
+.skyLogoAuth {
   margin-top: 122px;
   margin-bottom: 47px;
   transform: translate(-26px, 41px);
   width: 662px;
+}
+
+.bigTTP {
+  margin-top: -20px;
+  margin-bottom: 66px;
+  transform: translate(-13px, 41px);
+  width: 737px;
 }
 
 .robotoFont {
@@ -226,12 +242,12 @@
 }
 
 .point-top-auth {
-  width: 100%;
-  margin-bottom: -21px;
+  width: 75%;
+  margin-bottom: 2px;
   height: auto;
   align-items: center;
   display: block;
-  transform: translate(0px, -10px);
+  transform: translate(54px, -10px);
 }
 
 .point-top-auth-img {
@@ -273,6 +289,7 @@
   overflow: hidden;
   /* perspective: 1000px; Remove this if you don't want the 3D effect */
 }
+
 #progCard {
   background-color: transparent;
   min-width: 300px;
@@ -280,10 +297,26 @@
   overflow: hidden;
 }
 
+#pointCard {
+  background-color: transparent;
+  min-width: 300px;
+  height: 470px;
+  overflow: hidden;
+}
+
+
 #cardAuth {
   background-color: transparent;
   width: 100%;
   height: 600px;
+  overflow: hidden;
+  /* perspective: 1000px; Remove this if you don't want the 3D effect */
+}
+
+#cardAuthPoint {
+  background-color: transparent;
+  width: 100%;
+  height: 680px;
   overflow: hidden;
   /* perspective: 1000px; Remove this if you don't want the 3D effect */
 }
@@ -414,10 +447,26 @@
 }
 
 .kekstLogo {
-  width: 110px;
+    width: 110px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transform: translate(-50%, -30%);
+    position: absolute;
+}
+
+.kekstLogoBig {
+  width: 400px;
   border: 1px solid black;
   border-radius: 10px;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -4%);
+  position: absolute;
+}
+
+.kekstLogoAuth {
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 10px;
+  transform: translate(-50%, -10%);
   position: absolute;
 }
 
@@ -447,11 +496,19 @@
   border: 0.5px solid;
 }
 
-#authorMain {
+.authorMain {
   border-radius: 5px;
   width:75%;
   box-shadow:
   rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+}
+
+.authorImgBig {
+  border-radius: 5px;
+  width:75%;
+  box-shadow:
+  rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+
 }
 
 .guest-img{

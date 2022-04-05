@@ -12,11 +12,17 @@ const ProgramPart = (props) => {
             <div onClick={() => scrollToTop()} id="cardAuth">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
+                {title === "Under Construction" ? (
                   <img
                     className="table-top-auth"
-                    src="https://swerthmi.sirv.com/SKYTOP/digital_programs/skytop%20at%20the%20table.png"
+                    src="https://skytop-strategies.com/wp-content/uploads/2022/04/under-construction-icon-on-white-background-vector-19719079-908942554-1649180537513.jpg"
                     alt=""
-                  />
+                  /> ): (
+                    <img
+                      className="table-top-auth"
+                      src="https://skytop-strategies.com/wp-content/uploads/2022/03/table.png"
+                      alt=""
+                    /> )}
                   <div className="program-blurb-auth">
                     <b>
                       {title === "Under Construction" ? (

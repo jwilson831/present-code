@@ -1,18 +1,20 @@
-const ProgramGuestsSide = ({
-  img,
-  img2,
-  img3,
-  header,
-  name,
-  name2,
-  name3,
-  title,
-  title2,
-  title3,
-  affiliation,
-  affiliation2,
-  affiliation3,
-}) => {
+const ProgramGuestsSide = (data) => {
+  const {
+    img,
+    img2,
+    img3,
+    header,
+    name,
+    name2,
+    name3,
+    title,
+    title2,
+    title3,
+    affiliation,
+    affiliation2,
+    affiliation3,
+  } = data;
+  // ) )
   return (
     <>
       <div className="guest-container">
@@ -22,16 +24,14 @@ const ProgramGuestsSide = ({
           <h5>Featuring</h5>
         </i>
         <div className="guest-box">
-          <strong >
+          <strong>
             <h5>{name}</h5>
             <h6>
               {title} <br /> {affiliation}
             </h6>
           </strong>
           <img alt="" className="guest-img" src={img} />
-          <button className="guestButton">
-            About {name}
-          </button>
+          <button className="guestButton">About {name}</button>
         </div>
 
         <div className="guest-box">
@@ -42,12 +42,10 @@ const ProgramGuestsSide = ({
             </h6>
           </strong>
           <img alt="" className="guest-img" src={img2} />
-          <button className="guestButton">
-            About {name2}
-          </button>
+          <button className="guestButton">About {name2}</button>
         </div>
 
-        <div className="guest-box">
+        {/* <div className="guest-box">
           <strong>
             <h5>{name3}</h5>
             <h6>
@@ -58,7 +56,7 @@ const ProgramGuestsSide = ({
           <button className="guestButton">
             About {name3}
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );

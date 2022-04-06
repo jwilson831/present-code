@@ -148,7 +148,7 @@ const TTPAuthor = (props) => {
         sub_title={part_sub_title3}
         logo={part_logo3}
         styles="kekstLogoAuth"
-        guest="Cynthia Plouche, Board Director in the Financial Sector"
+        guest="Cynthia Plouché, Board Director in the Financial Sector"
       />
       {/* <ProgramPart
         title={part_title}

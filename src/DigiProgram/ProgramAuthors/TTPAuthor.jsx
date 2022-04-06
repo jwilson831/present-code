@@ -87,7 +87,7 @@ const TTPAuthor = (props) => {
             <br />
             Michael Marquardt, Board Director of Global Companies
             <br />
-            Cynthia Plouche, Board Director in the Financial Sector
+            Cynthia Plouché, Board Director in the Financial Sector
           </h4>
         </div>
       </div>

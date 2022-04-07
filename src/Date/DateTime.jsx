@@ -11,7 +11,7 @@ export const DateTime = () => {
             clearInterval(timer)
         }
     });
-console.log(month,day, year)
+// console.log(month,day, year)
     return(
         <>
             {/* <p> Time : {date.toLocaleTimeString()}</p> */}

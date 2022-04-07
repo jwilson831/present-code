@@ -82,11 +82,11 @@ function Conference(props){
                     <ConfNav clickHandler={clickHandler} active={key} info={info}/>
                     <div className="mt-3 text-left conf-content">
                         <div className="text-right">
-                            <PastInfoMenu 
+                            {/* <PastInfoMenu 
                                 info={info[key].props.name} 
                                 pastConf={data.acf.past_conferences}
                                 pastInfoClickHandler={pastInfoClickHandler}
-                            />
+                            /> */}
                         </div> 
                         {info[key]}
                     </div>

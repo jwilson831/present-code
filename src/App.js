@@ -476,7 +476,6 @@ import InvestMenu from "./util/Invest/InvestMenu";
 import Program from "./Program/Program";
 import AtTheTable from "./Program/AtTheTable";
 import RFK from "./rfk/RFK";
-import RfkSide from "./rfk/RfkSide";
 import DigiMain from "./DigiProgram/DigiMain";
 import DigiSide from "./DigiProgram/DigiSide";
 import DigiAuthorSide from "./DigiProgram/ProgramAuthors/DigiAuthorSide";
@@ -833,9 +832,6 @@ function App() {
 
             <div className="side-menu">
               <Switch>
-              <Route exact path="/rfk">
-                  <RfkSide />
-                </Route>
               <Route exact path="/surveys/:id">
                   <SurveySide calendar={editCalendar} />
                 </Route>

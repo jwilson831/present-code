@@ -254,7 +254,7 @@ function App() {
                       </div>
                     }
                     articles={articles}
-                    ids={[2671, 2678, 2332, 2335, 2250, 1947, 187, 1306]}
+                    ids={[2332,3073, 3081, 3085, 2671, 2678, 2332, 2335, 2250, 1947, 187, 1306]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.extrahop.com/"}
@@ -299,7 +299,7 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      2753, 2811, 2757, 2754, 2574, 2637, 2418, 2368, 2328, 2247, 2121, 1815, 1812,
+                      2754, 2368, 3395, 2977, 2888, 2753, 2811, 2757, 2754, 2574, 2637, 2418, 2368, 2328, 2247, 2121, 1815, 1812,
                       1316,
                     ]}
                     comments={comments}

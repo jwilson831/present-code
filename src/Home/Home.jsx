@@ -29,7 +29,7 @@ function Home (props){
                 </div>
                 <div className="subfeature"><SubFeatures articles={props.articles} ids={[3422,3430,3448]} comments={props.comments}/></div>
                 <div className="recent">
-                    <Recents changeActiveCategory={props.changeActiveCategory} articles={props.articles} ids={[2888,2977,3395,3085,2368,3081,2754,3073,2332,1815,1306,1316,2121]} comments={props.comments}/>
+                    <Recents changeActiveCategory={props.changeActiveCategory} articles={props.articles} ids={[3508,3511,3513,3524,3527,3530,3533,3536,3540,1815,1306,1316,2121]} comments={props.comments}/>
                     <ViewAllBtn linkTo={"article"}/>
                 </div>
             </div>

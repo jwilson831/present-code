@@ -254,7 +254,7 @@ function App() {
                       </div>
                     }
                     articles={articles}
-                    ids={[2332,3073, 3081, 3085, 2671, 2678, 2332, 2335, 2250, 1947, 187, 1306]}
+                    ids={[3073, 3081, 3085, 2671, 2678, 2332, 2335, 2250, 1947, 187, 1306]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.extrahop.com/"}

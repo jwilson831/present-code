@@ -10,6 +10,8 @@ function Section (props){
     useEffect(() => {
         sendGAPageView(window.location.pathname);
     },[])
+
+    console.log(props)
     
     return(
         <div className="">

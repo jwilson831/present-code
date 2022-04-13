@@ -17,7 +17,7 @@ const Categories = () => {
           {/* Article */}
           <div className="logo col-sm">
             <Link to={`/articles/2560`}>
-              <div onClick={() => scrollToTop()} id="progCard">
+              <div onClick={() => scrollToTop()} className="authorCard">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <div
@@ -49,21 +49,19 @@ const Categories = () => {
           {/* Author */}
           <div id="back" className="logo col-sm">
             <Link to={`/program-authors/`}>
-              <div onClick={() => scrollToTop()} id="progCard">
+              <div onClick={() => scrollToTop()} className="authorCard">
                 <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <strong>
-                      <h4>Author</h4>
+                  <div id="cardColor" className="flip-card-front">
+                    <div style={{transform: "translate(0px, -13px)"}}><strong>
+                      <h3>ANGELITA BAEYENS</h3>
                       <h5>
-                        Title <br /> Affiliation
+                      VP of International Advocacy and Litigation <br /> Robert F. Kennedy Human Rights
                       </h5>
-                    </strong>
-                    <br/>
-                    <br/>
+                    </strong></div>
                     <img
                       alt=""
                       className="rfkAuthor"
-                      src="https://skytop-strategies.com/wp-content/uploads/2022/04/rightsLogo-3367542517-1649355060719.webp"
+                      src="https://skytop-strategies.com/wp-content/uploads/2022/04/baeyens.webp"
                     />
                   </div>
                 </div>

@@ -6,7 +6,7 @@ import CommentsContainer from "../Comments/CommentsContainer";
 import PageLoader from "../util/Loader/Loader";
 import { renderByLine } from "../util/renderByLine";
 import moment from "moment";
-// import { sendGAPageView } from "../util/GoogleAnalytics";
+import { sendGAPageView } from "../util/GoogleAnalytics";
 import RecentSurvey from "./RecentSurvey";
 
 function Survey(props) {
@@ -38,7 +38,7 @@ function Survey(props) {
   });
 
   useEffect(() => {
-    // sendGAPageView(window.location.pathname);
+    sendGAPageView(window.location.pathname);
 
     const selectCurrentSurvey = (data) => {
       if (Array.isArray(data)) {

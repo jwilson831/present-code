@@ -24,6 +24,7 @@ function Recents(props) {
   }, [props.articles, props.ids]);
 
   const renderArticles = (articles) => {
+    console.log(articles);
     return articles.map((article) => (
       <RecentArticle
         id={article.id}

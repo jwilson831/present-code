@@ -22,6 +22,7 @@ function Home (props){
     //     }
     //     findSurvey(props.articles);
     // },[props.articles])
+    
     return(
         <>
             <div className="home-grid">
@@ -40,8 +41,8 @@ function Home (props){
                 <Advert image={"https://utcoleca.sirv.com/SKYTOP/skytop_ads/image.png"} link={"https://esg.moodys.io/"}/>
             </div>
             <hr/>
-            
-            {/* {survey &&
+
+            {survey &&
                 <div className="mt-5 mb-5">
                     <RecentSurvey
                         id={survey.id}
@@ -55,7 +56,7 @@ function Home (props){
                         excerpt={survey.acf.excerpt}
                     />
                 </div> 
-            } */}
+            }
 
         </>
     )

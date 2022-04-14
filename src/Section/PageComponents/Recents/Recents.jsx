@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
 import { findById } from "../../../util/findById";
-import { orderByDate } from "../../../util/orderByDate";
 import RecentArticle from "./RecentArticle";
 import Programs from "../../../util/ProgramLogos/ProgramLogos";
 
@@ -26,7 +25,7 @@ function Recents(props) {
 
   const renderArticles = (articles) => {
     console.log(articles);
-    const sorted = articles.sort((a,b) => new Date(a.acf.date).getTime() - new Date(b.acf.date).getTime())
+    const sorted = articles.sort((a,b) => new Date(b.acf.date).getTime() - new Date(a.acf.date).getTime())
     console.log(sorted);
 
     return sorted.map((article) => (

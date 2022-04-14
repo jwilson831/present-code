@@ -71,7 +71,7 @@ function App() {
         );
 
         const editorials = await axios(
-          "https://skytop-strategies.com/wp-json/wp/v2/editorials?_embed=wp:featuredmedia"
+          "https://skytop-strategies.com/wp-json/wp/v2/editorials?_embed=wp:featuredmedia&per_page=100"
         );
 
         const programs = await axios(
@@ -195,7 +195,7 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      3092, 2770, 2767, 2751, 2748, 2744, 2569, 2661, 2241,
+                      3560, 2770, 2767, 2751, 2748, 2744, 2569, 2661, 2241,
                       2217, 2136, 1322, 643, 1284
                     ]}
                     comments={comments}
@@ -291,7 +291,7 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      2894, 2588, 2407, 2430, 2223, 2153, 2145, 1808, 1303, 585
+                      3596, 3594, 2894, 2588, 2407, 2430, 2223, 2153, 2145, 1808, 1303, 585
                     ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
@@ -317,7 +317,7 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      3395, 2977, 2888, 2811, 2753, 2757, 2754, 2637, 2574,
+                      3593, 2977, 2888, 2811, 2753, 2757, 2754, 2637, 2574,
                       2418, 2368, 2328, 2247, 2121, 1815, 1812, 1316
                     ]}
                     comments={comments}

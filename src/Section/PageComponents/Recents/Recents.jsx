@@ -26,8 +26,10 @@ function Recents(props) {
 
   const renderArticles = (articles) => {
     console.log(articles);
-    // const orderedArticles = orderByDate(articles);
-    return articles.map((article) => (
+    const sorted = articles.sort((a,b) => new Date(a.acf.date).getTime() - new Date(b.acf.date).getTime())
+    console.log(sorted);
+
+    return sorted.map((article) => (
       <RecentArticle
         id={article.id}
         image={article.acf.image}

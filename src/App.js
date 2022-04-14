@@ -61,6 +61,10 @@ function App() {
           "https://skytop-strategies.com/wp-json/wp/v2/articles?_fields[]=title&_fields[]=acf&_fields[]=content&_fields[]=date&_fields[]=id&_fields[]=_links&_embed=wp:featuredmedia&per_page=100"
         );
 
+        const articles2 = await axios(
+          "https://skytop-strategies.com/wp-json/wp/v2/articles2?_fields[]=title&_fields[]=acf&_fields[]=content&_fields[]=date&_fields[]=id&_fields[]=_links&_embed=wp:featuredmedia&per_page=100"
+        );
+
         const conferences = await axios(
           "https://skytop-strategies.com/wp-json/wp/v2/conferences?_fields[]=id&_fields[]=title&_fields[]=acf&_fields[]=content&_fields[]=_links&_embed=wp:featuredmedia&per_page=100"
         );
@@ -74,23 +78,25 @@ function App() {
         );
 
         const programs = await axios(
-          "https://skytop-strategies.com/wp-json/wp/v2/programs"
+          "https://skytop-strategies.com/wp-json/wp/v2/programs?per_page=100"
         );
         const surveys = await axios(
-          "https://skytop-strategies.com/wp-json/wp/v2/surveys"
+          "https://skytop-strategies.com/wp-json/wp/v2/surveys?per_page=100"
         );
-        
+
+        const allArticles = articles.data.concat(articles2.data);
+
         setSurveys(surveys.data)
         setPrograms(programs.data);
-        setArticles(articles.data);
+        setArticles(allArticles);
         setConferences(orderByDate(conferences));
         setComments(comments.data);
         setPublisher(editorials.data[1]);
         setCal(editorials.data[2]);
         setSideCal(editorials.data[0]);
-        setEditorial(editorials.data[3]);
+        setEditorial(editorials.data[3]); 
         {
-          console.log(articles.data);
+          console.log(allArticles);
         }
         {
           console.log(editorials.data);
@@ -258,8 +264,7 @@ function App() {
                       </div>
                     }
                     articles={articles}
-                    ids={[2671, 2678, 2332, 2335, 2250, 1947, 187, 1306]}
-                    // 3073, 3081, 3085,
+                    ids={[1306, 3073, 3081, 3085, 2671, 2678, 2332, 2335, 2250, 1947, 187, 1306]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.extrahop.com/"}
@@ -304,10 +309,9 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      2753, 2811, 2757, 2754, 2574, 2637, 2418, 2368, 2328, 2247, 2121, 1815, 1812,
+                      1815, 1316, 2121, 2754, 2368, 3395, 2977, 2888, 2753, 2811, 2757, 2754, 2574, 2637, 2418, 2368, 2328, 2247, 2121, 1815, 1812,
                       1316,
                     ]}
-                    // 2754, 2368, 3395, 2977, 2888,
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.boardroomalpha.com/"}

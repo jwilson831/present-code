@@ -50,7 +50,7 @@ function RecentArticle(props){
                                 {props.custom_byline ?
                                     <> 
                                         <p className="m-0"><Markup content={props.custom_byline}/></p>
-                                        <p className="mt-1">{moment(props.date).format("MMMM Do, YYYY")}</p>
+                                        {/* <p className="mt-1">{moment(props.date).format("MMMM Do, YYYY")}</p> */}
                                     </>
                                     :
                                     <p className="m-0">By <Markup content={renderByLine(props.author)}/> / {moment(props.date).format("MMMM Do, YYYY")} </p>

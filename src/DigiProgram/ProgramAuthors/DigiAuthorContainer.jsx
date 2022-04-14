@@ -14,7 +14,7 @@ const DigiAuthorContainer = () => {
     const fetchData = async () => {
       try {
         const author = await axios(
-          `https://skytop-strategies.com/wp-json/wp/v2/program_authors/${id}`
+          `https://skytop-strategies.com/wp-json/wp/v2/program_authors/${id}?per_page=100`
         );
         setAuthor(author.data.acf);
         setLoaded(true);

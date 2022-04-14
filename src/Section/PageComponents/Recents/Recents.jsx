@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
 import { findById } from "../../../util/findById";
+import { orderByDate } from "../../../util/orderByDate";
 import RecentArticle from "./RecentArticle";
 import Programs from "../../../util/ProgramLogos/ProgramLogos";
 
@@ -25,6 +26,7 @@ function Recents(props) {
 
   const renderArticles = (articles) => {
     console.log(articles);
+    // const orderedArticles = orderByDate(articles);
     return articles.map((article) => (
       <RecentArticle
         id={article.id}

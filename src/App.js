@@ -38,8 +38,6 @@ import Survey from "./Survey/Survey";
 import SurveySide from "./Survey/SurveySide";
 import DateTime from "./Date/DateTime";
 
-
-
 function App() {
   const [articles, setArticles] = useState([]);
   const [conferences, setConferences] = useState([]);
@@ -51,8 +49,7 @@ function App() {
   const [activeCategory, setActiveCategory] = useState("Headlines");
   const [programs, setPrograms] = useState([]);
   const [surveys, setSurveys] = useState([]);
-  const [sideCal, setSideCal] = useState([])
-
+  const [sideCal, setSideCal] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -86,7 +83,7 @@ function App() {
 
         const allArticles = articles.data.concat(articles2.data);
 
-        setSurveys(surveys.data)
+        setSurveys(surveys.data);
         setPrograms(programs.data);
         setArticles(allArticles);
         setConferences(orderByDate(conferences));
@@ -94,7 +91,7 @@ function App() {
         setPublisher(editorials.data[1]);
         setCal(editorials.data[2]);
         setSideCal(editorials.data[0]);
-        setEditorial(editorials.data[3]); 
+        setEditorial(editorials.data[3]);
         {
           console.log(allArticles);
         }
@@ -158,9 +155,10 @@ function App() {
               <div className="section">
                 <div style={styleObj}>
                   {/* March 14, 2022 */}
-                  <DateTime/>
+                  <DateTime />
                   <br />
-                  Headlines Edition #3: <b>Hostile Nation States, Terrorists and Cyber Criminals</b>
+                  Headlines Edition #3:{" "}
+                  <b>Hostile Nation States, Terrorists and Cyber Criminals</b>
                   <ColoredLine color="gold" />
                 </div>
 
@@ -196,7 +194,10 @@ function App() {
                       </div>
                     }
                     articles={articles}
-                    ids={[3092,2770, 2767, 2751, 2748, 2744, 2569, 2661, 2241, 2217, 2136, 1322, 643, 1284]}
+                    ids={[
+                      3092, 2770, 2767, 2751, 2748, 2744, 2569, 2661, 2241,
+                      2217, 2136, 1322, 643, 1284
+                    ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.boardroomalpha.com/"}
@@ -218,7 +219,9 @@ function App() {
                       </div>
                     }
                     articles={articles}
-                    ids={[3089, 2756, 2675, 2424, 2157, 1804, 203, 622, 583, 2800]}
+                    ids={[
+                      3089, 2756, 2675, 2424, 2157, 1804, 203, 622, 583, 2800
+                    ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.boardroomalpha.com/"}
@@ -242,8 +245,8 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      2891, 2560, 2565, 2572, 2394, 2380, 2319, 2325, 2226, 2132,
-                      2150, 1862,
+                      2891, 2560, 2572, 2394, 2380, 2319, 2325, 2226,
+                      2132, 2150, 1862
                     ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
@@ -264,7 +267,10 @@ function App() {
                       </div>
                     }
                     articles={articles}
-                    ids={[ 3073, 3081, 3085, 2671, 2678, 2332, 2335, 2250, 1947, 187, 1306]}
+                    ids={[
+                      3073, 3081, 3085, 2671, 2678, 2332, 2335, 2250, 1947, 187,
+                      1306
+                    ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.extrahop.com/"}
@@ -284,7 +290,9 @@ function App() {
                       </div>
                     }
                     articles={articles}
-                    ids={[2894, 2588, 2407, 2430, 2223, 2153, 2145, 1808, 1303, 585]}
+                    ids={[
+                      2894, 2588, 2407, 2430, 2223, 2153, 2145, 1808, 1303, 585
+                    ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
                     ad_link={"https://www.boardroomalpha.com/"}
@@ -309,8 +317,8 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      3395, 2977, 2888, 2811, 2753, 2757, 2754, 2637, 2574, 2418, 2368, 2328, 2247, 2121, 1815, 1812,
-                      1316,
+                      3395, 2977, 2888, 2811, 2753, 2757, 2754, 2637, 2574,
+                      2418, 2368, 2328, 2247, 2121, 1815, 1812, 1316
                     ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
@@ -396,7 +404,7 @@ function App() {
 
             <div className="side-menu">
               <Switch>
-              <Route exact path="/surveys/:id">
+                <Route exact path="/surveys/:id">
                   <SurveySide calendar={editCalendar} />
                 </Route>
                 <Route path={"/conferences/:id"}>
@@ -428,8 +436,12 @@ function App() {
                 </Route>
                 <Route path={"*"}>
                   <PrimaryMenu
-                    ad={"https://swerthmi.sirv.com/SKYTOP/skytop_ads/figbyte.jpg"}
-                    ad_link={"https://figbytes.com/speak-to-figbytes-expert/?utm_campaign=Content%20Syndication&utm_source=third-party%20&utm_medium=Ad&utm_content=Skytop%20"}
+                    ad={
+                      "https://swerthmi.sirv.com/SKYTOP/skytop_ads/figbyte.jpg"
+                    }
+                    ad_link={
+                      "https://figbytes.com/speak-to-figbytes-expert/?utm_campaign=Content%20Syndication&utm_source=third-party%20&utm_medium=Ad&utm_content=Skytop%20"
+                    }
                     conferences={filterByCategory(conferences, activeCategory)}
                     editorial={editorial}
                     publisher={publisher}
@@ -453,4 +465,3 @@ function App() {
 }
 
 export default App;
-

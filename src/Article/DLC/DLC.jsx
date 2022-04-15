@@ -13,8 +13,8 @@ function DLC(props){
     return (
         <div className="dlc-box poll-container mt-5 text-center">
             <p className="section-title mb-0">{props.title}</p>
-            {props.title2 ? (<p className="section-title mb-0">{props.title2}</p>) : ""}
-            {props.title3 ? (<p className="section-title mb-0">{props.title3}</p>) : ""}
+            {props.title2 ? (<p style={{paddingBottom:"0px"}}className="section-title mb-0">{props.title2}</p>) : ""}
+            {props.title3 ? (<p style={{fontWeight:"500"}} className="section-title mb-0">{props.title3}</p>) : ""}
             <img className="dlc-img mt-3"src={props.image} alt="dlc"></img>
             {props.registration ? 
                 <button onClick={() => generateToken()} className="btn btn-primary comment-btn mt-4" data-toggle="modal" data-target="#dlcModal">Download <i className="fas fa-download"></i></button>

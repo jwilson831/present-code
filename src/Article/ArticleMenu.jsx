@@ -35,6 +35,8 @@ function ArticleMenu(props){
                     {currentArticle.acf.dlc && currentArticle.acf.dlc.dlc_title !== "" &&
                     <DLC 
                         title={currentArticle.acf.dlc.dlc_title}
+                        title2={currentArticle.acf.dlc.dlc_title2}
+                        title3={currentArticle.acf.dlc.dlc_title3}
                         image={currentArticle.acf.dlc.dlc_image}
                         file={currentArticle.acf.dlc.dlc_file}
                         registration={currentArticle.acf.dlc.registration_required}

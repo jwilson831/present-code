@@ -24,7 +24,7 @@ function Recents(props) {
   }, [props.articles, props.ids]);
 
   const renderArticles = (articles) => {
-    console.log(articles);
+    // console.log(articles);
     const sorted = articles.sort((a,b) => new Date(b.acf.date).getTime() - new Date(a.acf.date).getTime())
     console.log(sorted);
 

@@ -15,6 +15,7 @@ const ProgramGuestsSide = (data) => {
     affiliation3,
   } = data;
 
+
   return (
     <>
       <div className="guest-container">
@@ -23,16 +24,31 @@ const ProgramGuestsSide = (data) => {
         <i>
           <h5>Featuring</h5>
         </i>
-        <div className="guest-box">
+
+        {name === "Sarah McPhee" ? (<div className="guest-box">
           <strong>
-            <h5>{name}</h5>
+            <h5>Sarah McPhee</h5>
             <h6>
-              {title} <br /> {affiliation}
+            Chair of Houdini Sportswear <br /> 
+            Audit and Risk Chair at Grover.com <br/>
+            Non-Executive Director at ACQ Bure, Bure Equity, Atle Investment and Axel Johnson Inc. <br/> <br/>
+            Recognized as <br/>
+            Best CEO in Sweden <br/>
+            Most Powerful Women
             </h6>
           </strong>
           <img alt="" className="guest-img" src={img} />
           <button className="guestButton">About {name}</button>
-        </div>
+        </div>) : (<div className="guest-box">
+          <strong>
+            <h5>{name}</h5>
+            <h6>
+            {title} <br /> {affiliation}
+            </h6>
+          </strong>
+          <img alt="" className="guest-img" src={img} />
+          <button className="guestButton">About {name}</button>
+        </div>)}
 
         { name2 ? (<div className="guest-box">
           <strong>

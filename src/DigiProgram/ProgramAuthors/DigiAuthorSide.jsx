@@ -25,7 +25,6 @@ const DigiAuthorSide = () => {
   }, [id]);
 
   const {
-    short_part_header,
     guest_name,
     guest_name2,
     guest_name3,
@@ -86,6 +85,7 @@ const DigiAuthorSide = () => {
     guest_img13,
     guest_img14,
     guest_img15,
+    short_part_header,
     short_part_header2,
     short_part_header3,
     short_part_header4,

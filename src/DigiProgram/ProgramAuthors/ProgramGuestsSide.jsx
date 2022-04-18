@@ -14,7 +14,7 @@ const ProgramGuestsSide = (data) => {
     affiliation2,
     affiliation3,
   } = data;
-  // ) )
+
   return (
     <>
       <div className="guest-container">
@@ -34,7 +34,7 @@ const ProgramGuestsSide = (data) => {
           <button className="guestButton">About {name}</button>
         </div>
 
-        <div className="guest-box">
+        { name2 ? (<div className="guest-box">
           <strong>
             <h5>{name2}</h5>
             <h6>
@@ -43,7 +43,7 @@ const ProgramGuestsSide = (data) => {
           </strong>
           <img alt="" className="guest-img" src={img2} />
           <button className="guestButton">About {name2}</button>
-        </div>
+        </div>) : "" }
 
         { name3 ? (<div className="guest-box">
           <strong>

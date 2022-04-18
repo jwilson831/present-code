@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../../util/scrollToTop";
 
-const PointPart = (props) => {
+const TTPPart = (props) => {
   const { guest, title, number, sub_title, logo, styles, name } = props;
   return (
     <div className="container">
@@ -49,4 +49,4 @@ const PointPart = (props) => {
   );
 };
 
-export default PointPart;
+export default TTPPart;

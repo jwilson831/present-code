@@ -1,13 +1,13 @@
-import ProgramPart from "./ProgramPart";
+import ATTPart from "./ATTPart";
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../../util/scrollToTop";
 
-const DigiAuthor = (props) => {
+const ATTAuthor = (props) => {
   const {
     auth_img_bio,
     program_logo,
     name,
-    category,
+    // category,
     title,
     sub_title,
     title2,
@@ -35,14 +35,14 @@ const DigiAuthor = (props) => {
     part_number5,
     part_sub_title5,
     part_logo5,
-    part_title6,
-    part_number6,
-    part_sub_title6,
-    part_logo6,
-    part_title7,
-    part_number7,
-    part_sub_title7,
-    part_logo7,
+    // part_title6,
+    // part_number6,
+    // part_sub_title6,
+    // part_logo6,
+    // part_title7,
+    // part_number7,
+    // part_sub_title7,
+    // part_logo7,
     construction_img,
     contributing_author,
   } = props.author;
@@ -50,19 +50,13 @@ const DigiAuthor = (props) => {
     <>
       <br />
       <div className="stuImgContainer">
-        {category === "At The Table" ? (
+
           <img
             className="stuImg"
             alt="studio"
             src="https://skytop-strategies.com/wp-content/uploads/2022/03/blank-layout.jpg"
           />
-        ) : (
-          <img
-            className="stuImg"
-            alt="studio"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/blank-layout.jpg"
-          />
-        )}
+
         <br />
         <br />
         <br />
@@ -76,7 +70,6 @@ const DigiAuthor = (props) => {
             ) : (
               <img alt="" className="programTableLogoAuth" src={program_logo} />
             )}
-            {/* <img alt="" id="skyLogoAuth" src={program_logo} /> */}
           </h3>
           <h4>Presents</h4>
           <br />
@@ -128,28 +121,28 @@ const DigiAuthor = (props) => {
       <br />
       <hr className="blueLine" />
       <br />
-      <ProgramPart
+      <ATTPart
         title={part_title}
         number={part_number}
         sub_title={part_sub_title}
         logo={part_logo}
         build={construction_img}
       />
-      <ProgramPart
+      <ATTPart
         title={part_title2}
         number={part_number2}
         sub_title={part_sub_title2}
         logo={part_logo2}
         build={construction_img}
       />
-      <ProgramPart
+      <ATTPart
         title={part_title3}
         number={part_number3}
         sub_title={part_sub_title3}
         logo={part_logo3}
         build={construction_img}
       />
-      <ProgramPart
+      <ATTPart
         title={part_title4}
         number={part_number4}
         sub_title={part_sub_title4}
@@ -159,7 +152,7 @@ const DigiAuthor = (props) => {
       {part_title5 === "Under Construction" ? (
         ""
       ) : (
-        <ProgramPart
+        <ATTPart
           title={part_title5}
           number={part_number5}
           sub_title={part_sub_title5}
@@ -168,14 +161,14 @@ const DigiAuthor = (props) => {
         />
       )}
 
-      {/* <ProgramPart
+      {/* <ATTPart
         title={part_title6}
         number={part_number6}
         sub_title={part_sub_title6}
         logo={part_logo6}
         build={construction_img}
       />
-      <ProgramPart
+      <ATTPart
         title={part_title7}
         number={part_number7}
         sub_title={part_sub_title7}
@@ -186,4 +179,4 @@ const DigiAuthor = (props) => {
   );
 };
 
-export default DigiAuthor;
+export default ATTAuthor;

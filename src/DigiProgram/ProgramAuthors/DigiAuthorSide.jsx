@@ -148,7 +148,6 @@ const DigiAuthorSide = () => {
           {short_part_header4 === "" ? (
             ""
           ) : (
-            <>
               <ProgramGuestsSide
                 header={short_part_header4}
                 img={guest_img10}
@@ -164,7 +163,8 @@ const DigiAuthorSide = () => {
                 title3={guest_title12}
                 affiliation3={guest_affiliation12}
               />
-              <ProgramGuestsSide
+          )}
+          {/* { short_part_header5              <ProgramGuestsSide
                 header={short_part_header5}
                 img={guest_img13}
                 name={guest_name13}
@@ -178,9 +178,7 @@ const DigiAuthorSide = () => {
                 name3={guest_name15}
                 title3={guest_title15}
                 affiliation3={guest_affiliation15}
-              />
-            </>
-          )}
+              />} */}
         </>
       ) : (
         <div className="author-loader">

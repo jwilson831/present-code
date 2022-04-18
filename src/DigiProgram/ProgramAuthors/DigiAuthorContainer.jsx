@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import PageLoader from "../../util/Loader/Loader";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import DigiAuthor from "./DigiAuthor";
+import ATTAuthor from "./ATTAuthor";
 import TTPAuthor from "./TTPAuthor";
+import ITSAuthor from "./ITSAuthor";
 
 const DigiAuthorContainer = () => {
   const [programAuthor, setAuthor] = useState("");
@@ -24,17 +25,26 @@ const DigiAuthorContainer = () => {
     };
     fetchData();
   }, [id]);
-  // console.log(programAuthor.category);
+
   const category = programAuthor.category;
+
   return (
     <>
       {loaded ? (
         <div className="feature">
+
+          {category === "At The Table" || category === "Under Construction" ? (
+            <ATTAuthor author={programAuthor} />
+          ) : ""}
+          
           {category === "To The Point" ? (
             <TTPAuthor author={programAuthor} />
-          ) : (
-            <DigiAuthor author={programAuthor} />
-          )}
+          ) : ""}
+          
+          {/* {category === "In The Studio" ? (
+            <ITSAuthor author={programAuthor} />
+          ) : ""} */}
+
         </div>
       ) : (
         <div className="author-loader">

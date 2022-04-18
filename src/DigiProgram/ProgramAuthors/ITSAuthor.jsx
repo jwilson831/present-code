@@ -1,8 +1,8 @@
-import TTPPart from "./TTPPart";
+import ITSPart from "./ITSPart";
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../../util/scrollToTop";
 
-const TTPAuthor = (props) => {
+const ITSAuthor = (props) => {
   const {
     auth_img_bio,
     program_logo,
@@ -51,9 +51,9 @@ const TTPAuthor = (props) => {
       <br />
       <div className="stuImgContainer">
         <img
-          className="ttpBack"
+          className="ITSBack"
           alt="studio"
-          src="https://skytop-strategies.com/wp-content/uploads/2022/03/blank-layout.jpg"
+          src="hITSs://skytop-strategies.com/wp-content/uploads/2022/03/blank-layout.jpg"
         />
         <br />
         <br />
@@ -62,7 +62,7 @@ const TTPAuthor = (props) => {
           <br />
           <br />
           <br />
-          <img alt="" className="bigTTP" src={program_logo} />
+          <img alt="" className="bigITS" src={program_logo} />
           <h2>
             {title}
             {sub_title}
@@ -99,7 +99,7 @@ const TTPAuthor = (props) => {
       <br />
       <hr className="blueLine" />
       <br />
-      <h3>A Three Part Series</h3>
+      <h3>A Four Part Series</h3>
       <br />
       <img className="authorImgBig" alt="" src={author_image} />
       <br />
@@ -124,7 +124,7 @@ const TTPAuthor = (props) => {
       <hr className="blueLine" />
       <br />
 
-      <TTPPart
+      <ITSPart
         title={part_title}
         number={part_number}
         sub_title={part_sub_title}
@@ -133,7 +133,7 @@ const TTPAuthor = (props) => {
         guest="Maryann Bruce, Board Director and Former CEO"
       />
 
-      <TTPPart
+      <ITSPart
         title={part_title2}
         number={part_number2}
         sub_title={part_sub_title2}
@@ -142,7 +142,7 @@ const TTPAuthor = (props) => {
         guest="Michael Marquardt, Director of Global Companies"
       />
 
-      <TTPPart
+      <ITSPart
         title={part_title3}
         number={part_number3}
         sub_title={part_sub_title3}
@@ -155,4 +155,4 @@ const TTPAuthor = (props) => {
   );
 };
 
-export default TTPAuthor;
+export default ITSAuthor;

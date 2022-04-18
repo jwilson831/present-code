@@ -41,9 +41,9 @@ const DigiAuthorContainer = () => {
             <TTPAuthor author={programAuthor} />
           ) : ""}
           
-          {/* {category === "In The Studio" ? (
+          {category === "In The Studio" ? (
             <ITSAuthor author={programAuthor} />
-          ) : ""} */}
+          ) : ""}
 
         </div>
       ) : (

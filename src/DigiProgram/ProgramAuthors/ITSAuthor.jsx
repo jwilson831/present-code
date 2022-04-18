@@ -27,10 +27,10 @@ const ITSAuthor = (props) => {
     part_number3,
     part_sub_title3,
     part_logo3,
-    // part_title4,
-    // part_number4,
-    // part_sub_title4,
-    // part_logo4,
+    part_title4,
+    part_number4,
+    part_sub_title4,
+    part_logo4,
     // part_title5,
     // part_number5,
     // part_sub_title5,
@@ -51,9 +51,9 @@ const ITSAuthor = (props) => {
       <br />
       <div className="stuImgContainer">
         <img
-          className="ITSBack"
+          className="ttpBack"
           alt="studio"
-          src="hITSs://skytop-strategies.com/wp-content/uploads/2022/03/blank-layout.jpg"
+          src="https://skytop-strategies.com/wp-content/uploads/2022/03/blank-layout.jpg"
         />
         <br />
         <br />
@@ -62,35 +62,26 @@ const ITSAuthor = (props) => {
           <br />
           <br />
           <br />
-          <img alt="" className="bigITS" src={program_logo} />
-          <h2>
-            {title}
-            {sub_title}
-          </h2>
+          <img alt="" style={{ width: "376px" }} src={program_logo} />
+          <br />
           <br />
           <h3>
             Christopher P. Skroupa <br />
             Editor-in-Chief, Skytop <br />
-            <h5>
-              <i>Presents</i>
-            </h5>
           </h3>
-          <h4>
-            {" "}
-            <br />
-            Jeremy Fielding, CEO, Kekst CNC <br />
-            <h5>
-              <i>along with</i>
-            </h5>
-            Marann Bruce, Board Director and Former CEO
-            <br />
-            Michael Marquardt, Board Director of Global Companies
-            <br />
-            Cynthia Plouché, Board Director in the Financial Sector
-          </h4>
+          <h5>
+            <i>Presents</i>
+          </h5>
+          <h4>Sarah McPhee</h4>
+          <br />
+          <h5>
+            <i>A Four Part Series</i>
+          </h5>
+
+          <h3>{title}</h3>
+          <h4>{sub_title}</h4>
         </div>
       </div>
-      {/* <b>View Streamed or On Demand Worldwide</b><br/><br/> */}
       <h5 className="viewStream">View Streamed or On Demand Worldwide</h5>
       <button className="previewButtonAuth">
         Register Here to Join Our Program
@@ -99,7 +90,6 @@ const ITSAuthor = (props) => {
       <br />
       <hr className="blueLine" />
       <br />
-      <h3>A Four Part Series</h3>
       <br />
       <img className="authorImgBig" alt="" src={author_image} />
       <br />
@@ -113,7 +103,6 @@ const ITSAuthor = (props) => {
         </Link>
       ) : (
         <a href={about_link}>
-          {" "}
           <button onClick={() => scrollToTop()} className="previewButtonAuth">
             About {about_name}
           </button>
@@ -129,8 +118,6 @@ const ITSAuthor = (props) => {
         number={part_number}
         sub_title={part_sub_title}
         logo={part_logo}
-        styles="yourLogoAuth"
-        guest="Maryann Bruce, Board Director and Former CEO"
       />
 
       <ITSPart
@@ -138,8 +125,6 @@ const ITSAuthor = (props) => {
         number={part_number2}
         sub_title={part_sub_title2}
         logo={part_logo2}
-        styles="kekstLogoAuth"
-        guest="Michael Marquardt, Director of Global Companies"
       />
 
       <ITSPart
@@ -147,10 +132,14 @@ const ITSAuthor = (props) => {
         number={part_number3}
         sub_title={part_sub_title3}
         logo={part_logo3}
-        styles="kekstLogoAuth"
-        guest="Cynthia Plouché, Board Director in the Financial Sector"
       />
 
+      <ITSPart
+        title={part_title4}
+        number={part_number4}
+        sub_title={part_sub_title4}
+        logo={part_logo4}
+      />
     </>
   );
 };

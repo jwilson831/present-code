@@ -76,7 +76,6 @@ const TTPAuthor = (props) => {
             </h5>
           </h3>
           <h4>
-            {" "}
             <br />
             Jeremy Fielding, CEO, Kekst CNC <br />
             <h5>
@@ -90,7 +89,6 @@ const TTPAuthor = (props) => {
           </h4>
         </div>
       </div>
-      {/* <b>View Streamed or On Demand Worldwide</b><br/><br/> */}
       <h5 className="viewStream">View Streamed or On Demand Worldwide</h5>
       <button className="previewButtonAuth">
         Register Here to Join Our Program

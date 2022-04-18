@@ -224,8 +224,15 @@
 }
 
 .table-top-auth {
-  max-width: 15%;
-  margin-bottom: 25px;
+  max-width: 20%;
+  height: auto;
+  align-items: center;
+  display: block;
+  transform: translate(-23px, -16px);
+}
+
+.stu-top-auth {
+  max-width: 25%;
   height: auto;
   align-items: center;
   display: block;

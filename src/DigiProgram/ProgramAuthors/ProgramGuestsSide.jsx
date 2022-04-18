@@ -45,7 +45,7 @@ const ProgramGuestsSide = (data) => {
           <button className="guestButton">About {name2}</button>
         </div>
 
-        {/* <div className="guest-box">
+        <div className="guest-box">
           <strong>
             <h5>{name3}</h5>
             <h6>
@@ -56,7 +56,7 @@ const ProgramGuestsSide = (data) => {
           <button className="guestButton">
             About {name3}
           </button>
-        </div> */}
+        </div>
       </div>
     </>
   );

@@ -157,7 +157,7 @@ function App() {
                   {/* March 14, 2022 */}
                   <DateTime />
                   <br />
-                  Headlines Edition #3:
+                  Headlines Edition #3:{" "}
                   <b>Hostile Nation States, Terrorists and Cyber Criminals</b>
                   <ColoredLine color="gold" />
                 </div>

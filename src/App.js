@@ -95,9 +95,9 @@ function App() {
         {
           console.log(allArticles);
         }
-        {
-          console.log(editorials.data);
-        }
+        // {
+        //   console.log(editorials.data);
+        // }
       } catch (err) {
         console.error(err);
       }

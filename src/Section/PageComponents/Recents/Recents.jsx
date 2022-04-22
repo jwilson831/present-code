@@ -3,6 +3,7 @@ import "./styles.css";
 import { findById } from "../../../util/findById";
 import RecentArticle from "./RecentArticle";
 import Programs from "../../../util/ProgramLogos/ProgramLogos";
+import Advert2 from "../../../util/Advert/Advert2";
 
 function Recents(props) {
   const [articles, setArticles] = useState([]);
@@ -25,8 +26,10 @@ function Recents(props) {
 
   const renderArticles = (articles) => {
     // console.log(articles);
-    const sorted = articles.sort((a,b) => new Date(b.acf.date).getTime() - new Date(a.acf.date).getTime())
-    console.log(sorted);
+    const sorted = articles.sort(
+      (a, b) => new Date(b.acf.date).getTime() - new Date(a.acf.date).getTime()
+    );
+    // console.log(sorted);
 
     return sorted.map((article) => (
       <RecentArticle
@@ -44,10 +47,15 @@ function Recents(props) {
 
   return (
     <div>
+      <div className="mt-4">
+        <Advert2 />
+      </div>
+      <hr/>
       <Programs />
       <div className="recent-container text-left">
         <div className="recent-title-section">
-        Headlines Edition #3: Hostile Nation States, Terrorists and Cyber Criminals
+          Headlines Edition #3: Hostile Nation States, Terrorists and Cyber
+          Criminals
         </div>
         <hr
           style={{

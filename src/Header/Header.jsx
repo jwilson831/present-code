@@ -18,7 +18,7 @@ function Header (){
                 <h5 className="tagline">Where Corporate Insight and Disruptive Ideas Converge</h5>
                 {/* invest-button view-all comments-box */}
                     <div className="">
-                        <Link to="/invest-in-us">
+                        <Link style={{ textDecoration: 'none' }} to="/invest-in-us">
                             <p className="nav-text invest-link view-all comments-box">Invest In Us</p>
                         </Link>
                     </div>

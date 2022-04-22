@@ -1,22 +1,42 @@
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../util/scrollToTop";
 
-const Categories = () => {
+const Categories = (props) => {
+  const {
+    category,
+    categoryImage,
+    article,
+    artTitle,
+    artByLine,
+    artImage,
+    name,
+    title,
+    affiliation,
+    image,
+    style,
+    link,
+  } = props;
+  // console.log(article);
   return (
     <div id="border">
-      <h1 className="textShadow">Gender Bias</h1>
-      <img
-        alt="boxSetImg"
-        className="boxSetImg"
-        src="https://skytop-strategies.com/wp-content/uploads/2022/04/w5.jpg"
-      />
+      <h1 className="textShadow">{category}</h1>
+
+      <div className="categoryImg">
+        <img alt="" className="boxSetImg" src={categoryImage} />
+        {/* <img
+          alt=""
+          style={{ position: "relative", width: "95%", borderRadius: "10px" }}
+          id="img-top"
+          src="https://skytop-strategies.com/wp-content/uploads/2022/04/w3-1.jpg"
+        /> */}
+      </div>
 
       <div className="container">
         <br />
         <div className="row">
           {/* Article */}
           <div className="logo col-sm">
-            <Link to={`/articles/2560`}>
+            <Link to={`/articles/${article}`}>
               <div onClick={() => scrollToTop()} className="authorCard">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -24,22 +44,11 @@ const Categories = () => {
                       style={{ transform: "translate(0px, -32px)" }}
                       className="program-blurb"
                     >
-                      <h4>
-                        Women in China and Mexico Are Disappearing:
-                        <br />
-                        <i>Stop This Global Trend</i>
-                      </h4>
-                      <i>
-                        By Angelita Baeyens and Rachel Margolis, The Robert F.
-                        Kennedy Center for Human Rights, and Skytop Contributors
-                      </i>
+                      <h4>{artTitle}</h4>
+                      <i>{artByLine}</i>
                       <br />
                       <br />
-                      <img
-                        alt=""
-                        className="articleImg"
-                        src="https://skytop-strategies.com/wp-content/uploads/2022/04/231a0469-746a-4fa4-b8bf-746b69c6f242.png"
-                      />
+                      <img alt="" className={style} src={artImage} />
                     </div>
                   </div>
                 </div>
@@ -48,25 +57,24 @@ const Categories = () => {
           </div>
           {/* Author */}
           <div id="back" className="logo col-sm">
-            <Link to={`/program-authors/`}>
+            <a href={link}>
               <div onClick={() => scrollToTop()} className="authorCard">
                 <div className="flip-card-inner">
                   <div id="cardColor" className="flip-card-front">
-                    <div style={{transform: "translate(0px, -13px)"}}><strong>
-                      <h3>ANGELITA BAEYENS</h3>
-                      <h5>
-                      VP of International Advocacy and Litigation <br /> Robert F. Kennedy Human Rights
-                      </h5>
-                    </strong></div>
-                    <img
-                      alt=""
-                      className="rfkAuthor"
-                      src="https://skytop-strategies.com/wp-content/uploads/2022/04/baeyens.webp"
-                    />
+                    <div style={{ transform: "translate(0px, -13px)" }}>
+                      <strong>
+                        <h3>{name}</h3>
+                        <h5>
+                          {title}
+                          <br /> {affiliation}
+                        </h5>
+                      </strong>
+                    </div>
+                    <img alt="" className="rfkAuthor" src={image} />
                   </div>
                 </div>
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

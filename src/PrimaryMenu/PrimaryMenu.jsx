@@ -26,7 +26,7 @@ function PrimaryMenu (props){
                     <Editorial
                         id={props.editorial.id}
                         category={"Editor's Note"}
-                        title={"Editor’s Note #7: Hostile Nation States, Terrorists and Cyber Criminals"}
+                        title={"Editor’s Note #7"}
                         img={props.editorial.acf.image}
                         author={props.editorial.acf.author}
                         excerpt={props.editorial.excerpt.rendered}

@@ -47,7 +47,7 @@ function Advert2(props) {
         <div className="">
           <p>
             <i>
-            “Join us in helping these great patriots, who risked their all for their country and ours as they start their new lives as Americans.”
+            “Join us in helping these great patriots, who risked their all for their country and ours, as they start their new lives as Americans.”
             </i>
             <br />
             <b>Mike Barry, Retired Senior US Intelligence Official, FAMIL Board of Directors</b>

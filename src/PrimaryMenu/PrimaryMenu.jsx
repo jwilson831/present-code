@@ -26,7 +26,9 @@ function PrimaryMenu (props){
                     <Editorial
                         id={props.editorial.id}
                         category={"Editor's Note"}
-                        title={"Editor’s Note #7"}
+                        // title={"Editor’s Note #7: The Death of Discourse"}
+                        title={"Editor’s Note #7:"}
+                        title2={" The Death of Discourse"}
                         img={props.editorial.acf.image}
                         author={props.editorial.acf.author}
                         excerpt={props.editorial.excerpt.rendered}

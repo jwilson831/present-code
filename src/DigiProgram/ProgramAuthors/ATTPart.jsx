@@ -34,7 +34,6 @@ const ProgramPart = (props) => {
                           />
                           <br />
                           <br />
-                          <br />
                         </>
                       ) : (
                         <h3> {title}</h3>

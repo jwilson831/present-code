@@ -3,16 +3,20 @@ const ProgramGuestsSide = (data) => {
     img,
     img2,
     img3,
+    img4,
     header,
     name,
     name2,
     name3,
+    name4,
     title,
     title2,
     title3,
+    title4,
     affiliation,
     affiliation2,
     affiliation3,
+    affiliation4
   } = data;
 
 
@@ -74,6 +78,18 @@ const ProgramGuestsSide = (data) => {
           </button>
         </div>) : ""}
 
+        { name4 ? (<div className="guest-box">
+          <strong>
+            <h5>{name4}</h5>
+            <h6>
+              {title4} <br /> {affiliation4}
+            </h6>
+          </strong>
+          <img alt="" className="guest-img" src={img4} />
+          <button className="guestButton">
+            About {name3}
+          </button>
+        </div>) : ""}
       </div>
     </>
   );

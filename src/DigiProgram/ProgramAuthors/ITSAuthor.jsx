@@ -31,10 +31,10 @@ const ITSAuthor = (props) => {
     part_number4,
     part_sub_title4,
     part_logo4,
-    // part_title5,
-    // part_number5,
-    // part_sub_title5,
-    // part_logo5,
+    part_title5,
+    part_number5,
+    part_sub_title5,
+    part_logo5,
     // part_title6,
     // part_number6,
     // part_sub_title6,
@@ -72,10 +72,10 @@ const ITSAuthor = (props) => {
           <h5>
             <i>Presents</i>
           </h5>
-          <h4>Sarah McPhee</h4>
+          <h4>{name}</h4>
           <br />
           <h5>
-            <i>A Four Part Series</i>
+            <i>{sub_title2}</i>
           </h5>
 
           <h3>{title}</h3>
@@ -140,6 +140,14 @@ const ITSAuthor = (props) => {
         sub_title={part_sub_title4}
         logo={part_logo4}
       />
+
+      <ITSPart
+        title={part_title5}
+        number={part_number5}
+        sub_title={part_sub_title5}
+        logo={part_logo5}
+      />
+
     </>
   );
 };

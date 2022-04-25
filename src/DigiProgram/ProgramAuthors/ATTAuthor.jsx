@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import { scrollToTop } from "../../util/scrollToTop";
 
 const ATTAuthor = (props) => {
+  console.log(props);
   const {
     auth_img_bio,
     program_logo,
     name,
+    affiliation1,
+    affiliation2,
     // category,
     title,
     sub_title,
@@ -50,12 +53,11 @@ const ATTAuthor = (props) => {
     <>
       <br />
       <div className="stuImgContainer">
-
-          <img
-            className="stuImg"
-            alt="studio"
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/blank-layout.jpg"
-          />
+        <img
+          className="stuImg"
+          alt="studio"
+          src="https://skytop-strategies.com/wp-content/uploads/2022/03/blank-layout.jpg"
+        />
 
         <br />
         <br />
@@ -75,17 +77,25 @@ const ATTAuthor = (props) => {
           <br />
           <h3>
             <p style={{ whiteSpace: "nowrap" }}>{name}</p>
+            {affiliation1 ? (
+              <h5>
+                <p style={{transform: "translate(0px, -14px)"}}>
+                  {affiliation1} {affiliation2}
+                </p>
+              </h5>
+            ) : (
+              ""
+            )}
             <h4>Along with Special Guests</h4>
             <br />
-            <h2>{title}</h2>
+            <h3>{title}</h3>
             <h4>{sub_title}</h4>
             <br />
             <br />
-            <h5 className="viewStream">View Streamed or On Demand Worldwide</h5>
           </h3>
         </div>
       </div>
-      <br />
+      <h5 className="viewStream">View Streamed or On Demand Worldwide</h5>
       <button className="previewButtonAuth">
         Register Here to Join Our Program
       </button>
@@ -128,28 +138,43 @@ const ATTAuthor = (props) => {
         logo={part_logo}
         build={construction_img}
       />
-      <ATTPart
-        title={part_title2}
-        number={part_number2}
-        sub_title={part_sub_title2}
-        logo={part_logo2}
-        build={construction_img}
-      />
-      <ATTPart
-        title={part_title3}
-        number={part_number3}
-        sub_title={part_sub_title3}
-        logo={part_logo3}
-        build={construction_img}
-      />
-      <ATTPart
-        title={part_title4}
-        number={part_number4}
-        sub_title={part_sub_title4}
-        logo={part_logo4}
-        build={construction_img}
-      />
-      {part_title5 === "Under Construction" ? (
+      {!part_title2 ? (
+        ""
+      ) : (
+        <ATTPart
+          title={part_title2}
+          number={part_number2}
+          sub_title={part_sub_title2}
+          logo={part_logo2}
+          build={construction_img}
+        />
+      )}
+
+      {!part_title3 ? (
+        ""
+      ) : (
+        <ATTPart
+          title={part_title3}
+          number={part_number3}
+          sub_title={part_sub_title3}
+          logo={part_logo3}
+          build={construction_img}
+        />
+      )}
+
+      {!part_title4 ? (
+        ""
+      ) : (
+        <ATTPart
+          title={part_title4}
+          number={part_number4}
+          sub_title={part_sub_title4}
+          logo={part_logo4}
+          build={construction_img}
+        />
+      )}
+
+      {!part_title5 ? (
         ""
       ) : (
         <ATTPart

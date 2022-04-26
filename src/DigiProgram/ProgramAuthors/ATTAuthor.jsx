@@ -107,7 +107,7 @@ const ATTAuthor = (props) => {
       <h2>{title2}</h2>
       <h3>{sub_title2}</h3>
       <br />
-      <img className="authorMain" alt="" src={author_image} />
+      {name === "Richard Howitt" ? (<img className="howitt" alt="" src={author_image} />) :( <img className="authorMain" alt="" src={author_image} />)}
       <br />
       <br />
 

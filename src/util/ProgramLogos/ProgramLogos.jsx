@@ -1,20 +1,19 @@
 import React from "react";
 import "./styles.css";
-import { Link } from 'react-router-dom';
-import { scrollToTop } from '../scrollToTop';
-
+import { Link } from "react-router-dom";
+import { scrollToTop } from "../scrollToTop";
 
 const ProgramLogos = () => {
   return (
     <Link to="/digi-prog">
-    <div className="containter">
+      <div className="containter">
         <button onClick={() => scrollToTop()} className="programButton">
           Three Streamed Program Channels
         </button>
-      <br />
-      <div className="row">
-        {/* To The Point */}
-        <div onClick={() => scrollToTop()} className="logo col-sm">
+        <br />
+        <div className="row">
+          {/* To The Point */}
+          <div onClick={() => scrollToTop()} className="logo col-sm">
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
@@ -32,16 +31,15 @@ const ProgramLogos = () => {
                   />
                   <hr></hr>
                   <div className="program-blurb">
-                    Everything <b>you</b> need to know right now in 30 minutes
-                    or less
+                    Everything the viewer needs to know in 30 minutes or less
                   </div>
                   {/* <button type="button" class="btn btn-primary">Sneak Peak</button> */}
                 </div>
               </div>
             </div>
-        </div>
-        {/* At The Table */}
-        <div onClick={() => scrollToTop()} className="logo col-sm">
+          </div>
+          {/* At The Table */}
+          <div onClick={() => scrollToTop()} className="logo col-sm">
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
@@ -56,16 +54,16 @@ const ProgramLogos = () => {
                     src="https://swerthmi.sirv.com/SKYTOP/digital_programs/skytop%20at%20the%20table.png"
                   />
                   <div className="program-blurb">
-                    Skytop has set the table and invited the players, now sit
-                    and watch this thought provoking panel discussion
+                    A Skytop Contributing Author has convened the experts, now
+                    viewers sit and engage in actionable conversation{" "}
                   </div>
                   {/* <button type="button" class="btn btn-primary">Sneak Peak</button> */}
                 </div>
               </div>
             </div>
-        </div>
-        {/* In The Studio */}
-        <div onClick={() => scrollToTop()} className="logo col-sm">
+          </div>
+          {/* In The Studio */}
+          <div onClick={() => scrollToTop()} className="logo col-sm">
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
@@ -80,17 +78,17 @@ const ProgramLogos = () => {
                     src="https://swerthmi.sirv.com/SKYTOP/digital_programs/in%20the%20studio%20color.png"
                   />
                   <div className="program-blurb">
-                    Join Skytop CEO Chris Skroupa as he sits 1-1 with industry
-                    experts and has riveting in depth conversations in this one
-                    hour news program
+                    Skytop CEO Christopher Skroupa sits 1:1 with movers and
+                    shakers supporting viewers seeking to impact their company
+                    and their performance{" "}
                   </div>
                   {/* <button type="button" class="btn btn-primary">Sneak Peak</button> */}
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
     </Link>
   );
 };

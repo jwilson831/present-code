@@ -64,7 +64,7 @@ const RFK = () => {
 
           <Categories
             category="Gender Bias"
-            categoryImage="https://skytop-strategies.com/wp-content/uploads/2022/04/w5.jpg"
+            categoryImage="https://skytop-strategies.com/wp-content/uploads/2022/04/gender-based-violence-splice.png"
             article={gender.acf.article[0]}
             artTitle={gender.acf.article_title}
             artByLine={gender.acf.article_by_line}
@@ -79,7 +79,7 @@ const RFK = () => {
 
           <Categories
             category="Mass Incarceration"
-            categoryImage="https://skytop-strategies.com/wp-content/uploads/2022/04/20170208_065e.jpg"
+            categoryImage="https://skytop-strategies.com/wp-content/uploads/2022/04/mass-incarceration-splice.png"
             article={prison.acf.article[0]}
             artTitle={prison.acf.article_title}
             artByLine={prison.acf.article_by_line}
@@ -94,7 +94,7 @@ const RFK = () => {
 
           <Categories
             category="Civil Space & Activism"
-            categoryImage="https://skytop-strategies.com/wp-content/uploads/2022/04/220314162419-protester-full-169-3621671246-1650653791201.jpeg"
+            categoryImage="https://skytop-strategies.com/wp-content/uploads/2022/04/civiil-space-activism-splice.png"
             article={activism.acf.article[0]}
             artTitle={activism.acf.article_title}
             artByLine={activism.acf.article_by_line}
@@ -109,7 +109,7 @@ const RFK = () => {
 
           <Categories
             category="Racial Injustice"
-            categoryImage="https://skytop-strategies.com/wp-content/uploads/2022/04/wide_16x9.jpg"
+            categoryImage="https://skytop-strategies.com/wp-content/uploads/2022/04/racial-injustice-splice.png"
             article={race.acf.article[0]}
             artTitle={race.acf.article_title}
             artByLine={race.acf.article_by_line}

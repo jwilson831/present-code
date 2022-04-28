@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import PageLoader from "../../util/Loader/Loader";
 import "./styles.css";
 
@@ -10,10 +10,8 @@ function DLCDonForm(props) {
   const [jobTitle, setJobTitle] = useState("");
   const [showMessage, setShowMessage] = useState(false);
   const [loading, setLoading] = useState(true);
-  const downloadLink = useRef(null);
 
   const download = () => {
-    downloadLink.current.click();
     setTimeout(() => {
       setName("");
       setEmail("");

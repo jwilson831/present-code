@@ -1,11 +1,9 @@
 import axios from "axios";
 import React, { useState } from "react";
-import DLCForm from "./DLCForm";
 import DLCDonForm from "./DLCDonForm";
 import "./styles.css";
 
 function DLCDon(props) {
-  console.log(props);
   const [token, setToken] = useState(null);
 
   const generateToken = async () => {
@@ -26,7 +24,7 @@ function DLCDon(props) {
       <p style={{ fontWeight: "500" }} className="section-title mb-0">
         {props.title3}
       </p>
-      {props.registration ? (
+      
         <button
           onClick={() => generateToken()}
           className="btn btn-primary comment-btn mt-4"
@@ -35,13 +33,7 @@ function DLCDon(props) {
         >
           Description & Pricing <i className="fas"></i>
         </button>
-      ) : (
-        <a href={props.file} download>
-          <button className="btn btn-primary comment-btn mt-4">
-            Description & Pricing<i className="fas fa-download"></i>
-          </button>
-        </a>
-      )}
+      
       <DLCDonForm token={token} title={props.title} />
     </div>
   );

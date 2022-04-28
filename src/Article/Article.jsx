@@ -28,13 +28,12 @@ function Article(props){
         setLoaded(true);
     },[id,props.articles])
 
-    
 
     return(
         <>
         {loaded ?
             <div>
-                <div className="article-container mt-3" >
+                <div className={`${data.acf.author[0].ID === 3294 ? "article-containerDon mt-3" : "article-container mt-3"}`} >
                     <div>
                         {data.acf.category === "Skytop Survey" &&
                             <div className="survey-article-header mb-4">

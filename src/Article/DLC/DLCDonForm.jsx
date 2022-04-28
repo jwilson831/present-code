@@ -100,7 +100,7 @@ function DLCDonForm(props) {
             <form className="comments-form" onSubmit={(e) => submitHandler(e)}>
               {showMessage && (
                 <div className="thank-you-msg">
-                  <h5 className="m-0">Thank You For Registering!  Someone will contact you shortly.</h5>
+                  <h5 className="m-0">Thank You For Registering!<br/>Someone will contact you shortly.</h5>
                   <span className="pt-2">
                     <i className="far fa-check-square"></i>
                   </span>

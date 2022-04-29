@@ -6,8 +6,8 @@ import "./styles.css";
 function DLCDonForm(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [company, setCompany] = useState("");
-  const [jobTitle, setJobTitle] = useState("");
+  const [affiliation, setAffiliation] = useState("");
+  const [title, setTitle] = useState("");
   const [showMessage, setShowMessage] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -15,8 +15,8 @@ function DLCDonForm(props) {
     setTimeout(() => {
       setName("");
       setEmail("");
-      setCompany("");
-      setJobTitle("");
+      setAffiliation("");
+      setTitle("");
       setLoading(true);
       setShowMessage(true);
     }, 2000);
@@ -39,7 +39,7 @@ function DLCDonForm(props) {
             "https://skytop-strategies.com/wp-json/wp/v2/user_downloads",
             {
               title: name,
-              content: `${name} downloaded ${props.title}`,
+              content: `${name} requests pricing and description for ${props.title}`,
               status: "private",
             },
             {
@@ -51,7 +51,7 @@ function DLCDonForm(props) {
             }
           );
           await axios.post(
-            `https://skytop-strategies.com/wp-json/acf/v3/user_downloads/${newUser.data.id}?fields[name]=${name}&fields[email]=${email}&fields[company]=${company}&fields[job_title]=${jobTitle}`,
+            `https://skytop-strategies.com/wp-json/acf/v3/user_downloads/${newUser.data.id}?fields[name]=${name}&fields[email]=${email}&fields[company]=${affiliation}&fields[job_title]=${title}`,
             {},
             {
               headers: {
@@ -130,21 +130,21 @@ function DLCDonForm(props) {
                   ></input>
                 </div>
                 <div className="d-flex align-items-center comment-data-container">
-                  <label className="comment-data-label">Company: </label>
+                  <label className="comment-data-label">Title: </label>
                   <input
                     className="comment-data-input form-control"
                     required
-                    onChange={(e) => setCompany(e.target.value)}
-                    value={company}
+                    onChange={(e) => setTitle(e.target.value)}
+                    value={title}
                   ></input>
                 </div>
                 <div className="d-flex align-items-center comment-data-container">
-                  <label className="comment-data-label">Job Title: </label>
+                  <label className="comment-data-label">Affiliation: </label>
                   <input
                     className="comment-data-input form-control"
                     required
-                    onChange={(e) => setJobTitle(e.target.value)}
-                    value={jobTitle}
+                    onChange={(e) => setAffiliation(e.target.value)}
+                    value={affiliation}
                   ></input>
                 </div>
               </div>

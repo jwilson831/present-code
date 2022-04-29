@@ -1,19 +1,19 @@
-import axios from "axios";
-import React, { useState } from "react";
+// import axios from "axios";
+// import React, { useState } from "react";
 import DLCDonForm from "./DLCDonForm";
 import "./styles.css";
 
 function DLCDon(props) {
-  const [token, setToken] = useState(null);
-
-  const generateToken = async () => {
-    const {
-      data: { token },
-    } = await axios.post(
-      `https://skytop-strategies.com/wp-json/jwt-auth/v1/token?username=${process.env.REACT_APP_WP_USERNAME}&password=${process.env.REACT_APP_WP_PASSWORD}`
-    );
-    setToken(token);
-  };
+const {token} = props;
+  // const [token, setToken] = useState(null);
+  // const generateToken = async () => {
+  //   const {
+  //     data: { token },
+  //   } = await axios.post(
+  //     `https://skytop-strategies.com/wp-json/jwt-auth/v1/token?username=${process.env.REACT_APP_WP_USERNAME}&password=${process.env.REACT_APP_WP_PASSWORD}`
+  //   );
+  //   setToken(token);
+  // };
   return (
     <div className="dlc-box poll-container mt-5 text-center">
       <p className="section-title mb-0">{props.title}</p>
@@ -26,7 +26,8 @@ function DLCDon(props) {
       </p>
       
         <button
-          onClick={() => generateToken()}
+          // onClick={() => generateToken()}
+          onClick={() => {}}
           className="btn btn-primary comment-btn mt-4"
           data-toggle="modal"
           data-target="#dlcModal2"
@@ -34,7 +35,7 @@ function DLCDon(props) {
           Description & Pricing <i className="fas"></i>
         </button>
       
-      <DLCDonForm token={token} title={props.title} />
+      <DLCDonForm  token={token} title={props.title3} />
     </div>
   );
 }

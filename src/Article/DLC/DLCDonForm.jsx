@@ -6,8 +6,8 @@ import "./styles.css";
 function DLCDonForm(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [affiliation, setAffiliation] = useState("");
-  const [title, setTitle] = useState("");
+  const [company, setCompany] = useState("");
+  const [jobTitle, setJobTitle] = useState("");
   const [showMessage, setShowMessage] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -15,8 +15,8 @@ function DLCDonForm(props) {
     setTimeout(() => {
       setName("");
       setEmail("");
-      setAffiliation("");
-      setTitle("");
+      setCompany("");
+      setJobTitle("");
       setLoading(true);
       setShowMessage(true);
     }, 2000);
@@ -51,7 +51,7 @@ function DLCDonForm(props) {
             }
           );
           await axios.post(
-            `https://skytop-strategies.com/wp-json/acf/v3/user_downloads/${newUser.data.id}?fields[name]=${name}&fields[email]=${email}&fields[company]=${affiliation}&fields[job_title]=${title}`,
+            `https://skytop-strategies.com/wp-json/acf/v3/user_downloads/${newUser.data.id}?fields[name]=${name}&fields[email]=${email}&fields[company]=${company}&fields[job_title]=${jobTitle}`,
             {},
             {
               headers: {
@@ -100,7 +100,7 @@ function DLCDonForm(props) {
             <form className="comments-form" onSubmit={(e) => submitHandler(e)}>
               {showMessage && (
                 <div className="thank-you-msg">
-                  <h5 className="m-0">Thank You For Registering!<br/>Someone will contact you shortly.</h5>
+                  <h5 className="m-0">Thank You For Registering!<br/>We will contact you shortly.</h5>
                   <span className="pt-2">
                     <i className="far fa-check-square"></i>
                   </span>
@@ -130,21 +130,21 @@ function DLCDonForm(props) {
                   ></input>
                 </div>
                 <div className="d-flex align-items-center comment-data-container">
-                  <label className="comment-data-label">Title: </label>
+                  <label className="comment-data-label">Company: </label>
                   <input
                     className="comment-data-input form-control"
                     required
-                    onChange={(e) => setTitle(e.target.value)}
-                    value={title}
+                    onChange={(e) => setCompany(e.target.value)}
+                    value={company}
                   ></input>
                 </div>
                 <div className="d-flex align-items-center comment-data-container">
-                  <label className="comment-data-label">Affiliation: </label>
+                  <label className="comment-data-label">Job Title: </label>
                   <input
                     className="comment-data-input form-control"
                     required
-                    onChange={(e) => setAffiliation(e.target.value)}
-                    value={affiliation}
+                    onChange={(e) => setJobTitle(e.target.value)}
+                    value={jobTitle}
                   ></input>
                 </div>
               </div>

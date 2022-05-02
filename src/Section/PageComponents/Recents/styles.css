@@ -1,11 +1,10 @@
-.advert2 {
+.soldierImg {
     border-radius: 10px;
     width: 100%;
     margin-top: 4rem;
     margin-bottom: 4rem;
     margin-left: .3rem;
   }
-  
   
   .advertColumn {
     float: left;
@@ -26,6 +25,15 @@
     margin-bottom: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   }
+
+@media (max-width: 576px) { 
+    .soldierImg, .familQuotes {
+     display: none;
+   }
+   .familImg {
+       transform: translate(-130px, 0px)
+   }
+}
 
 
 .recent-container{
@@ -53,6 +61,7 @@
     border-top-right-radius: 0px;
 
 }
+
 @media screen and (min-width:2000px) {
     .recent-img{
         height: 25rem;

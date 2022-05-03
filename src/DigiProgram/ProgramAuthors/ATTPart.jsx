@@ -9,7 +9,7 @@ const ProgramPart = (props) => {
       <div className="row">
         <div id="back" className="logo col-sm">
         <Link to="/digi-prog">
-            <div onClick={() => scrollToTop()} id="cardAuth">
+            <div onClick={() => scrollToTop()} className="cardAuth">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                 {title === "Under Construction" ? (

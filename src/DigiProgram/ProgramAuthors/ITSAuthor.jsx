@@ -62,7 +62,7 @@ const ITSAuthor = (props) => {
           <br />
           <br />
           <br />
-          <img alt="" style={{ width: "376px" }} src={program_logo} />
+          <img alt="" className="itsBig" src={program_logo} />
           <br />
           <br />
           <h3>

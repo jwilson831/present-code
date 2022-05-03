@@ -60,7 +60,7 @@
     margin-top: 122px;
     margin-bottom: 47px;
     transform: translate(0px, 41px);
-    width: 410px;
+    width: 350px;
  }
 }
 
@@ -97,14 +97,14 @@
 
 @media (max-width: 660px) { 
   .bigTTP {
-    width: 338px;
-    margin-top: -10px;
+    width: 385px;
+    transform: translate(0px, 50px);
   }
 }
 
 @media (max-width: 1200px) { 
   .ttpPeople {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
 }
 }
 
@@ -312,6 +312,15 @@
   transform: translate(54px, -10px);
 }
 
+@media (max-width: 568px) { 
+  .point-top-auth {
+    width: 90%;
+    transform: translate(5px, -10px);
+
+ }
+}
+
+
 .point-top-auth-img {
   width: 100%;
   margin-bottom: -21px;
@@ -366,13 +375,31 @@
   overflow: hidden;
 }
 
+.itsCard {
+  background-color: transparent;
+  width: 100%;
+  height: 530px;
+  overflow: hidden;
+}
 
-#cardAuth {
+@media (max-width: 568px) { 
+  .itsCard {
+    height: 550px;
+ }
+}
+
+.cardAuth {
   background-color: transparent;
   width: 100%;
   height: 635px;
   overflow: hidden;
   /* perspective: 1000px; Remove this if you don't want the 3D effect */
+}
+
+@media (max-width: 568px) { 
+  .cardAuth {
+    height: 700px;
+ }
 }
 
 #cardAuthPoint {
@@ -385,7 +412,7 @@
 
 @media (max-width: 568px) { 
   #cardAuthPoint {
-    height: 760px;
+    height: 770px;
  }
 }
 
@@ -479,6 +506,17 @@
   padding: auto;
   height: auto;
 }
+
+.itsBig {
+    width: 330px;
+}
+
+@media (max-width: 568px) { 
+  .itsBig {
+    width: 250px;
+  }
+}
+
 
 .programContent {
   margin-top: 20px;

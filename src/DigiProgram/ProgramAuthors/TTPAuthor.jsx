@@ -71,11 +71,11 @@ const TTPAuthor = (props) => {
           <h3>
             Christopher P. Skroupa <br />
             Editor-in-Chief, Skytop <br />
+            </h3>
             <h5>
               <i>Presents</i>
             </h5>
-          </h3>
-          <h4>
+          <h4 className="ttpPeople">
             <br />
             Jeremy Fielding, CEO, Kekst CNC <br />
             <h5>

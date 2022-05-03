@@ -26,7 +26,7 @@ const ProgramPart = (props) => {
                   <div className="program-blurb-auth">
                     <b>
                       {title === "Under Construction" ? (
-                        <>
+                        <div className="constructionMargin">
                           <img
                             alt=""
                             className="constructionLogo"
@@ -34,7 +34,7 @@ const ProgramPart = (props) => {
                           />
                           <br />
                           <br />
-                        </>
+                        </div>
                       ) : (
                         <h3> {title}</h3>
                       )}

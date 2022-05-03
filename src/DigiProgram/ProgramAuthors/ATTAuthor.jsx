@@ -76,7 +76,7 @@ const ATTAuthor = (props) => {
           <h4>Presents</h4>
           <br />
           <h3>
-            <p style={{ whiteSpace: "nowrap" }}>{name}</p>
+            <p className="attName" >{name}</p>
             {affiliation1 ? (
               <h5>
                 <p style={{transform: "translate(0px, -14px)"}}>
@@ -107,7 +107,7 @@ const ATTAuthor = (props) => {
       <h2>{title2}</h2>
       <h3>{sub_title2}</h3>
       <br />
-      {name === "Richard Howitt" ? (<img className="howitt" alt="" src={author_image} />) :( <img className="authorMain" alt="" src={author_image} />)}
+      {about_name === "Cameron Munter" ? ( <img className="authorMain" alt="" src={author_image} />) : (<img className="howitt" alt="" src={author_image} />)}
       <br />
       <br />
 

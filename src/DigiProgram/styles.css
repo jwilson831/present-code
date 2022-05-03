@@ -97,7 +97,8 @@
 
 @media (max-width: 660px) { 
   .bigTTP {
-    width: 450px;
+    width: 338px;
+    margin-top: -10px;
   }
 }
 
@@ -377,10 +378,17 @@
 #cardAuthPoint {
   background-color: transparent;
   width: 100%;
-  height: 680px;
+  height: 700px;
   overflow: hidden;
   /* perspective: 1000px; Remove this if you don't want the 3D effect */
 }
+
+@media (max-width: 568px) { 
+  #cardAuthPoint {
+    height: 760px;
+ }
+}
+
 
 #back_auth {
   transform: translate(-13px, 320px);

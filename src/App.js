@@ -405,7 +405,7 @@ function App() {
             <div className="side-menu">
               <Switch>
                 <Route exact path="/surveys/:id">
-                  <SurveySide editorial={editorial} calendar={editCalendar} />
+                  <SurveySide comments={comments} editorial={editorial} calendar={editCalendar} />
                 </Route>
                 <Route path={"/conferences/:id"}>
                   <ConferenceMenu conferences={conferences} />

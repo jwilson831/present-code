@@ -17,6 +17,29 @@ function PrimaryMenu(props) {
     <>
       <div className="side-menu-container text-left">
         <SideContainer conferences={props.conferences} />
+        <Editorial
+              id={props.editorial.id}
+              category={"Editor's Note"}
+              // title={"Editor’s Note #7: The Death of Discourse"}
+              title={"Editor’s Note #7:"}
+              title2={" The Death of Discourse"}
+              img={props.editorial.acf.image}
+              author={props.editorial.acf.author}
+              excerpt={props.editorial.excerpt.rendered}
+              link={"/editorial"}
+              comments={props.comments}
+              email={"cskroupa@skytopstrategies.com"}
+            />
+        <a href={props.ad_link} target="_blank" rel="noreferrer">
+          <img
+            style={{ boxShadow: "none" }}
+            className="menu-advert"
+            alt="ad"
+            src={props.ad}
+          ></img>
+        </a>
+        <br />
+
         <div className="calendarStyle" >
             <br/>
         <Calendar calendar={props.calendar}/>
@@ -24,9 +47,6 @@ function PrimaryMenu(props) {
 
         {window.location.pathname === "/" ? (
           <div>
-            <br/>
-              <hr/>
-              <br/>
             <a
               href={"https://www.spglobal.com/en/"}
               target="_blank"
@@ -41,19 +61,7 @@ function PrimaryMenu(props) {
                 }
               ></img>
             </a>
-            {/* <Editorial
-              id={props.editorial.id}
-              category={"Editor's Note"}
-              // title={"Editor’s Note #7: The Death of Discourse"}
-              title={"Editor’s Note #7:"}
-              title2={" The Death of Discourse"}
-              img={props.editorial.acf.image}
-              author={props.editorial.acf.author}
-              excerpt={props.editorial.excerpt.rendered}
-              link={"/editorial"}
-              comments={props.comments}
-              email={"cskroupa@skytopstrategies.com"}
-            /> */}
+
 
             {/* <Editorial
               id={props.publisher.id}
@@ -73,16 +81,7 @@ function PrimaryMenu(props) {
           ""
         )}
         {/* <hr style={{ marginTop: "85px" }} /> */}
-        <br />
-        <a href={props.ad_link} target="_blank" rel="noreferrer">
-          <img
-            style={{ boxShadow: "none" }}
-            className="menu-advert"
-            alt="ad"
-            src={props.ad}
-          ></img>
-        </a>
-        <hr style={{ marginTop: "85px" }} />
+        <br/>
         <NewsFeed />
       </div>
     </>

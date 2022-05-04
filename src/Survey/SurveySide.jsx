@@ -6,10 +6,11 @@ import './styles.css';
 
 const SurveySide = (props) => {
     return(
-    //     <div className="calendarStyle" >
-    //         <br/>
-    //     <Calendar calendar={props.calendar}/>
-    // </div>
+        <>
+        <div className="calendarStyle" >
+            <br/>
+        <Calendar calendar={props.calendar}/>
+    </div>
     <div className="side-menu-container text-left">
     <Editorial
               id={props.editorial.id}
@@ -25,6 +26,7 @@ const SurveySide = (props) => {
               email={"cskroupa@skytopstrategies.com"}
             />
             </div>
+            </>
     )
 }
 

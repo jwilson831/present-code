@@ -3,6 +3,7 @@
     padding: 1rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    border-radius: 10px;
 }
 .edit-category{
     background: rgba(241, 200, 16, 0.884) !important;

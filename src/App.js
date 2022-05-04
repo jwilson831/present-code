@@ -95,9 +95,9 @@ function App() {
         {
           console.log(allArticles);
         }
-        // {
-        //   console.log(editorials.data);
-        // }
+        {
+          console.log(editorials.data);
+        }
       } catch (err) {
         console.error(err);
       }
@@ -405,7 +405,7 @@ function App() {
             <div className="side-menu">
               <Switch>
                 <Route exact path="/surveys/:id">
-                  <SurveySide calendar={editCalendar} />
+                  <SurveySide editorial={editorial} calendar={editCalendar} />
                 </Route>
                 <Route path={"/conferences/:id"}>
                   <ConferenceMenu conferences={conferences} />

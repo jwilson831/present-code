@@ -17,8 +17,16 @@ function PrimaryMenu(props) {
     <>
       <div className="side-menu-container text-left">
         <SideContainer conferences={props.conferences} />
+        <div className="calendarStyle" >
+            <br/>
+        <Calendar calendar={props.calendar}/>
+    </div>
+
         {window.location.pathname === "/" ? (
           <div>
+            <br/>
+              <hr/>
+              <br/>
             <a
               href={"https://www.spglobal.com/en/"}
               target="_blank"
@@ -33,7 +41,7 @@ function PrimaryMenu(props) {
                 }
               ></img>
             </a>
-            <Editorial
+            {/* <Editorial
               id={props.editorial.id}
               category={"Editor's Note"}
               // title={"Editor’s Note #7: The Death of Discourse"}
@@ -45,8 +53,9 @@ function PrimaryMenu(props) {
               link={"/editorial"}
               comments={props.comments}
               email={"cskroupa@skytopstrategies.com"}
-            />
-            <Editorial
+            /> */}
+
+            {/* <Editorial
               id={props.publisher.id}
               category={"Publisher's Note"}
               title={
@@ -58,12 +67,12 @@ function PrimaryMenu(props) {
               link={"/publisher"}
               comments={props.comments}
               email={"asullivan@skytopstrategies.com"}
-            />
+            /> */}
           </div>
         ) : (
           ""
         )}
-        <hr style={{ marginTop: "85px" }} />
+        {/* <hr style={{ marginTop: "85px" }} /> */}
         <br />
         <a href={props.ad_link} target="_blank" rel="noreferrer">
           <img

@@ -47,11 +47,14 @@ function Recents(props) {
 
   return (
     <div>
-      <div className="mt-4">
-        <Advert2 />
-      </div>
-      <hr/>
       <Programs />
+      <hr/>
+      <div className="mt-4">
+        <br/>
+        <Advert2 />
+        <br/>
+      </div>
+      {/* <hr/> */}
       <div className="recent-container text-left">
         <div className="recent-title-section">
           Headlines Edition #3: Hostile Nation States, Terrorists and Cyber

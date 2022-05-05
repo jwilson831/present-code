@@ -404,8 +404,11 @@ function App() {
 
             <div className="side-menu">
               <Switch>
-                <Route exact path="/surveys/:id">
+                {/* <Route exact path="/surveys/:id">
                   <SurveySide comments={comments} editorial={editorial} calendar={editCalendar} />
+                </Route> */}
+                <Route exact path="/rfk">
+                  <DigiSide programs={programs} />
                 </Route>
                 <Route path={"/conferences/:id"}>
                   <ConferenceMenu conferences={conferences} />

@@ -4,7 +4,7 @@ import './styles.css';
 function NewsFeed(){
     return(
             <div >
-                <iframe scrolling="no"title="news-feed-embed" src="https://share.hsforms.com/1CgKQL3j9Sw2AgdWlxFfM3Qcw754" width="100%" height="1100" type="text/html" frameBorder="0" allowtransparency="true"></iframe>
+                <iframe scrolling="no"title="news-feed-embed" src="https://share.hsforms.com/1CgKQL3j9Sw2AgdWlxFfM3Qcw754" width="100%" height="1120" type="text/html" frameBorder="0" allowtransparency="true"></iframe>
             </div>
     )
 }

@@ -50,8 +50,8 @@ const DigiMain = (programs) => {
         link="/capital-markets"
         data={capital_markets}
         ttpStyle="clearyLogo"
-        attStyle="investorLogo"
-        itsStyle="yourLogo"
+        attStyle="yourLogo"
+        itsStyle="investorLogo"
       />
       <Programs
         link="/CSR"

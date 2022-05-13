@@ -9,6 +9,7 @@ function Speakers(props){
     useEffect(() => {
         if(props.speakers) {
             const ids = props.speakers.toString();
+            // console.log(props.speakers)
             const fetch = async () => {
                 try{
                     const {data}= await axios(`https://skytop-strategies.com/wp-json/wp/v2/people?include=${ids}&per_page=100`);

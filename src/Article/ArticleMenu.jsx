@@ -135,6 +135,27 @@ function ArticleMenu(props) {
                 title3="China-Japan Strategy: Mystery Investment Funds"
                 registration={currentArticle.acf.dlc.registration_required}
               />
+              <DLCDon
+                token={token}
+                title={currentArticle.acf.dlc.dlc_title}
+                title2="Survey Poll"
+                title3= "Climate Change, Food and Military-Civil Fusion"
+                registration={currentArticle.acf.dlc.registration_required}
+              />
+              <DLCDon
+                token={token}
+                title={currentArticle.acf.dlc.dlc_title}
+                title2="Survey Poll"
+                title3= "U.S. Challenge: China Research Joint Ventures and Tech Transfer"
+                registration={currentArticle.acf.dlc.registration_required}
+              />
+              <DLCDon
+                token={token}
+                title={currentArticle.acf.dlc.dlc_title}
+                title2="Survey Poll"
+                title3= "LinkedIn China Polls: The Russia-Ukraine War Influence"
+                registration={currentArticle.acf.dlc.registration_required}
+              />
             </>
           ) : (
             ""

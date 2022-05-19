@@ -7,14 +7,14 @@ const ProgramPreviews = () => {
         {/* id="border" */}
       <div className="container">
         <br />
-        <h2 className="robotoFont" >
-          <b>Exceptional Business Insights</b>
+        <h2  >
+          <b style={{fontSize: 30}}>Exceptional Business Insights</b>
         </h2>
-        <h3 className="robotoFont">
-          <i style={{fontSize:"2.3rem"}}>Hosted by</i>
+        <h3 >
+          <i style={{fontSize: 26}}>Hosted by</i>
         </h3>
-        <h2 className="robotoFont">
-          <b style={{fontSize:"2.3rem"}}>Skytop Contributing Authors</b>
+        <h2 >
+          <b style={{fontSize: 26}}>Skytop Contributing Authors</b>
         </h2>
         <br />
         <div className="row">
@@ -128,7 +128,7 @@ const ProgramPreviews = () => {
       <Link to={`/digi-prog`}>
         <h3 style={{ paddingBottom: "10px" }}>
           <button onClick={() => scrollToTop()} class="previewButtonAuth">
-            More Live, Streamed or On Demand
+            More Live, Streamed or On Demand Programs
           </button>
         </h3>
       </Link>

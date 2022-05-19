@@ -154,7 +154,7 @@ function App() {
             <Switch>
               <div className="section">
                 <div style={styleObj}>
-                <div style={{textAlign: "center", fontSize: 26}}><b>Hostile Nation States, Terrorists and Cyber Criminals</b></div>
+                <div style={{textAlign: "center", fontSize: 28}}><b>Hostile Nation States, Terrorists and Cyber Criminals</b></div>
               <br/>
                   Headlines Edition #3{" "}
                   <br />

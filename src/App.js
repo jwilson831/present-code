@@ -129,7 +129,7 @@ function App() {
   const styleObj = {
     fontSize: 18,
     textAlign: "left",
-    marginLeft: 16,
+    // marginLeft: 16,
   };
   const ColoredLine = ({ color }) => (
     <hr
@@ -154,11 +154,11 @@ function App() {
             <Switch>
               <div className="section">
                 <div style={styleObj}>
-                  {/* March 14, 2022 */}
-                  <DateTime />
+                <div style={{textAlign: "center", fontSize: 26}}><b>Hostile Nation States, Terrorists and Cyber Criminals</b></div>
+              <br/>
+                  Headlines Edition #3{" "}
                   <br />
-                  Headlines Edition #3:{" "}
-                  <b>Hostile Nation States, Terrorists and Cyber Criminals</b>
+                  <DateTime />
                   <ColoredLine color="gold" />
                 </div>
 

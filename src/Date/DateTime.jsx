@@ -13,11 +13,11 @@ export const DateTime = () => {
     });
 // console.log(month,day, year)
     return(
-        <>
+        <div style={{fontSize: "18px"}}>
             {/* <p> Time : {date.toLocaleTimeString()}</p> */}
             {/* <p> Date : {date.toLocaleDateString()}</p> */}
             {date.toString()}
-        </>
+        </div>
     )
 }
 

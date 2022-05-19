@@ -1,6 +1,6 @@
 function Advert2(props) {
   return (
-    <div id="adBorder">
+    <div id="border">
       <a href="https://familusa.org/" target="_blank" rel="noreferrer">
         <div className="advertRow">
           <div className="advertColumn">

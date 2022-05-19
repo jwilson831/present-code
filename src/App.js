@@ -164,15 +164,15 @@ function App() {
 
                 <Route exact path="/">
                   <Home
-                    video={"https://www.youtube.com/embed/-IQeSnz9KCY"}
-                    title={
-                      <div className="video-title text-center">
-                        <h5>There's No Business Like SPAC Business</h5>
-                        <p>
-                          Eric Rosenfeld, Chairman and CEO, Crescendo Partners
-                        </p>
-                      </div>
-                    }
+                    // video={"https://www.youtube.com/embed/-IQeSnz9KCY"}
+                    // title={
+                    //   <div className="video-title text-center">
+                    //     <h5>There's No Business Like SPAC Business</h5>
+                    //     <p>
+                    //       Eric Rosenfeld, Chairman and CEO, Crescendo Partners
+                    //     </p>
+                    //   </div>
+                    // }
                     survey={surveys[0]}
                     articles={articles}
                     comments={comments}

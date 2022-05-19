@@ -3,8 +3,6 @@ import "./styles.css";
 import { findById } from "../../../util/findById";
 import RecentArticle from "./RecentArticle";
 import Programs from "../../../util/ProgramLogos/ProgramLogos";
-import Advert2 from "../../../util/Advert/Advert2";
-import ProgramPreviews from "./ProgramPreviews"
 
 function Recents(props) {
   const [articles, setArticles] = useState([]);
@@ -48,14 +46,6 @@ function Recents(props) {
 
   return (
     <div>
-      <ProgramPreviews />
-      <br/>
-      <hr/>
-      <div className="mt-4">
-        <Advert2 />
-        <br/>
-      </div>
-      <hr/>
       <div className="recent-container text-left">
         <div className="recent-title-section">
           Headlines Edition #3: Hostile Nation States, Terrorists and Cyber

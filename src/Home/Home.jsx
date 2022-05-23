@@ -55,7 +55,7 @@ function Home(props) {
         <div className="subfeature">
           <SubFeatures
             articles={props.articles}
-            ids={[4145, 4142, 3592]}
+            ids={[4157,4145, 4142]}
             comments={props.comments}
           />
         </div>

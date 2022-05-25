@@ -291,7 +291,7 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      2550, 1334, 187, 630, 3596, 2894, 2588, 2407, 2430, 2223, 2153, 2145, 1808, 1303, 585
+                      3568, 2550, 1334, 187, 630, 3596, 2894, 2588, 2407, 2430, 2223, 2153, 2145, 1808, 1303, 585
                     ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}

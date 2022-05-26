@@ -55,7 +55,7 @@ function Home(props) {
         <div className="subfeature">
           <SubFeatures
             articles={props.articles}
-            ids={[4157,4145, 4180]}
+            ids={[4157,4145,4180]}
             comments={props.comments}
           />
         </div>
@@ -63,7 +63,7 @@ function Home(props) {
           <Recents
             changeActiveCategory={props.changeActiveCategory}
             articles={props.articles}
-            ids={[3570, 3572, 3573, 3575, 3576, 3577, 3578]}
+            ids={[4200,3570, 4142, 3572, 3573, 3578]}
             comments={props.comments}
           />
           <ViewAllBtn linkTo={"article"} />

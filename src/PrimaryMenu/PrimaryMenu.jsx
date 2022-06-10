@@ -45,7 +45,8 @@ function PrimaryMenu(props) {
         <Calendar calendar={props.calendar}/>
     </div>
 
-        {window.location.pathname === "/" ? (
+        {/* {
+        window.location.pathname === "/" ? (
           <div>
             <a
               href={"https://www.spglobal.com/en/"}
@@ -53,17 +54,17 @@ function PrimaryMenu(props) {
               rel="noreferrer"
             >
               <img
-                style={{ width: "80%", boxShadow: "none" }}
+                style={{boxShadow: "none" }}
                 className="menu-advert"
                 alt="ad"
                 src={
-                  "https://utcoleca.sirv.com/SKYTOP/S_P%20Global%20S1%20Climate%20Week-Event%20Collaterals-01_Climate%20Week%20Event%20Page-800x800%202.png"
+                  "https://skytop-strategies.com/wp-content/uploads/2022/06/SP-S1-Collage-Resize-970x250-02.jpg"
                 }
               ></img>
             </a>
 
 
-            {/* <Editorial
+            <Editorial
               id={props.publisher.id}
               category={"Publisher's Note"}
               title={
@@ -75,11 +76,12 @@ function PrimaryMenu(props) {
               link={"/publisher"}
               comments={props.comments}
               email={"asullivan@skytopstrategies.com"}
-            /> */}
+            />
           </div>
         ) : (
           ""
-        )}
+        )} */}
+        
         {/* <hr style={{ marginTop: "85px" }} /> */}
         <br/>
         <NewsFeed />

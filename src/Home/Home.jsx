@@ -72,8 +72,8 @@ function Home(props) {
       <Advert image={props.ad} link={props.ad_link} />
       <div className="mt-4">
         <Advert
-          image={"https://utcoleca.sirv.com/SKYTOP/skytop_ads/image.png"}
-          link={"https://esg.moodys.io/"}
+          image={"https://skytop-strategies.com/wp-content/uploads/2022/06/SP-S1-Collage-Resize-970x250-02.jpg"}
+          link={"https://www.spglobal.com/en/"}
         />
       </div>
       <div>

@@ -22,7 +22,7 @@ function PrimaryMenu(props) {
               category={"Editor's Note"}
               // title={"Editor’s Note #7: The Death of Discourse"}
               title={"Editor’s Note #7:"}
-              title2={" The Death of Discourse"}
+              title2={" Big Three to Social Media"}
               img={props.editorial.acf.image}
               author={props.editorial.acf.author}
               excerpt={props.editorial.excerpt.rendered}

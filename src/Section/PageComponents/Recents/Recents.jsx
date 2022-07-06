@@ -48,8 +48,7 @@ function Recents(props) {
     <div>
       <div className="recent-container text-left">
         <div className="recent-title-section">
-          Headlines Edition #3: Hostile Nation States, Terrorists and Cyber
-          Criminals
+          Headlines Edition #4: The Death of Discourse
         </div>
         <hr
           style={{

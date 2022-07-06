@@ -27,12 +27,12 @@ function SideContainer(props) {
     <div className="conference-container">
       <div className="conference-spotlight">
         <h3 className="section-title">Conference Spotlight</h3>
-        <h6>Global Cyber Security Summit</h6>
-        <Link to="/conferences/385">
+        <h6>ESG Impact</h6>
+        <Link to="/conferences/1218">
           <img
             className="card-img side-img"
             src={
-              "https://skytop-strategies.com/wp-content/uploads/2021/07/THE-ONE-FOR-ROME.jpg"
+              "https://skytop-strategies.com/wp-content/uploads/2022/07/unnamed-7.png"
             }
             alt="spotlight conference"
           ></img>

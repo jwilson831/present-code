@@ -154,9 +154,9 @@ function App() {
             <Switch>
               <div className="section">
                 <div style={styleObj}>
-                <div style={{textAlign: "center", fontSize: 28}}><b>Hostile Nation States, Terrorists and Cyber Criminals</b></div>
+                <div style={{textAlign: "center", fontSize: 28}}><b>The Death of Discourse</b></div>
               <br/>
-                  Headlines Edition #3{" "}
+                  Headlines Edition #4{" "}
                   <br />
                   <DateTime />
                   <ColoredLine color="gold" />
@@ -245,7 +245,7 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      3576, 4168, 2105, 2103, 1838, 1800, 1325, 580, 177, 181, 184, 590, 601, 616, 599, 3613, 2560, 2572, 2394, 2380, 2319, 2325, 2226,
+                      3578, 3576, 4168, 2105, 2103, 1838, 1800, 1325, 580, 177, 181, 184, 590, 601, 616, 599, 3613, 2560, 2572, 2394, 2380, 2319, 2325, 2226,
                       2132, 2150, 1862
                     ]}
                     comments={comments}
@@ -291,7 +291,7 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      3567, 3568, 2550, 1334, 187, 630, 3596, 2894, 2588, 2407, 2430, 2223, 2153, 2145, 1808, 1303, 585
+                      3573, 3567, 3568, 2550, 1334, 187, 630, 3596, 2894, 2588, 2407, 2430, 2223, 2153, 2145, 1808, 1303, 585
                     ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
@@ -317,7 +317,7 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      2557, 1314, 1290, 612, 193, 609, 604, 3593, 3609, 3616, 3617, 2753, 2757, 2754, 2637, 2574,
+                      3572, 4200, 4142, 3570, 4157, 4145, 4180, 2557, 1314, 1290, 612, 193, 609, 604, 3593, 3609, 3616, 3617, 2753, 2757, 2754, 2637, 2574,
                       2418, 2368, 2328, 2247, 2121, 1815, 1812, 1316
                     ]}
                     comments={comments}

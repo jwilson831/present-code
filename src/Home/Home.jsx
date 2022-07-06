@@ -36,7 +36,7 @@ function Home(props) {
             alt=""
             id="adBorder"
             style={{ width: "95%", borderRadius: "10px" }}
-            src="https://skytop-strategies.com/wp-content/uploads/2022/03/w_tw.png"
+            src="https://skytop-strategies.com/wp-content/uploads/2022/07/death-of-discourse-1.png"
           />
           <hr />
           <Advert
@@ -55,7 +55,7 @@ function Home(props) {
         <div className="subfeature">
           <SubFeatures
             articles={props.articles}
-            ids={[4157,4145,4180]}
+            ids={[4383, 4380, 4386]}
             comments={props.comments}
           />
         </div>
@@ -63,7 +63,7 @@ function Home(props) {
           <Recents
             changeActiveCategory={props.changeActiveCategory}
             articles={props.articles}
-            ids={[4200,3570, 4142, 3572, 3573, 3578]}
+            ids={[ 4390, 4393, 4396, 4399, 4403, 4409, 4406 ]}
             comments={props.comments}
           />
           <ViewAllBtn linkTo={"article"} />

@@ -35,14 +35,14 @@ function Poll(){
                     <div className="text-center w-100">
                         <div className="m-auto"><p className="poll-header-txt mb-1 p-1"><b>Skytop Perspectives</b></p></div>
                         {/* <div className="m-auto"><p className="poll-header-txt mb-1 p-1">Share Your Insights!</p></div> */}
-                        <div className="m-auto"><p className="poll-header-txt m-0 p-1">Weigh In with Us on This Week’s Topic</p></div>
+                        <a href="https://www.goodwinlaw.com/"><div className="m-auto"><p className="poll-header-txt m-0 p-1">Sponsored By</p><img alt="" src="https://skytop-strategies.com/wp-content/uploads/2022/07/transparent-goodwin.png"/></div></a>
                     </div>
                     <button type="button" className="m-0 p-0 close" data-dismiss="modal" aria-label="Close">
                         <span onClick={() => modalClickHandler()} aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div className="modal-body poll-body text-center">
-                    <iframe title="poll" id="totalpoll-iframe-2645" src="https://skytop-strategies.com/?post_type=poll&p=3071&embed=1" frameborder="0" allowtransparency="true" width="100%" height="600"></iframe>
+                    <iframe title="poll" id="totalpoll-iframe-2645" src="https://skytop-strategies.com/?post_type=poll&p=4428&embed=1" frameborder="0" allowtransparency="true" width="100%" height="400"></iframe>
                 </div>
                 <div className="modal-footer">
                     <button onClick={() => modalClickHandler()} type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>

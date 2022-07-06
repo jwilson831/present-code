@@ -63,7 +63,7 @@ function Home(props) {
           <Recents
             changeActiveCategory={props.changeActiveCategory}
             articles={props.articles}
-            ids={[ 4390, 4393, 4396, 4399, 4403, 4409, 4406 ]}
+            ids={[ 4390, 4393, 4396, 4403, 4409, 4406 ]}
             comments={props.comments}
           />
           <ViewAllBtn linkTo={"article"} />

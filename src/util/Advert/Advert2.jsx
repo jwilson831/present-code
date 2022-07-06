@@ -24,12 +24,12 @@ function Advert2(props) {
       </div>
             <div className="familQuotes">
               <p>
-                <h2>The Case for Space: Companies and Investors Imagine the Next Frontier</h2>
+                <h2>The Case for Space</h2><h3>Companies and Investors Imagine the Next Frontier</h3>
                 <br/>
                 <i>
                 Space, like the internet, will permeate the business world to the point
-where every company will be a space company. Already companies as diverse as John Deere,
-Komatsu and NVIDIA are making plays to commercialize space. 
+                where every company will be a space company. Already companies as diverse as John Deere,
+                Komatsu and NVIDIA are making plays to commercialize space. 
                 </i>
               </p>
             </div>

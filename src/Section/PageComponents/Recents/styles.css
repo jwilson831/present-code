@@ -30,9 +30,10 @@
     .soldierImg, .familQuotes {
      display: none;
    }
-   .familImg {
-       transform: translate(-130px, 0px)
+   #f4fLogo, .familImg  {
+       transform: translate(-90px, 0px)
    }
+
 }
 
 

@@ -11,7 +11,7 @@ function Advert2(props) {
             />
           </div>
 
-          <div className="advertColumn">
+          <div style={{marginTop:"52px"}} className="advertColumn">
           <div className="">
         <img
           className="familImg"
@@ -33,7 +33,7 @@ Komatsu and NVIDIA are making plays to commercialize space.
                 </i>
               </p>
             </div>
-            <button class="previewButtonAuth">About Tim Chrisman</button>
+            <button id="f4fLogo" class="previewButtonAuth">About Tim Chrisman</button>
 
 
 

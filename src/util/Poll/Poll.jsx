@@ -35,7 +35,7 @@ function Poll(){
                     <div className="text-center w-100">
                         <div className="m-auto"><p className="poll-header-txt mb-1 p-1"><b>Skytop Perspectives</b></p></div>
                         {/* <div className="m-auto"><p className="poll-header-txt mb-1 p-1">Share Your Insights!</p></div> */}
-                        <a href="https://www.goodwinlaw.com/"><div className="m-auto"><p className="poll-header-txt m-0 p-1">Sponsored By</p><img alt="" src="https://skytop-strategies.com/wp-content/uploads/2022/07/transparent-goodwin.png"/></div></a>
+                        <a href="https://www.goodwinlaw.com/"><div className="m-auto"><p className="poll-header-txt m-0 p-1">Sponsored By</p><img className="pollLogo" alt="" src="https://skytop-strategies.com/wp-content/uploads/2022/07/transparent-goodwin.png"/></div></a>
                     </div>
                     <button type="button" className="m-0 p-0 close" data-dismiss="modal" aria-label="Close">
                         <span onClick={() => modalClickHandler()} aria-hidden="true">&times;</span>

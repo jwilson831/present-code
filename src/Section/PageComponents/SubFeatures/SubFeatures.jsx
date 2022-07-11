@@ -66,7 +66,7 @@ function SubFeatures (props){
     }
     return(
         <div className="sub-feature-container text-left">
-            <p className="section-title">Features</p>
+            <p className="section-title">Headliners</p>
             {renderArticles(articles)}
         </div>
     )

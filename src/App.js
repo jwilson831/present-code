@@ -154,7 +154,8 @@ function App() {
             <Switch>
               <div className="section">
                 <div style={styleObj}>
-                <div style={{textAlign: "center", fontSize: 28}}><b>The Death of Discourse</b></div>
+                <div style={{textAlign: "center", fontSize: 32}}><b>Big Three to Social Media</b></div>
+                <div style={{textAlign: "center", fontSize: 28}}>The Death of Discourse</div>
               <br/>
                   Headlines Edition #4{" "}
                   <br />

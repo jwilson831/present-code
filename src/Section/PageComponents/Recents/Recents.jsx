@@ -48,7 +48,8 @@ function Recents(props) {
     <div>
       <div className="recent-container text-left">
         <div className="recent-title-section">
-          Headlines Edition #4: The Death of Discourse
+        Current Features & Recent Postings
+          {/* Headlines Edition #4: The Death of Discourse */}
         </div>
         <hr
           style={{

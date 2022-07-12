@@ -154,11 +154,18 @@ function App() {
             <Switch>
               <div className="section">
                 <div style={styleObj}>
-                <div style={{textAlign: "center", fontSize: 32}}><b>Big Three to Social Media</b></div>
-                <div style={{textAlign: "center", fontSize: 28}}>The Death of Discourse</div>
-              <br/>
-                  Headlines Edition #4{" "}
+                  <div style={{ textAlign: "center", fontSize: 32 }}>
+                    <b>Big Three to Social Media</b> <br />{" "}
+                    <img
+                      alt=""
+                      src="https://skytop-strategies.com/wp-content/uploads/2022/07/Big-Three.jpg"
+                    />
+                  </div>
+                  <div style={{ textAlign: "center", fontSize: 28 }}>
+                    The Death of Discourse
+                  </div>
                   <br />
+                  Headlines Edition #4 <br />
                   <DateTime />
                   <ColoredLine color="gold" />
                 </div>
@@ -186,18 +193,21 @@ function App() {
                 </Route>
 
                 <Route exact path="/activism">
-                  <Section
+                  {/* <Section
                     video={"https://www.youtube.com/embed/VnI4ox-lOEU"}
                     title={
                       <div className="video-title text-center">
                         <h5>Evolving Practices in Shareholder Engagement</h5>
                         <p>Jeremy Fielding, CEO Kekst CNC</p>
                       </div>
-                    }
+                    } */}
+                  <Section
+                    video={"https://www.youtube.com/embed/001z9za9uXM"}
                     articles={articles}
                     ids={[
-                      4309, 3575,1328, 1322, 593, 596, 627, 205, 209, 212, 3594, 3560, 3626, 3623, 2751, 2748, 2744, 2569, 2661, 2241,
-                      2217, 2136, 1322, 643, 1284
+                      4309, 3575, 1328, 1322, 593, 596, 627, 205, 209, 212,
+                      3594, 3560, 3626, 3623, 2751, 2748, 2744, 2569, 2661,
+                      2241, 2217, 2136, 1322, 643, 1284,
                     ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
@@ -221,7 +231,8 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      3577, 2555, 197, 200, 607, 3089, 2756, 2675, 2424, 2157, 1804, 203, 622, 583, 3620
+                      3577, 2555, 197, 200, 607, 3089, 2756, 2675, 2424, 2157,
+                      1804, 203, 622, 583, 3620,
                     ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
@@ -246,8 +257,9 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      3578, 3576, 4168, 2105, 2103, 1838, 1800, 1325, 580, 177, 181, 184, 590, 601, 616, 599, 3613, 2560, 2572, 2394, 2380, 2319, 2325, 2226,
-                      2132, 2150, 1862
+                      3578, 3576, 4168, 2105, 2103, 1838, 1800, 1325, 580, 177,
+                      181, 184, 590, 601, 616, 599, 3613, 2560, 2572, 2394,
+                      2380, 2319, 2325, 2226, 2132, 2150, 1862,
                     ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
@@ -269,8 +281,8 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      3592, 1337, 1319, 1309, 215, 218, 3607, 3605, 3602, 2671, 2678, 2332, 2335, 2250, 1947, 187,
-                      1306
+                      3592, 1337, 1319, 1309, 215, 218, 3607, 3605, 3602, 2671,
+                      2678, 2332, 2335, 2250, 1947, 187, 1306,
                     ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
@@ -292,7 +304,8 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      3573, 3567, 3568, 2550, 1334, 187, 630, 3596, 2894, 2588, 2407, 2430, 2223, 2153, 2145, 1808, 1303, 585
+                      3573, 3567, 3568, 2550, 1334, 187, 630, 3596, 2894, 2588,
+                      2407, 2430, 2223, 2153, 2145, 1808, 1303, 585,
                     ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}
@@ -318,8 +331,10 @@ function App() {
                     }
                     articles={articles}
                     ids={[
-                      3572, 4200, 4142, 3570, 4157, 4145, 4180, 2557, 1314, 1290, 612, 193, 609, 604, 3593, 3609, 3616, 3617, 2753, 2757, 2754, 2637, 2574,
-                      2418, 2368, 2328, 2247, 2121, 1815, 1812, 1316
+                      3572, 4200, 4142, 3570, 4157, 4145, 4180, 2557, 1314,
+                      1290, 612, 193, 609, 604, 3593, 3609, 3616, 3617, 2753,
+                      2757, 2754, 2637, 2574, 2418, 2368, 2328, 2247, 2121,
+                      1815, 1812, 1316,
                     ]}
                     comments={comments}
                     changeActiveCategory={changeActiveCategory}

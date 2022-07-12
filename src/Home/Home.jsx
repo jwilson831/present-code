@@ -13,6 +13,8 @@ import RecentSurvey from "../Survey/RecentSurvey";
 import ProgramLogos from "../util/ProgramLogos/ProgramLogos";
 import Advert2 from "../util/Advert/Advert2";
 import ProgramPreviews from "../Section/PageComponents/Recents/ProgramPreviews";
+import { Link } from "react-router-dom";
+import { scrollToTop } from "../util/scrollToTop";
 
 function Home(props) {
   const survey = props.survey;
@@ -39,6 +41,21 @@ function Home(props) {
             src="https://skytop-strategies.com/wp-content/uploads/2022/07/death-of-discourse-1.png"
           />
           <hr />
+          <Link to={"/activism"}>
+            <img
+              onClick={() => scrollToTop()}
+              alt=""
+              style={{ width: "100%", marginTop: "1rem", marginBottom: "2rem" }}
+              src="https://skytop-strategies.com/wp-content/uploads/2022/07/SA-Red.jpg"
+            />
+          </Link>
+
+          {/* <Advert
+            image={
+              "https://skytop-strategies.com/wp-content/uploads/2022/07/SA-Red.jpg"
+            }
+            link={"/activism"}
+          /> */}
           <Advert
             image={
               "https://skytop-strategies.com/wp-content/uploads/2022/03/esg.jpg"
@@ -63,16 +80,24 @@ function Home(props) {
           <Recents
             changeActiveCategory={props.changeActiveCategory}
             articles={props.articles}
-            ids={[ 4390, 4393, 4396, 4403, 4409, 4406 ]}
+            ids={[4390, 4393, 4396, 4403, 4409, 4406]}
             comments={props.comments}
           />
           <ViewAllBtn linkTo={"article"} />
         </div>
       </div>
       <Advert image={props.ad} link={props.ad_link} />
+      {/* <Advert
+            image={
+              "https://skytop-strategies.com/wp-content/uploads/2022/03/esg.jpg"
+            }
+            link={"https://practicalesg.com/begin-your-membership-skytop/"}
+          /> */}
       <div className="mt-4">
         <Advert
-          image={"https://skytop-strategies.com/wp-content/uploads/2022/06/SP-S1-Collage-Resize-970x250-02.jpg"}
+          image={
+            "https://skytop-strategies.com/wp-content/uploads/2022/06/SP-S1-Collage-Resize-970x250-02.jpg"
+          }
           link={"https://www.spglobal.com/en/"}
         />
       </div>

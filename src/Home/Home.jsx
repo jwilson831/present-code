@@ -46,10 +46,10 @@ function Home(props) {
               onClick={() => scrollToTop()}
               alt=""
               style={{ width: "100%", marginTop: "1rem", marginBottom: "2rem" }}
-              src="https://skytop-strategies.com/wp-content/uploads/2022/07/SA-Red.jpg"
+              src="https://skytop-strategies.com/wp-content/uploads/2022/07/Skytop-Red-Issue-7122022.jpg"
             />
           </Link>
-
+          <hr />
           {/* <Advert
             image={
               "https://skytop-strategies.com/wp-content/uploads/2022/07/SA-Red.jpg"

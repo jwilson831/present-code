@@ -26,7 +26,16 @@ function Sponsors(props){
                         <hr></hr>
                         {renderSponsors(props.all)}
                     </div> : ""
-                } 
+                }
+                {props.host ?
+                    <div>
+                        <p className="sponsor-cat-txt">
+                        Exclusive Host Sponsor
+                            <hr></hr>
+                        </p>
+                        {renderSponsors(props.host)}
+                    </div> : ""
+                }  
                 {props.lead ?
                     <div>
                         <p className="sponsor-cat-txt">

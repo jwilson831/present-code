@@ -34,7 +34,8 @@ function Conference(props){
                     // <About  name="sponsors" data={data} engage={data.acf.engage} discover={data.acf.discover} apply={data.acf.apply}/>,
                     <Sponsors 
                     key={0}
-                        name="sponsors" 
+                        name="sponsors"
+                        host={data.acf.exclusive_host_sponsor} 
                         lead={data.acf.lead_sponsors}
                         co_lead={data.acf.co_lead_sponsors}
                         title_sponsors={data.acf.title_sponsors}
